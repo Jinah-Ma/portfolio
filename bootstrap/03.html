@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>간격, 사이즈, 크기</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <p class="text-light bg-primary mb-3">Lorem ipsum dolor sit</p> <!-- 마진 바텀 - 사이즈 -->
+    <p class="text-light bg-info mt-4">Lorem ipsum dolor sit</p> <!-- 마진 탑 - 사이즈 (중첩때문에 큰 수를 썼다.) -->
+    <p class="bg-warning p-4 ps-5 p-sm-1 p-md-4 p-xl-5">Lorem ipsum dolor sit</p> <!-- p-4방향을 안쓰면 네방향 모두 들어간다. ps-5 레프트 라이트 5가 적용이 된다. p-sm-1 패딩이 스몰사이즈(sm>576)일 때 1번 사이즈 적용 p-md-4 미디엄사이즈(>768) p-xl-5(>1200) 패딩 엑스라지일때 -->
+    <hr>
+    <div class="bg-secondary" style="width: 800px; height: 600px;">
+<div class="bg-primary text-light p-3 w-25 h-100">box</div>
+<div class="bg-danger text-right p-3 w-50 m-auto">box</div>
+<div class="bg-success text-right p-3 w-75">box</div>
+<div class="bg-warning text-right p-3 w-100">box</div>
+    </div>
+<hr>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
