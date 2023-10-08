@@ -1,0 +1,134 @@
+header {
+    width: $width;
+
+    .gnb {
+        width: $nav;
+        height: $height;
+        background-color: $background;
+        position: fixed;
+        box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+
+        .logo img {
+            width: 12rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-top: 5rem;
+        }
+
+        .menu {
+            width: 100%;
+
+            &-name {
+                margin-top: 7rem;
+
+                li {
+                    text-align: center;
+                    margin: 2rem;
+
+                    a {
+                        text-transform: capitalize;
+                        color: $text2;
+                        font-size: $main2;
+                    }
+
+                    a:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        .copy {
+            font-size: $info1;
+            color: $text3;
+            text-align: center;
+            margin-top: 38rem;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 7rem;
+                margin: auto;
+                border-top: 1px solid $primary;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    //gnb
+
+    .header-inner {
+        width: $mainW;
+        height: $height;
+        position: absolute;
+        left: $nav;
+        background: /* url(../img/1663069891734.jpg) no-repeat center, */ #d2d3cd;
+        background-position-y: 0;
+
+        .home {
+            .header-text {
+                font-size: $h1;
+                color: $text2;
+                margin-top: 24.5rem;
+                margin-left: 15vw;
+                line-height: 1.333;
+
+                strong {
+                    color: $primary;
+                    font-weight: 500;
+                }
+            }
+
+            .header-box {
+                width: 48rem;
+                height: 27rem;
+                background-color: rgba(255, 255, 255, 0.8);
+                position: fixed;
+                left: 60vw;
+                bottom: 6rem;
+
+                .box-1 {
+                    width: 38rem;
+                    margin: auto;
+                    margin-top: 3rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 2px solid $pointcolor1;
+
+                    span:nth-child(1) {
+                        font-size: $h4;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: $text3;
+                        margin-top: 1.333rem;
+                    }
+                }
+
+                .box-2 {
+                    width: 38rem;
+                    margin: auto;
+                    margin-top: 1.2rem;
+
+                    .tell, .mail {
+                        line-height: 1.333 !important;
+                        span:first-child {
+                            color: $primary;
+                            font-size: $main2;
+                        }
+
+                        span:last-child {
+                            font-size: $main2;
+                            color: $text2;
+                        }
+                    }
+                }
+                .box-3{
+                    @extend %boxHover;
+                }
+            }
+        }
+    }
+
+}
