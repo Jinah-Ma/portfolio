@@ -1,0 +1,15 @@
+footer{
+    width: $width;
+    user-select: none;
+}
+
+.footer-inner{
+    width: $mainW;
+    margin-left: $nav;
+
+    section.contact{
+        width: 100%;
+        height: 120rem;
+        background-color: chocolate;
+    }
+}

@@ -1,1 +1,22 @@
-main{display: none;}
+main{
+    width: $width;
+    user-select: none;
+}
+
+.main-inner{
+    width: $mainW;
+    margin-left: $nav;
+
+    section.about{width: 100%; height: 88rem; background-color: antiquewhite;}
+    // .about
+
+    section.history{width: 100%; height: 71rem; background-color: beige;}
+    // .history
+
+    section.projects{width: 100%; height: 214rem; background-color: bisque;}
+    // .projects
+
+    section.artworks{width: 100%; height: 120rem; background-color: burlywood;}
+    //.artworks
+
+}
