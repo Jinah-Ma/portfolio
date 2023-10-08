@@ -1,14 +1,21 @@
-body{
+body {
     width: 100vw;
 }
 
-.wrap{
+.wrap {
     width: 100vw;
     position: relative;
 }
-span.ham{display: none;}
+
+/* header */
+span.ham,
+span.solid {
+    display: none;
+}
 
 @import "abstracts/varables";
+@import "abstracts/mixin";
+//
 @import "layout/header";
 @import "layout/main";
 @import "components/butoon";
