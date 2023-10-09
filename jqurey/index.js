@@ -22,3 +22,7 @@ btn.on('click', function () {
     }
     isOpen = !isOpen;
 });
+
+
+let box = $('.header-box');
+

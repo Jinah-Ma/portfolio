@@ -1,0 +1,62 @@
+%title {
+    &>p {
+        position: absolute;
+        top: 6rem;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 5.7rem;
+            border: 1px solid $primary;
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+%about {
+    display: flex;
+
+    h3 {
+        font-size: 2.2rem;
+        width: 7vw;
+        font-weight: 370;
+        color: $secondary;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.75;
+    }
+}
+
+%history {
+    h3 {
+        font-size: $h4;
+        font-weight: 600;
+        color: $secondary;
+        padding-top: 5rem;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 28vw;
+            border: 1px solid $primary;
+            margin-top: 1.5rem;
+
+            @include mediaQ ('sm1') {
+                width: 65vw;
+            }
+            @include mediaQ ('sm2') {
+                width: 65vw;
+            }
+            @include mediaQ ('smHam') {
+                width: 65vw;
+            }
+            @include mediaQ ('smHam2') {
+                width: 65vw;
+            }
+        }
+    }
+}

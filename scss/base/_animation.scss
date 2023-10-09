@@ -1,0 +1,23 @@
+%show {
+    & {
+        animation-name: show;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        opacity: 0;
+
+        @keyframes show {
+            0% {
+                transform: translateY(8rem);
+                overflow: hidden;
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}

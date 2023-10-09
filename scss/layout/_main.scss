@@ -1,22 +1,535 @@
-main{
+main {
     width: $width;
     user-select: none;
 }
 
-.main-inner{
+.main-inner {
     width: $mainW;
-    margin-left: $nav;
+    margin-left: 15vw;
 
-    section.about{width: 100%; height: 88rem; background-color: antiquewhite;}
+    @include mediaQ ('smHam') {
+        margin: auto;
+    }
+
+    @include mediaQ ('smHam2') {
+        margin: auto;
+    }
+
+    section.about {
+        width: $inner;
+        height: 88rem;
+        margin: auto;
+        position: relative;
+
+        @include mediaQ ('smHam') {
+            height: 145rem;
+        }
+
+        @include mediaQ ('smHam2') {
+            height: 145rem;
+        }
+
+        /* 타이틀 base */
+        @extend %title;
+
+
+        & .title-flex {
+            display: flex;
+            flex-direction: row;
+            gap: 6vw;
+            align-items: center;
+            padding-top: 16.2rem;
+
+            @include mediaQ ('smHam') {
+                flex-direction: column;
+            }
+
+            @include mediaQ ('smHam2') {
+                flex-direction: column;
+            }
+
+            & .title-text {
+                line-height: 1.333;
+
+                & .title-name {
+                    & p:first-child {
+                        font-size: $main2;
+                        font-weight: 300;
+
+                        &>strong {
+                            color: $primary;
+                            font-weight: 400;
+                        }
+
+                        @include mediaQ ('smHam') {
+                            text-align: center;
+                        }
+
+                        @include mediaQ ('smHam2') {
+                            text-align: center;
+                        }
+
+                    }
+
+                    & p:last-child {
+                        font-size: $h4;
+                        font-weight: 300;
+
+                        @include mediaQ ('md') {
+                            font-size: 3rem;
+                        }
+
+                        @include mediaQ ('sm1') {
+                            font-size: $main1;
+                        }
+
+                        @include mediaQ ('sm2') {
+                            font-size: $main1;
+                        }
+
+                        @include mediaQ ('smHam') {
+                            font-size: $main1;
+                            text-align: center;
+                        }
+
+                        @include mediaQ ('smHam2') {
+                            font-size: $main1;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                & .title-info {
+                    padding-top: 4rem;
+
+                    & .title-flex {
+                        &-profile {
+                            @extend %about;
+
+                            padding-bottom: 3rem;
+
+                            @include mediaQ ('sm1') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('sm2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+                        }
+
+                        &-mail {
+                            @extend %about;
+                            padding-bottom: 3rem;
+
+                            @include mediaQ ('sm1') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('sm2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+                        }
+
+                        &-phone {
+                            @extend %about;
+                            padding-bottom: 3rem;
+
+                            @include mediaQ ('sm1') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('sm2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+                        }
+
+                        &-study {
+                            @extend %about;
+                            padding-bottom: 3rem;
+
+                            @include mediaQ ('sm1') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('sm2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+                        }
+
+                        &-skillList {
+                            @extend %about;
+                            padding-bottom: 3rem;
+
+                            @include mediaQ ('sm1') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('sm2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                h3 {
+                                    font-size: 1.6rem !important;
+                                    padding-right: 8rem;
+                                }
+
+                                p {
+                                    font-size: 1.6rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .title-img {
+                position: relative;
+
+                img {
+                    width: 24vw;
+                    height: 28vw;
+                    z-index: 0;
+
+                    @include mediaQ ('smHam') {
+                        width: 50rem;
+                        height: auto;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        width: 50rem;
+                        height: auto;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 22vw;
+                    height: 27vw;
+                    border: 8px solid $pointcolor1;
+                    top: 3.8rem;
+                    left: -1.5vw;
+                    z-index: -1;
+
+                    @include mediaQ ('smHam') {
+                        width: 50rem;
+                        height: 59rem;
+                        left: -4.5vw;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        width: 50rem;
+                        height: 59rem;
+                        left: -4.5vw;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 24vw;
+                    height: 27vw;
+                    background-image: url(../img/bg2.png);
+                    top: -3.8rem;
+                    left: 1.5vw;
+                    z-index: -1;
+
+                    @include mediaQ ('smHam') {
+                        width: 50rem;
+                        height: 59rem;
+                        left: 4.5vw;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        width: 50rem;
+                        height: 59rem;
+                        left: 4.5vw;
+                    }
+                }
+
+                @extend %show;
+            }
+        }
+
+    }
+
     // .about
 
-    section.history{width: 100%; height: 71rem; background-color: beige;}
+    section.history {
+        width: $mainW;
+        height: 71rem;
+        background-color: $background2;
+
+        @include mediaQ ('md') {
+            height: 84rem;
+        }
+        @include mediaQ ('sm1') {
+            height: 110rem;
+        }
+        @include mediaQ ('sm2') {
+            height: 110rem;
+        }
+        @include mediaQ ('smHam') {
+            height: 110rem;
+            width: $width;
+            margin: 0;
+            margin-left: -7rem;
+        }
+        @include mediaQ ('smHam2') {
+            height: 120rem;
+            width: $width;
+            margin: 0;
+            margin-left: -4rem;
+        }
+
+        & .hInner {
+            display: flex;
+            flex-direction: row;
+            width: $inner;
+            margin: auto;
+            justify-content: space-between;
+
+            @include mediaQ ('sm1') {
+                flex-direction: column;
+            }
+            @include mediaQ ('sm2') {
+                flex-direction: column;
+            }
+            @include mediaQ ('smHam') {
+                flex-direction: column;
+            }
+            @include mediaQ ('smHam2') {
+                flex-direction: column;
+            }
+
+            & .history-one {
+                @extend %history;
+
+                @include mediaQ ('md') {
+                    margin-left: -5rem;
+                    padding-right: 8rem
+                }
+            }
+
+            & .history-two {
+                @extend %history;
+
+                @include mediaQ ('md') {
+                    margin-right: -5rem;
+                }
+            }
+
+            & .history-flex {
+                margin-top: 1rem;
+
+                & .flex-text {
+                    display: flex;
+                    justify-content: space-between;
+                    line-height: 1.75;
+                    padding: 1.2rem 0;
+
+                    li:first-child {
+                        font-size: $main2;
+                        color: $text2;
+                    }
+
+                    li:last-child {
+                        font-size: 1.4rem;
+                        width: 6vw;
+                        height: 3.7rem;
+                        text-align: center;
+                        line-height: 2.8;
+                        background-color: $pointcolor1;
+                        color: $text2;
+
+                        @include mediaQ ('smHam') {
+                            width: 12vw;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // .history
 
-    section.projects{width: 100%; height: 214rem; background-color: bisque;}
+    section.projects {
+        width: 100%;
+        height: 214rem;
+        background-color: bisque;
+    }
+
     // .projects
 
-    section.artworks{width: 100%; height: 120rem; background-color: burlywood;}
+    section.artworks {
+        width: 100%;
+        height: 120rem;
+        background-color: burlywood;
+    }
+
     //.artworks
 
 }

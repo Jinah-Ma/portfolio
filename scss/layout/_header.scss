@@ -132,12 +132,13 @@ header {
     }
 
     .gnb {
-        width: $nav;
+        width: 15vw;
         height: $height;
         background-color: $background;
         position: fixed;
         top: 0;
         box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        z-index: 1;
 
         .logo img {
             width: 12rem;
@@ -197,13 +198,13 @@ header {
     //gnb
 
     .header-inner {
-        z-index: -1;
+        z-index: 0;
         width: $mainW;
         height: 100vh;
         position: relative;
         left: 15vw;
         background:
-            /*  url(../img/1663069891734.jpg) no-repeat center, */
+             url(../img/1663069891734.jpg) no-repeat center,
             #d2d3cd;
         background-position-y: 0;
 
@@ -362,6 +363,9 @@ header {
                 @include mediaQ('smHam2') {
                     left: 0.4vw;
                 }
+            }
+            .header-box{
+                @extend %show;
             }
         }
 
