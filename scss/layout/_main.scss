@@ -423,18 +423,22 @@ main {
         @include mediaQ ('md') {
             height: 84rem;
         }
+
         @include mediaQ ('sm1') {
             height: 110rem;
         }
+
         @include mediaQ ('sm2') {
             height: 110rem;
         }
+
         @include mediaQ ('smHam') {
             height: 110rem;
             width: $width;
             margin: 0;
             margin-left: -7rem;
         }
+
         @include mediaQ ('smHam2') {
             height: 120rem;
             width: $width;
@@ -452,12 +456,15 @@ main {
             @include mediaQ ('sm1') {
                 flex-direction: column;
             }
+
             @include mediaQ ('sm2') {
                 flex-direction: column;
             }
+
             @include mediaQ ('smHam') {
                 flex-direction: column;
             }
+
             @include mediaQ ('smHam2') {
                 flex-direction: column;
             }
@@ -505,6 +512,7 @@ main {
                         @include mediaQ ('smHam') {
                             width: 12vw;
                         }
+
                         @include mediaQ ('smHam2') {
                             width: 8vw;
                         }
@@ -519,7 +527,81 @@ main {
     section.projects {
         width: 100%;
         height: 214rem;
-        background-color: bisque;
+        background-color: $background;
+        position: relative;
+
+
+        .inner {
+            width: $inner;
+            position: relative;
+            margin: auto;
+
+            >h3 {
+                font-size: 4.8rem;
+                font-weight: 600;
+                color: $secondary;
+                position: absolute;
+                top: 16rem;
+            }
+
+            @extend %title;
+
+            .project {
+                width: 30vw;
+                height: 72.6rem;
+                position: absolute;
+                top: 30rem;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+
+                img {
+                    width: 30vw;
+                    height: auto;
+                }
+
+                .pInfo {
+                    width: 27vw;
+                    margin: auto;
+
+                    .title {
+                        padding: 4rem 0;
+
+                        h3 {
+                            font-size: $h4;
+                            font-weight: 500;
+                            color: $secondary;
+                        }
+                        >p{
+                            font-weight: 300;
+                            font-size: $main2;
+                            padding-top: 1rem;
+                        }
+                    }
+
+                    .mainInfo{
+                        p{
+                          font-size: 1.8rem;
+                          font-weight: 300;
+                          line-height: 1.75;
+                          color: $secondary;  
+                        }
+                    }
+
+                    .infoBtn{
+                        margin-top: 3.2rem !important;
+                        gap: 2vw !important;
+                        @extend %boxHover;
+                        a:first-child{
+                            padding: 1.2rem 2.3rem;
+                        }
+                        a:last-child{
+                            padding: 1.2rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 
     // .projects
