@@ -7,20 +7,20 @@ body {
   width: 100vw;
 }
 
-.main-inner section.projects .inner .project1 .pInfo .infoBtn, .main-inner section.projects .inner .project2 .pInfo .infoBtn, .main-inner section.projects .inner .project3 .pInfo .infoBtn, .main-inner section.projects .inner .project4 .pInfo .infoBtn, header .header-inner .home .header-box .box-3 {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn, header .header-inner .home .header-box .box-3 {
   display: flex;
   gap: 1.5vw;
   justify-content: center;
   margin-top: 2.7rem;
 }
-.main-inner section.projects .inner .project1 .pInfo .infoBtn a, .main-inner section.projects .inner .project2 .pInfo .infoBtn a, .main-inner section.projects .inner .project3 .pInfo .infoBtn a, .main-inner section.projects .inner .project4 .pInfo .infoBtn a, header .header-inner .home .header-box .box-3 a {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a, header .header-inner .home .header-box .box-3 a {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   border: 1px solid;
   background-color: #E76162;
   color: #fff;
 }
-.main-inner section.projects .inner .project1 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project2 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project3 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project4 .pInfo .infoBtn a:hover, header .header-inner .home .header-box .box-3 a:hover {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:hover, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:hover, header .header-inner .home .header-box .box-3 a:hover {
   border: 1px solid #E76162;
   background-color: #fff;
   color: #E76162;
@@ -867,10 +867,54 @@ main {
   background-color: #fff;
   position: relative;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects {
+    height: 360rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects {
+    height: 360rem;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects {
+    height: 360rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects {
+    height: 360rem;
+  }
+}
 .main-inner section.projects .inner {
   width: 65vw;
   position: relative;
   margin: auto;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main-inner section.projects .inner > h3 {
   font-size: 4.8rem;
@@ -879,15 +923,174 @@ main {
   position: absolute;
   top: 16rem;
 }
-.main-inner section.projects .inner .project2 {
+@media screen and (min-width: 1070px) and (max-width: 1279px) {
+  .main-inner section.projects .inner .project {
+    height: 65rem !important;
+  }
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project {
+    width: 60vw !important;
+  }
+  .main-inner section.projects .inner .project img {
+    width: 60vw !important;
+    height: auto !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project {
+    width: 60vw !important;
+  }
+  .main-inner section.projects .inner .project img {
+    width: 60vw !important;
+    height: auto !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project {
+    width: 60vw !important;
+  }
+  .main-inner section.projects .inner .project img {
+    width: 60vw !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project {
+    width: 60vw !important;
+  }
+  .main-inner section.projects .inner .project img {
+    width: 60vw !important;
+    height: auto !important;
+  }
+}
+.main-inner section.projects .inner .project.project2 {
   right: 0;
 }
-.main-inner section.projects .inner .project3 {
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project2 {
+    right: initial;
+    top: 110rem !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project2 {
+    right: initial;
+    top: 110rem !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project2 {
+    right: initial;
+    top: 110rem !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project2 {
+    right: initial;
+    top: 110rem !important;
+  }
+}
+.main-inner section.projects .inner .project.project3 {
   top: 120rem !important;
 }
-.main-inner section.projects .inner .project4 {
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 {
+    top: 190rem !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 {
+    top: 190rem !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project3 {
+    top: 190rem !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project3 {
+    top: 190rem !important;
+  }
+}
+.main-inner section.projects .inner .project.project4 {
   right: 0;
   top: 120rem !important;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project4 {
+    right: unset;
+    top: 270rem !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project4 {
+    right: unset;
+    top: 270rem !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project4 {
+    right: unset;
+    top: 270rem !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project4 {
+    right: unset;
+    top: 270rem !important;
+  }
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project .pInfo {
+    width: 45vw !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project .pInfo {
+    width: 45vw !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project .pInfo {
+    width: 45vw !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project .pInfo {
+    width: 45vw !important;
+  }
+}
+@media screen and (min-width: 1070px) and (max-width: 1279px) {
+  .main-inner section.projects .inner .project .pInfo .title p {
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project .pInfo .title p {
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project .pInfo .title p {
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (min-width: 1070px) and (max-width: 1279px) {
+  .main-inner section.projects .inner .project .pInfo .infoBtn a {
+    padding: 1.2rem 0.8rem !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project .pInfo .infoBtn a {
+    padding: 1.2rem 0.8rem !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project .pInfo .infoBtn a {
+    padding: 1.2rem 0.8rem !important;
+  }
 }
 .main-inner section.artworks {
   width: 100%;
@@ -994,7 +1197,7 @@ header .header-inner .home .header-box, .main-inner section.about .title-flex .t
   }
 }
 
-.main-inner section.projects .inner .project1, .main-inner section.projects .inner .project2, .main-inner section.projects .inner .project3, .main-inner section.projects .inner .project4 {
+.main-inner section.projects .inner .project.project1, .main-inner section.projects .inner .project.project2, .main-inner section.projects .inner .project.project3, .main-inner section.projects .inner .project.project4 {
   width: 30vw;
   height: 72.6rem;
   position: absolute;
@@ -1002,40 +1205,40 @@ header .header-inner .home .header-box, .main-inner section.about .title-flex .t
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
-.main-inner section.projects .inner .project1 img, .main-inner section.projects .inner .project2 img, .main-inner section.projects .inner .project3 img, .main-inner section.projects .inner .project4 img {
+.main-inner section.projects .inner .project.project1 img, .main-inner section.projects .inner .project.project2 img, .main-inner section.projects .inner .project.project3 img, .main-inner section.projects .inner .project.project4 img {
   width: 30vw;
   height: auto;
 }
-.main-inner section.projects .inner .project1 .pInfo, .main-inner section.projects .inner .project2 .pInfo, .main-inner section.projects .inner .project3 .pInfo, .main-inner section.projects .inner .project4 .pInfo {
+.main-inner section.projects .inner .project.project1 .pInfo, .main-inner section.projects .inner .project.project2 .pInfo, .main-inner section.projects .inner .project.project3 .pInfo, .main-inner section.projects .inner .project.project4 .pInfo {
   width: 27vw;
   margin: auto;
 }
-.main-inner section.projects .inner .project1 .pInfo .title, .main-inner section.projects .inner .project2 .pInfo .title, .main-inner section.projects .inner .project3 .pInfo .title, .main-inner section.projects .inner .project4 .pInfo .title {
+.main-inner section.projects .inner .project.project1 .pInfo .title, .main-inner section.projects .inner .project.project2 .pInfo .title, .main-inner section.projects .inner .project.project3 .pInfo .title, .main-inner section.projects .inner .project.project4 .pInfo .title {
   padding: 4rem 0;
 }
-.main-inner section.projects .inner .project1 .pInfo .title h3, .main-inner section.projects .inner .project2 .pInfo .title h3, .main-inner section.projects .inner .project3 .pInfo .title h3, .main-inner section.projects .inner .project4 .pInfo .title h3 {
+.main-inner section.projects .inner .project.project1 .pInfo .title h3, .main-inner section.projects .inner .project.project2 .pInfo .title h3, .main-inner section.projects .inner .project.project3 .pInfo .title h3, .main-inner section.projects .inner .project.project4 .pInfo .title h3 {
   font-size: 3.5rem;
   font-weight: 500;
   color: #3E614D;
 }
-.main-inner section.projects .inner .project1 .pInfo .title > p, .main-inner section.projects .inner .project2 .pInfo .title > p, .main-inner section.projects .inner .project3 .pInfo .title > p, .main-inner section.projects .inner .project4 .pInfo .title > p {
+.main-inner section.projects .inner .project.project1 .pInfo .title > p, .main-inner section.projects .inner .project.project2 .pInfo .title > p, .main-inner section.projects .inner .project.project3 .pInfo .title > p, .main-inner section.projects .inner .project.project4 .pInfo .title > p {
   font-weight: 300;
   font-size: 2rem;
   padding-top: 1rem;
 }
-.main-inner section.projects .inner .project1 .pInfo .mainInfo p, .main-inner section.projects .inner .project2 .pInfo .mainInfo p, .main-inner section.projects .inner .project3 .pInfo .mainInfo p, .main-inner section.projects .inner .project4 .pInfo .mainInfo p {
+.main-inner section.projects .inner .project.project1 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project2 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project3 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project4 .pInfo .mainInfo p {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.75;
   color: #3E614D;
 }
-.main-inner section.projects .inner .project1 .pInfo .infoBtn, .main-inner section.projects .inner .project2 .pInfo .infoBtn, .main-inner section.projects .inner .project3 .pInfo .infoBtn, .main-inner section.projects .inner .project4 .pInfo .infoBtn {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn {
   margin-top: 3.2rem !important;
   gap: 2vw !important;
 }
-.main-inner section.projects .inner .project1 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project2 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project3 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project4 .pInfo .infoBtn a:first-child {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:first-child {
   padding: 1.2rem 2.3rem;
 }
-.main-inner section.projects .inner .project1 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project2 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project3 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project4 .pInfo .infoBtn a:last-child {
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:last-child {
   padding: 1.2rem 2rem;
 }/*# sourceMappingURL=index.css.map */

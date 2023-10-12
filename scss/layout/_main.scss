@@ -530,11 +530,46 @@ main {
         background-color: $background;
         position: relative;
 
+        @include mediaQ ('sm1') {
+            height: 360rem;
+        }
+
+        @include mediaQ ('sm2') {
+            height: 360rem;
+        }
+
+        @include mediaQ ('smHam') {
+            height: 360rem;
+        }
+
+        @include mediaQ ('smHam2') {
+            height: 360rem;
+        }
 
         .inner {
             width: $inner;
             position: relative;
             margin: auto;
+
+            @include mediaQ ('sm1') {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include mediaQ ('sm2') {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include mediaQ ('smHam') {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include mediaQ ('smHam2') {
+                display: flex;
+                flex-direction: column;
+            }
 
             >h3 {
                 font-size: 4.8rem;
@@ -546,24 +581,182 @@ main {
 
             @extend %title;
 
-            .project1 {
-                @extend %projectCard;
-            }
-            .project2 {
-                @extend %projectCard;
-                right: 0;
-            }
-            .project3 {
-                @extend %projectCard;
-                top: 120rem !important;
-            }
-            .project4 {
-                @extend %projectCard;
-                right: 0;
-                top: 120rem !important;
+
+
+            .project {
+                @include mediaQ ('md') {
+                    height: 65rem !important;
+                }
+
+                @include mediaQ ('sm1') {
+                    width: 60vw !important;
+
+                    img {
+                        width: 60vw !important;
+                        height: auto !important;
+                    }
+                }
+
+                @include mediaQ ('sm2') {
+                    width: 60vw !important;
+
+                    img {
+                        width: 60vw !important;
+                        height: auto !important;
+                    }
+                }
+
+                @include mediaQ ('smHam') {
+                    width: 60vw !important;
+
+                    img {
+                        width: 60vw !important;
+                        height: auto !important;
+                    }
+                }
+
+                @include mediaQ ('smHam2') {
+                    width: 60vw !important;
+
+                    img {
+                        width: 60vw !important;
+                        height: auto !important;
+                    }
+                }
+
+
+                &.project1 {
+                    @extend %projectCard;
+                }
+
+                &.project2 {
+                    @extend %projectCard;
+                    right: 0;
+
+                    @include mediaQ ('sm1') {
+                        right: initial;
+                        top: 110rem !important;
+                    }
+
+                    @include mediaQ ('sm2') {
+                        right: initial;
+                        top: 110rem !important;
+                    }
+
+                    @include mediaQ ('smHam') {
+                        right: initial;
+                        top: 110rem !important;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        right: initial;
+                        top: 110rem !important;
+                    }
+                }
+
+                &.project3 {
+                    @extend %projectCard;
+                    top: 120rem !important;
+
+                    @include mediaQ ('sm1') {
+                        top: 190rem !important;
+                    }
+
+                    @include mediaQ ('sm2') {
+                        top: 190rem !important;
+                    }
+
+                    @include mediaQ ('smHam') {
+                        top: 190rem !important;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        top: 190rem !important;
+                    }
+                }
+
+                &.project4 {
+                    @extend %projectCard;
+                    right: 0;
+                    top: 120rem !important;
+
+                    @include mediaQ ('sm1') {
+                        right: unset;
+                        top: 270rem !important;
+                    }
+
+                    @include mediaQ ('sm2') {
+                        right: unset;
+                        top: 270rem !important;
+                    }
+
+                    @include mediaQ ('smHam') {
+                        right: unset;
+                        top: 270rem !important;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        right: unset;
+                        top: 270rem !important;
+                    }
+                }
+
+
+                & .pInfo {
+                    @include mediaQ ('sm1') {
+                        width: 45vw !important;
+                    }
+                    @include mediaQ ('sm2') {
+                        width: 45vw !important;
+                    }
+                    @include mediaQ ('smHam') {
+                        width: 45vw !important;
+                    }
+                    @include mediaQ ('smHam2') {
+                        width: 45vw !important;
+                    }
+
+                    .title {
+                        p {
+                            @include mediaQ ('md') {
+                                font-size: $main3 !important;
+                            }
+
+                            @include mediaQ ('smHam') {
+                                font-size: $main3 !important;
+                            }
+
+                            @include mediaQ ('smHam2') {
+                                font-size: $main3 !important;
+                            }
+                        }
+
+                    }
+
+                    .infoBtn {
+                        @include mediaQ ('md') {
+                            a {
+                                padding: 1.2rem 0.8rem !important;
+                            }
+                        }
+
+                        @include mediaQ ('smHam') {
+                            a {
+                                padding: 1.2rem 0.8rem !important;
+                            }
+                        }
+
+                        @include mediaQ ('smHam2') {
+                            a {
+                                padding: 1.2rem 0.8rem !important;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
+
     // .projects
 
     section.artworks {
@@ -571,6 +764,7 @@ main {
         height: 120rem;
         background-color: $background2;
     }
+
     //.artworks
 
 }
