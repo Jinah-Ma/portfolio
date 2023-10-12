@@ -346,17 +346,19 @@ main {
                 position: relative;
 
                 img {
-                    width: 24vw;
-                    height: 28vw;
+                    width: 22vw;
+                    height:30vw;
                     z-index: 0;
+                    object-fit: cover;
+                    object-position: center;
 
                     @include mediaQ ('smHam') {
-                        width: 50rem;
+                        width: 45rem;
                         height: auto;
                     }
 
                     @include mediaQ ('smHam2') {
-                        width: 50rem;
+                        width: 40rem;
                         height: auto;
                     }
                 }
@@ -365,7 +367,7 @@ main {
                     content: '';
                     position: absolute;
                     width: 22vw;
-                    height: 27vw;
+                    height: 29vw;
                     border: 8px solid $pointcolor1;
                     top: 3.8rem;
                     left: -1.5vw;
@@ -387,8 +389,8 @@ main {
                 &:after {
                     content: '';
                     position: absolute;
-                    width: 24vw;
-                    height: 27vw;
+                    width: 22vw;
+                    height: 29vw;
                     background-image: url(../img/bg2.png);
                     top: -3.8rem;
                     left: 1.5vw;
@@ -763,6 +765,7 @@ main {
         width: 100%;
         height: 120rem;
         background-color: $background2;
+
     }
 
     //.artworks

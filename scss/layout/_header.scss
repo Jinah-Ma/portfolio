@@ -204,38 +204,68 @@ header {
         position: relative;
         left: 15vw;
         background:
-             url(../img/1663069891734.jpg) no-repeat center,
-            #d2d3cd;
-        background-position-y: 0;
+            url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
+            background-position-y: -5rem;
+
+@include mediaQ('lg') {
+    background-position-y: top;
+}
+@include mediaQ('md') {
+    background-position-y: top !important;
+}
+@include mediaQ('sm1') {
+    background-position-y: top !important;
+}
+@include mediaQ('sm2') {
+    background-position-y: top !important;
+}
+@include mediaQ('smHam') {
+    background-position-y: top !important;
+}
+@include mediaQ('smHam2') {
+    background-position-y: top !important;
+}
 
         .home {
             .header-text {
                 font-size: $h1;
                 position: absolute;
                 color: $text2;
-                top: 24.5rem;
-                left: 15vw;
-                line-height: 1.333;
+                top: 14rem;
+                left: 10vw;
+                line-height: 1.5;
 
                 strong {
                     color: $primary;
                     font-weight: 500;
                 }
 
+                @include mediaQ('md') {
+                    left: 5vw;
+                }
+
                 @include mediaQ('sm1') {
                     margin-left: 4vw;
+                    left: 2vw;
                 }
 
                 @include mediaQ('sm2') {
                     margin-left: 2vw;
+                    left: 1vw;
+                    top: 20rem;
                 }
 
                 @include mediaQ('smHam') {
                     margin-left: 2vw;
+                    left: 1.5vw;
+                    top: 20rem;
                 }
 
                 @include mediaQ('smHam2') {
                     margin-left: 2vw;
+                    font-size: $h2;
+                    left: 1.5vw;
+                    top: 22rem;
                 }
             }
 
@@ -245,7 +275,7 @@ header {
                 background-color: rgba(255, 255, 255, 0.8);
                 position: absolute;
                 padding-top: 0.2rem;
-                left: 45vw;
+                left: 50vw;
                 bottom: 6rem;
 
                 .box-1 {
@@ -276,6 +306,9 @@ header {
                     @include mediaQ('sm2') {
                         width: 20rem;
                         margin-top: 1.5rem;
+                    }
+                    @include mediaQ('smHam') {
+                        margin-top: 1.2rem;
                     }
                 }
 
@@ -357,14 +390,17 @@ header {
                 }
 
                 @include mediaQ('smHam') {
-                    left: 22vw;
+                    left: 35vw;
+                    bottom: 3rem;
+                height: 24rem;
                 }
 
                 @include mediaQ('smHam2') {
                     left: 0.4vw;
                 }
             }
-            .header-box{
+
+            .header-box {
                 @extend %show;
             }
         }

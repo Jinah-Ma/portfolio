@@ -215,39 +215,82 @@ header .header-inner {
   height: 100vh;
   position: relative;
   left: 15vw;
-  background: url(../img/1663069891734.jpg) no-repeat center, #d2d3cd;
-  background-position-y: 0;
+  background: url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
+  background-position-y: -5rem;
+}
+@media screen and (min-width: 1280px) and (max-width: 1650px) {
+  header .header-inner {
+    background-position-y: top;
+  }
+}
+@media screen and (min-width: 1070px) and (max-width: 1279px) {
+  header .header-inner {
+    background-position-y: top !important;
+  }
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  header .header-inner {
+    background-position-y: top !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  header .header-inner {
+    background-position-y: top !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  header .header-inner {
+    background-position-y: top !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  header .header-inner {
+    background-position-y: top !important;
+  }
 }
 header .header-inner .home .header-text {
   font-size: 5.5rem;
   position: absolute;
   color: #666;
-  top: 24.5rem;
-  left: 15vw;
-  line-height: 1.333;
+  top: 14rem;
+  left: 10vw;
+  line-height: 1.5;
 }
 header .header-inner .home .header-text strong {
   color: #E76162;
   font-weight: 500;
 }
+@media screen and (min-width: 1070px) and (max-width: 1279px) {
+  header .header-inner .home .header-text {
+    left: 5vw;
+  }
+}
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   header .header-inner .home .header-text {
     margin-left: 4vw;
+    left: 2vw;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   header .header-inner .home .header-text {
     margin-left: 2vw;
+    left: 1vw;
+    top: 20rem;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   header .header-inner .home .header-text {
     margin-left: 2vw;
+    left: 1.5vw;
+    top: 20rem;
   }
 }
 @media screen and (max-width: 644px) {
   header .header-inner .home .header-text {
     margin-left: 2vw;
+    font-size: 5rem;
+    left: 1.5vw;
+    top: 22rem;
   }
 }
 header .header-inner .home .header-box {
@@ -256,7 +299,7 @@ header .header-inner .home .header-box {
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   padding-top: 0.2rem;
-  left: 45vw;
+  left: 50vw;
   bottom: 6rem;
 }
 header .header-inner .home .header-box .box-1 {
@@ -288,6 +331,11 @@ header .header-inner .home .header-box .box-1 p {
   header .header-inner .home .header-box .box-1 {
     width: 20rem;
     margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  header .header-inner .home .header-box .box-1 {
+    margin-top: 1.2rem;
   }
 }
 header .header-inner .home .header-box .box-2 {
@@ -371,7 +419,9 @@ header .header-inner .home .header-box .box-2 .mail span:last-child {
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   header .header-inner .home .header-box {
-    left: 22vw;
+    left: 35vw;
+    bottom: 3rem;
+    height: 24rem;
   }
 }
 @media screen and (max-width: 644px) {
@@ -691,19 +741,23 @@ main {
   position: relative;
 }
 .main-inner section.about .title-flex .title-img img {
-  width: 24vw;
-  height: 28vw;
+  width: 22vw;
+  height: 30vw;
   z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .main-inner section.about .title-flex .title-img img {
-    width: 50rem;
+    width: 45rem;
     height: auto;
   }
 }
 @media screen and (max-width: 644px) {
   .main-inner section.about .title-flex .title-img img {
-    width: 50rem;
+    width: 40rem;
     height: auto;
   }
 }
@@ -711,7 +765,7 @@ main {
   content: "";
   position: absolute;
   width: 22vw;
-  height: 27vw;
+  height: 29vw;
   border: 8px solid #FEE1E3;
   top: 3.8rem;
   left: -1.5vw;
@@ -734,8 +788,8 @@ main {
 .main-inner section.about .title-flex .title-img:after {
   content: "";
   position: absolute;
-  width: 24vw;
-  height: 27vw;
+  width: 22vw;
+  height: 29vw;
   background-image: url(../img/bg2.png);
   top: -3.8rem;
   left: 1.5vw;

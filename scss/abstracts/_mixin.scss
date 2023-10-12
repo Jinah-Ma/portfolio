@@ -1,6 +1,6 @@
 @mixin mediaQ($screen-width) {
     @if $screen-width == 'lg' {
-        @media screen and (min-width: 1280px) and (max-width: 100vw) {
+        @media screen and (min-width: 1280px) and (max-width: 1650px) {
             @content;
         }
     }
