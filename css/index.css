@@ -1151,6 +1151,92 @@ main {
   height: 120rem;
   background-color: #F8F2EE;
 }
+.main-inner section.artworks .inner {
+  width: 75vw;
+  position: relative;
+  margin: auto;
+}
+.main-inner section.artworks .inner h3 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #3E614D;
+  position: absolute;
+  top: 10rem;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner {
+  width: 70vw;
+  margin: auto;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxTitle {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding-top: 20rem;
+  margin-bottom: 12rem;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxTitle h4 {
+  width: 20vw;
+  height: inherit;
+  background-color: #fff;
+  border: 1px solid #E76162;
+  position: relative;
+  cursor: pointer;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxTitle h4 a {
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  left: 3.5rem;
+  top: 1.7rem;
+  display: block;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxTitle h4.active {
+  background-color: #E76162;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxTitle h4.active a {
+  color: #fff;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap {
+  position: relative;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup {
+  width: 100%;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page {
+  position: absolute;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn span {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  top: 83rem;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn span a {
+  padding: 1rem;
+  margin: 1rem;
+  color: #E76162;
+  text-decoration: underline;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page1 img:nth-child(1) {
+  -o-object-position: right;
+     object-position: right;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page1 img:nth-child(3) {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page1 img:nth-child(6) {
+  -o-object-position: left;
+     object-position: left;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page2 img {
+  display: none !important;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page3 img {
+  display: none !important;
+}
 
 footer {
   width: 100vw;
@@ -1189,11 +1275,11 @@ header .header-inner .home .header-box, .main-inner section.about .title-flex .t
   }
 }
 
-.main-inner section.about > p, .main-inner section.projects .inner > p {
+.main-inner section.about > p, .main-inner section.projects .inner > p, .main-inner section.artworks .inner > p {
   position: absolute;
   top: 6rem;
 }
-.main-inner section.about > p:before, .main-inner section.projects .inner > p:before {
+.main-inner section.about > p:before, .main-inner section.projects .inner > p:before, .main-inner section.artworks .inner > p:before {
   content: "";
   display: inline-block;
   width: 5.7rem;
@@ -1295,4 +1381,25 @@ header .header-inner .home .header-box, .main-inner section.about .title-flex .t
 }
 .main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:last-child {
   padding: 1.2rem 2rem;
+}
+
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 22vw);
+  grid-template-rows: repeat(2, 20vw);
+  gap: 2vw;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page img {
+  width: 22vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=index.css.map */

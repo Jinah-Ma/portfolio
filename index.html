@@ -313,29 +313,61 @@
 
                 <section id="artworks" class="artworks">
                     <div class="inner">
-                        <h3>작업 목록들</h3>
                         <p class="title">Artwork</p>
+                        <h3>그동안의 작업들</h3>
                         <div class="boxwrap">
                             <div class="boxInner">
-                                <div id="boxTitle">
-                                    <h4><a href="#">웹툰</a></h4>
-                                    <h4><a href="#">팝아트</a></h4>
-                                    <h4><a href="#">캐릭터일러스트</a></h4>
-                                    <h4><a href="#">일러스트</a></h4>
-                                    <h4><a href="#">이모티콘 및 기타</a></h4>
+                                <div id="boxTitle" class="boxTitle">
+                                    <h4 class="webtoon active"><a href="#boxGrup1">웹툰</a></h4>
+                                    <h4 class="pop"><a href="#">팝아트</a></h4>
+                                    <h4 class="cIllust"><a href="#">캐릭터일러스트</a></h4>
+                                    <h4 class="illust"><a href="#">일러스트</a></h4>
+                                    <h4 class="emoji"><a href="#">이모티콘</a></h4>
                                 </div>
                                 <!-- //boxTitle -->
                                 
                                 <div class="boxImgWrap">
-                                    <div id="boxGrup1" class="boxGrup webtoon">
-                                        
+                                    <div id="boxGrup1" class="boxGrup webtoon active">
+                                        <div id="Grup1page1" class="page page1">
+                                            <img src="./sorce/toon/one/win.jpg" alt="수상이력" data-src="./sorce/toon/one/win.jpg" class="pic">
+                                            <img src="./sorce/toon/one/cover.jpg" alt="오해와 사랑 표지" data-src="./sorce/toon/one/cover.jpg" class="pic">
+                                            <img src="./sorce/toon/two/win.jpg" alt="수상이력" data-src="./sorce/toon/two/win.jpg" class="pic">
+                                            <img src="./sorce/toon/two/cover.jpg" alt="장미의 굴레" data-src="./sorce/toon/two/cover.jpg" class="pic">
+                                            <img src="./sorce/toon/three/concept/a.jpg" alt="키설정 비교" data-src="./sorce/toon/three/concept/a.jpg" class="pic">
+                                            <img src="./sorce/toon/three/concept/c.jpg" alt="등장인물 설정1" data-src="./sorce/toon/three/concept/c.jpg" class="pic">
+                                        </div> <!-- //page1 -->
+
+                                        <div id="Grup1page2" class="page page2">
+                                            <img src="./sorce/toon/three/concept/f.jpg" alt="등장인물 설정2">
+                                            <img src="./sorce/toon/three/characterIllust/f.jpg" alt="등장인물 일러스트1">
+                                            <img src="./sorce/toon/three/characterIllust/g.jpg" alt="등장인물 일러스트2">
+                                            <img src="./sorce/toon/three/characterIllust/h.jpg" alt="등장인물 일러스트3">
+                                            <img src="./sorce/toon/three/characterIllust/i.jpg" alt="등장인물 일러스트4">
+                                            <img src="./sorce/toon/three/characterIllust/j.jpg" alt="등장인물 일러스트5">
+                                        </div> <!-- //page2 -->
+
+                                        <div id="Grup1page3" class="page page3">
+                                            <img src="./sorce/toon/three/characterIllust/k.jpg" alt="등장인물 일러스트6">
+                                            <img src="./sorce/toon/three/characterIllust/a.jpg" alt="등장인물 일러스트7">
+                                            <img src="./sorce/toon/three/characterIllust/b.jpg" alt="등장인물 일러스트8">
+                                            <img src="./sorce/toon/three/characterIllust/c.jpg" alt="등장인물 일러스트9">
+                                            <img src="./sorce/toon/three/characterIllust/d.jpg" alt="등장인물 일러스트10">
+                                            <img src="./sorce/toon/three/characterIllust/e.jpg" alt="등장인물 일러스트11">
+                                        </div>
+                                        <div id="lightbox"><img src="./sorce/toon/one/win.jpg" alt="" id="lightboximg"></div>
+
+                                        <div class="pageBtn pageBtn1">
+                                            <span><a href="#Grup1page1">1</a></span>
+                                            <span><a href="#Grup1page2">2</a></span>
+                                            <span><a href="#Grup1page3">3</a></span>
+                                        </div>
                                     </div> <!-- //1 -->
 
-                                    <div id="boxGrup2" class="boxGrup cIllust">
+                                    <div id="boxGrup2" class="boxGrup pop">
 
                                     </div> <!-- //2 -->
 
-                                    <div id="boxGrup3" class="boxGrup pop">
+                                    <div id="boxGrup3" class="boxGrup  cIllust">
 
                                     </div> <!-- //3 -->
 
@@ -343,7 +375,7 @@
 
                                     </div> <!-- //4 -->
 
-                                    <div id="boxGrup5" class="boxGrup etc">
+                                    <div id="boxGrup5" class="boxGrup emoji">
 
                                     </div> <!-- //5 -->
                                 </div>
