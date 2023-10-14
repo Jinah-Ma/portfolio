@@ -24,5 +24,49 @@ btn.on('click', function () {
 });
 
 
-let box = $('.header-box');
 
+// 아트워크 메뉴와 이미지
+const boxWrap = $('.boxwrap');
+boxWrap.each(function () {
+    let currentEl = $(this);
+
+    let target = currentEl.find('.boxTitle h4 a');
+    let tContainer = currentEl.find('.boxImgWrap>div');
+    console.log(tContainer);
+
+    target.on('click', function (e) {
+        e.preventDefault();
+        let tg = $(this);
+        let currentLink = tg.attr('href');
+        // console.log(currentLink);
+
+        tContainer.hide();
+        $(currentLink).show();
+
+        target.removeClass('active');
+        tg.addClass('active');
+    })
+});
+
+//아트워크 이미지 페이지
+const boxImgWrap = $('.boxImgWrap');
+boxImgWrap.each(function () {
+    let currentEl = $(this);
+
+    let target2 = currentEl.find('.pageBtn span a');
+    let tContainer2 = currentEl.find('.G1Img>div');
+    console.log(tContainer2);
+
+    target2.on('click', function (e) {
+        e.preventDefault();
+        let tg2 = $(this);
+        let currentLink2 = tg2.attr('href');
+        console.log(currentLink2);
+
+        tContainer2.hide();
+        $(currentLink2).show();
+
+        target2.removeClass('active');
+        tg2.addClass('active');
+    });
+});

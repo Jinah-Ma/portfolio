@@ -19,3 +19,25 @@
     }
 }
 
+%pageBtn {
+    >span {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        left: 47%;
+        transform: translate(-50%);
+        top: 42.5vw;
+
+        >a {
+            padding: 1rem;
+            margin: 1rem;
+            color: $secondary;
+            text-decoration: underline;
+            display: block;
+
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+}

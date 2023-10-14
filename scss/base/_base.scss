@@ -129,16 +129,26 @@
     grid-template-rows: repeat(2, 20vw);
     gap: 2vw;
 
-    img {
+    a {
         width: 22vw;
         height: 20vw;
         object-fit: cover;
         object-position: center;
         overflow: hidden;
         display: block;
-        cursor: pointer;
-        z-index: 1;
         box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+        cursor: pointer;
+
+        img {
+            width: 22vw;
+            height: 20vw;
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+            display: block;
+
+        }
     }
 
 }
