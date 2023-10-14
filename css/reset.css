@@ -166,13 +166,11 @@ img {
     vertical-align: top;
 }
 
-/* 최상위 콘텐츠 선택자/ 이것만 바꾸고 아래 변수로 적용하면 언제든 쉽게 바꿀 수 있다. */
 
 html {
     overflow-y: scroll;
     overflow-x: hidden;
     font-size: 62.5%;
-    /* 기본 폰트 10px/ rem을 쓸 것임. */
     font-weight: 400;
     color: #333;
 }
