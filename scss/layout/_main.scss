@@ -781,8 +781,8 @@ main {
         @include mediaQ ('sm1') {
             height: 150vw;
         }
-        @include mediaQ ('sm1') {
-            height: 150vw;
+        @include mediaQ ('sm2') {
+            height: 160vw;
         }
 
         @include mediaQ ('smHam') {

@@ -205,26 +205,31 @@ header {
         left: 15vw;
         background:
             url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
-            background-position-y: -5rem;
+        background-position-y: -5rem;
 
-@include mediaQ('lg') {
-    background-position-y: top;
-}
-@include mediaQ('md') {
-    background-position-y: top !important;
-}
-@include mediaQ('sm1') {
-    background-position-y: top !important;
-}
-@include mediaQ('sm2') {
-    background-position-y: top !important;
-}
-@include mediaQ('smHam') {
-    background-position-y: top !important;
-}
-@include mediaQ('smHam2') {
-    background-position-y: top !important;
-}
+        @include mediaQ('lg') {
+            background-position-y: top;
+        }
+
+        @include mediaQ('md') {
+            background-position-y: top !important;
+        }
+
+        @include mediaQ('sm1') {
+            background-position-y: top !important;
+        }
+
+        @include mediaQ('sm2') {
+            background-position-y: top !important;
+        }
+
+        @include mediaQ('smHam') {
+            background-position-y: top !important;
+        }
+
+        @include mediaQ('smHam2') {
+            background-position-y: top !important;
+        }
 
         .home {
             .header-text {
@@ -307,6 +312,7 @@ header {
                         width: 20rem;
                         margin-top: 1.5rem;
                     }
+
                     @include mediaQ('smHam') {
                         margin-top: 1.2rem;
                     }
@@ -392,7 +398,7 @@ header {
                 @include mediaQ('smHam') {
                     left: 35vw;
                     bottom: 3rem;
-                height: 24rem;
+                    height: 24rem;
                 }
 
                 @include mediaQ('smHam2') {

@@ -1,15 +1,462 @@
-footer{
+footer {
     width: $width;
     user-select: none;
-}
 
-.footer-inner{
-    width: $mainW;
-    margin-left: $nav;
-
-    section.contact{
+    .footerWrap {
         width: 100%;
-        height: 120rem;
-        background-color: chocolate;
+        height: 65vw;
+
+        .backImg {
+            width: 100%;
+            height: 45vw;
+            background: url(../img/photo/pick4-sm2.jpg) no-repeat center center/110%;
+            background-position-y: top;
+
+            @include mediaQ('md'){
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/110%;
+            }
+            @include mediaQ('sm1'){
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/110%;
+            }
+            @include mediaQ('sm2'){
+                height: 65vw;
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
+            }
+            @include mediaQ('smHam'){
+                height: 65vw;
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
+                width: 85vw;
+                margin: auto;
+            }
+            @include mediaQ('smHam2'){
+                height: 65vw;
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
+                width: 85vw;
+                margin: auto;
+            }
+            @include mediaQ('smHam2'){
+                height: 85vw;
+                background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
+                width: 85vw;
+                margin: auto;
+            }
+
+            .footer-inner {
+                width: 90vw;
+                height: 45vw;
+                position: relative;
+                left: 15vw;
+
+                @include mediaQ('sm2'){
+                    height: 65vw;
+                }
+                @include mediaQ('smHam'){
+                    height: 65vw;
+                }
+                @include mediaQ('smHam2'){
+                    height: 85vw;
+                }
+
+                @extend %title;
+                &>p{
+                    left: 6vw;
+
+                    @include mediaQ('lg'){
+                    top: 4rem !important;
+                    }
+                    @include mediaQ('md'){
+                    top: 4rem !important;
+                    }
+                    @include mediaQ('sm1'){
+                    top: 3rem !important;
+                    }
+                    @include mediaQ('sm2'){
+                    top: 3rem !important;
+                    }
+                    @include mediaQ('smHam'){
+                    top: 3rem !important;
+                    left: -8vw !important;
+                    }
+                    @include mediaQ('smHam2'){
+                    top: 3rem !important;
+                    left: -8vw !important;
+                    }
+                }
+
+                section.contact {
+                    .contactText {
+                        position: absolute;
+                        left: 40vw;
+                        top: 12vw;
+                        line-height: 0.5;
+
+                        span {
+                            font-size: $h3;
+                            font-weight: 300;
+
+                            strong {
+                                display: inline-block;
+                                font-size: 10rem;
+
+                                @include mediaQ('md'){
+                                    font-size: 6rem;  
+                                }
+                                @include mediaQ('sm1'){
+                                    font-size: 6rem;  
+                                }
+                                @include mediaQ('sm2'){
+                                    font-size: 6rem;  
+                                }
+                                @include mediaQ('smHam'){
+                                    font-size: 4rem;  
+                                }
+                                @include mediaQ('smHam2'){
+                                    font-size: 4rem;  
+                                }
+                            }
+
+                            &.spanTwo {
+                                display: block;
+                                margin-left: 8rem;
+
+                                @include mediaQ('sm2'){
+                                    margin-left: 5rem;  
+                                }
+                                @include mediaQ('smHam'){
+                                    margin-left: 4rem;  
+                                }
+                                @include mediaQ('smHam2'){
+                                    margin-left: 4rem;  
+                                }
+                            }
+
+                            @include mediaQ('lg'){
+                                font-size: $h4;
+                            }
+                            @include mediaQ('md'){
+                                font-size: $h4;
+                            }
+                            @include mediaQ('sm1'){
+                                font-size: $main1;
+                            }
+                            @include mediaQ('sm2'){
+                                font-size: $main1;
+                            }
+                            @include mediaQ('smHam'){
+                                font-size: $main1;
+                            }
+                            @include mediaQ('smHam2'){
+                                font-size: $main1;
+                            }
+                        }
+
+                        @include mediaQ('md'){
+                            line-height: 1;
+                        }
+                        @include mediaQ('sm2'){
+                            line-height: 0.5;
+                        }
+                        @include mediaQ('smHam'){
+                            line-height: 0.8;
+                            left: 20vw;
+                        }
+                        @include mediaQ('smHam2'){
+                            line-height: 0.8;
+                            left: 10vw;
+                        }
+
+                        .conBox {
+                            line-height: 1.333;
+                            display: flex;
+                            margin-top: 6rem;
+
+                            @extend %boxHover;
+                            gap: 2vw;
+
+                            @include mediaQ('sm2'){
+                                margin-top: 4rem;
+                            }
+
+                            a {
+                                font-size: $main2;
+                                padding: 1.2rem 4.5rem;
+
+                                @include mediaQ('lg'){
+                                    font-size: $main3;
+                                    padding: 1rem 3rem;
+                                }
+                                @include mediaQ('md'){
+                                    font-size: $main3;
+                                    padding: 1rem 3rem;
+                                }
+                                @include mediaQ('sm1'){
+                                    font-size: 1.4rem;
+                                    padding: 1rem 3rem;
+                                }
+                                @include mediaQ('sm2'){
+                                    font-size: 1.4rem;
+                                    padding: 1rem 3rem;
+                                }
+                                @include mediaQ('smHam'){
+                                    font-size: 1.4rem;
+                                    padding: 1rem 3rem;
+                                    margin-top: 26vw;
+                                }
+                                @include mediaQ('smHam2'){
+                                    font-size: 1.4rem;
+                                    padding: 1rem 3rem;
+                                    margin-top: 42vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //backImg
+
+        .contactF {
+            width: 100%;
+            height: 20vw;
+            background-color: $background;
+
+            @include mediaQ ('sm1'){
+                height: 50vw;
+            }
+            @include mediaQ ('sm2'){
+                height: 50vw;
+            }
+            @include mediaQ ('smHam'){
+                height: 60vw;
+            }
+            @include mediaQ ('smHam2'){
+                height: 90vw;
+            }
+
+            .contactFInner {
+                width: 90vw;
+                height: inherit;
+                position: relative;
+                left: 15vw;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+
+                @include mediaQ ('sm1'){
+                    height: 50vw;
+                }
+                @include mediaQ ('sm2'){
+                    height: 50vw;
+                }
+                @include mediaQ ('smHam'){
+                    height: 60vw;
+                }
+                @include mediaQ ('smHam2'){
+                    height: 90vw;
+                }
+
+                .textFlex {
+                    display: flex;
+                    gap: 10vw;
+                    padding-top: 6vw;
+                    position: relative;
+
+                    @include mediaQ ('lg'){
+                        gap: 7vw;
+                        padding-top: 4vw;
+                    }
+                    @include mediaQ ('md'){
+                        gap: 4vw;
+                        padding-top: 3vw;
+                    }
+                    @include mediaQ ('sm1'){
+                        gap: 4vw;
+                        padding-top: 5vw;
+                        display: grid;
+                        grid-template-columns: repeat(2, 30vw);
+                        margin: 0 8vw;
+                    }
+                    @include mediaQ ('sm2'){
+                        gap: 4vw;
+                        padding-top: 5vw;
+                        display: grid;
+                        grid-template-columns: repeat(2, 30vw);
+                        margin: 0 8vw;
+                    }
+                    @include mediaQ ('smHam'){
+                        gap: 4vw;
+                        padding-top: 5vw;
+                        display: grid;
+                        grid-template-columns: repeat(2, 30vw);
+                        margin: 0;
+                    }
+                    @include mediaQ ('smHam2'){
+                        gap: 4vw;
+                        padding-top: 5vw;
+                        display: grid;
+                        grid-template-columns: repeat(2, 30vw);
+                        margin: 0 -3vw;
+                    }
+
+                    .textFl:before {
+                        content: '';
+                        border: 1px solid $pointcolor1;
+                        position: absolute;
+                        height: 18rem;
+                        top: 8rem;
+
+                        @include mediaQ ('lg'){
+                            top: 2vw;
+                        }
+                        @include mediaQ ('md'){
+                            top: 1vw;
+                            height: 16rem;
+                        }
+                        @include mediaQ ('md'){
+                            top: 1vw;
+                            height: 16rem;
+                        }
+                        @include mediaQ ('sm1'){
+                            border: none;
+                        }
+                        @include mediaQ ('sm2'){
+                            border: none;
+                        }
+                        @include mediaQ ('smHam'){
+                            border: none;
+                        }
+                        @include mediaQ ('smHam2'){
+                            border: none;
+                        }
+                    }
+
+                    .tetx1:before {
+                        margin-left: 37rem;
+
+                        @include mediaQ ('lg'){
+                            margin-left: 18vw;
+                        }
+                        @include mediaQ ('md'){
+                            margin-left: 20vw;
+                        }
+                    }
+
+                    .tetx2:before {
+                        margin-left: 30rem;
+
+                        @include mediaQ ('lg'){
+                            margin-left: 15vw;
+                        }
+                        @include mediaQ ('md'){
+                            margin-left: 17vw;
+                        }
+                    }
+
+                    .tetx3:before {
+                        margin-left: 28rem;
+
+                        @include mediaQ ('lg'){
+                            margin-left: 13vw;
+                        }
+                        @include mediaQ ('md'){
+                            margin-left: 13vw;
+                        }
+                    }
+
+                    .tetx4:before {
+                        border: none;
+                    }
+
+                    h5 {
+                        font-size: $main1;
+                        padding-bottom: 2rem;
+                    }
+
+                    .tetx1 {
+                        p {
+                            line-height: 1.5;
+                            color: $text2;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .tetx2 {
+                        & span:first-child {
+                            color: $primary;
+                            font-size: 2rem;
+                            line-height: 1.5;
+                        }
+
+                        color: $text2;
+
+                        .tell2,
+                        .mail2 {
+                            font-weight: 300;
+                        }
+                    }
+
+                    .tetx3 {
+                        .tBox {
+                            display: grid;
+                            grid-template-columns: repeat(2, 5vw);
+
+                            li {
+                                a{
+                                    display: block;
+                                    padding: 0.5rem;
+                                    margin: 0.2rem;
+                                    color: $text3;
+
+                                    &:hover {
+                                        color: $primary;
+                                    }
+                                }
+                            }
+
+                            @include mediaQ ('sm1'){
+                                grid-template-columns: repeat(2, 10vw);
+                            }
+                            @include mediaQ ('sm2'){
+                                grid-template-columns: repeat(2, 10vw);
+                            }
+                            @include mediaQ ('smHam'){
+                                grid-template-columns: repeat(2, 13vw);
+                            }
+                            @include mediaQ ('smHam2'){
+                                grid-template-columns: repeat(2, 15vw);
+                            }
+                        }
+                    }
+
+                    .tetx4 {
+                        p{
+                            color: $text2;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .tetxFlexCl {
+                margin: auto;
+                transform: translate(-50%);
+                color: $secondary;
+                font-weight: 300;
+                font-size: 1.4rem;
+
+                @include mediaQ ('sm2'){
+                    transform: translate(-25%);
+                }
+                @include mediaQ ('smHam'){
+                    transform: translate(-25%);
+                }
+                @include mediaQ ('smHam2'){
+                    transform: translate(-40%);
+                }
+            }
+        }
+
+        //contactF
     }
 }
