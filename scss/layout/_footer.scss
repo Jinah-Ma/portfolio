@@ -12,29 +12,34 @@ footer {
             background: url(../img/photo/pick4-sm2.jpg) no-repeat center center/110%;
             background-position-y: top;
 
-            @include mediaQ('md'){
+            @include mediaQ('md') {
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/110%;
             }
-            @include mediaQ('sm1'){
+
+            @include mediaQ('sm1') {
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/110%;
             }
-            @include mediaQ('sm2'){
+
+            @include mediaQ('sm2') {
                 height: 65vw;
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
             }
-            @include mediaQ('smHam'){
+
+            @include mediaQ('smHam') {
                 height: 65vw;
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
                 width: 85vw;
                 margin: auto;
             }
-            @include mediaQ('smHam2'){
+
+            @include mediaQ('smHam2') {
                 height: 65vw;
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
                 width: 85vw;
                 margin: auto;
             }
-            @include mediaQ('smHam2'){
+
+            @include mediaQ('smHam2') {
                 height: 85vw;
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
                 width: 85vw;
@@ -47,39 +52,47 @@ footer {
                 position: relative;
                 left: 15vw;
 
-                @include mediaQ('sm2'){
+                @include mediaQ('sm2') {
                     height: 65vw;
                 }
-                @include mediaQ('smHam'){
+
+                @include mediaQ('smHam') {
                     height: 65vw;
                 }
-                @include mediaQ('smHam2'){
+
+                @include mediaQ('smHam2') {
                     height: 85vw;
                 }
 
                 @extend %title;
-                &>p{
+
+                &>p {
                     left: 6vw;
 
-                    @include mediaQ('lg'){
-                    top: 4rem !important;
+                    @include mediaQ('lg') {
+                        top: 4rem !important;
                     }
-                    @include mediaQ('md'){
-                    top: 4rem !important;
+
+                    @include mediaQ('md') {
+                        top: 4rem !important;
                     }
-                    @include mediaQ('sm1'){
-                    top: 3rem !important;
+
+                    @include mediaQ('sm1') {
+                        top: 3rem !important;
                     }
-                    @include mediaQ('sm2'){
-                    top: 3rem !important;
+
+                    @include mediaQ('sm2') {
+                        top: 3rem !important;
                     }
-                    @include mediaQ('smHam'){
-                    top: 3rem !important;
-                    left: -8vw !important;
+
+                    @include mediaQ('smHam') {
+                        top: 3rem !important;
+                        left: -8vw !important;
                     }
-                    @include mediaQ('smHam2'){
-                    top: 3rem !important;
-                    left: -8vw !important;
+
+                    @include mediaQ('smHam2') {
+                        top: 3rem !important;
+                        left: -8vw !important;
                     }
                 }
 
@@ -98,20 +111,24 @@ footer {
                                 display: inline-block;
                                 font-size: 10rem;
 
-                                @include mediaQ('md'){
-                                    font-size: 6rem;  
+                                @include mediaQ('md') {
+                                    font-size: 6rem;
                                 }
-                                @include mediaQ('sm1'){
-                                    font-size: 6rem;  
+
+                                @include mediaQ('sm1') {
+                                    font-size: 6rem;
                                 }
-                                @include mediaQ('sm2'){
-                                    font-size: 6rem;  
+
+                                @include mediaQ('sm2') {
+                                    font-size: 6rem;
                                 }
-                                @include mediaQ('smHam'){
-                                    font-size: 4rem;  
+
+                                @include mediaQ('smHam') {
+                                    font-size: 4rem;
                                 }
-                                @include mediaQ('smHam2'){
-                                    font-size: 4rem;  
+
+                                @include mediaQ('smHam2') {
+                                    font-size: 4rem;
                                 }
                             }
 
@@ -119,51 +136,62 @@ footer {
                                 display: block;
                                 margin-left: 8rem;
 
-                                @include mediaQ('sm2'){
-                                    margin-left: 5rem;  
+                                @include mediaQ('sm2') {
+                                    margin-left: 5rem;
                                 }
-                                @include mediaQ('smHam'){
-                                    margin-left: 4rem;  
+
+                                @include mediaQ('smHam') {
+                                    margin-left: 4rem;
                                 }
-                                @include mediaQ('smHam2'){
-                                    margin-left: 4rem;  
+
+                                @include mediaQ('smHam2') {
+                                    margin-left: 4rem;
                                 }
                             }
 
-                            @include mediaQ('lg'){
+                            @include mediaQ('lg') {
                                 font-size: $h4;
                             }
-                            @include mediaQ('md'){
+
+                            @include mediaQ('md') {
                                 font-size: $h4;
                             }
-                            @include mediaQ('sm1'){
+
+                            @include mediaQ('sm1') {
                                 font-size: $main1;
                             }
-                            @include mediaQ('sm2'){
+
+                            @include mediaQ('sm2') {
                                 font-size: $main1;
                             }
-                            @include mediaQ('smHam'){
+
+                            @include mediaQ('smHam') {
                                 font-size: $main1;
                             }
-                            @include mediaQ('smHam2'){
+
+                            @include mediaQ('smHam2') {
                                 font-size: $main1;
                             }
                         }
 
-                        @include mediaQ('md'){
+                        @include mediaQ('md') {
                             line-height: 1;
                         }
-                        @include mediaQ('sm2'){
+
+                        @include mediaQ('sm2') {
                             line-height: 0.5;
                         }
-                        @include mediaQ('smHam'){
+
+                        @include mediaQ('smHam') {
                             line-height: 0.8;
                             left: 20vw;
                         }
-                        @include mediaQ('smHam2'){
+
+                        @include mediaQ('smHam2') {
                             line-height: 0.8;
                             left: 10vw;
                         }
+
 
                         .conBox {
                             line-height: 1.333;
@@ -173,7 +201,7 @@ footer {
                             @extend %boxHover;
                             gap: 2vw;
 
-                            @include mediaQ('sm2'){
+                            @include mediaQ('sm2') {
                                 margin-top: 4rem;
                             }
 
@@ -181,34 +209,40 @@ footer {
                                 font-size: $main2;
                                 padding: 1.2rem 4.5rem;
 
-                                @include mediaQ('lg'){
+                                @include mediaQ('lg') {
                                     font-size: $main3;
                                     padding: 1rem 3rem;
                                 }
-                                @include mediaQ('md'){
+
+                                @include mediaQ('md') {
                                     font-size: $main3;
                                     padding: 1rem 3rem;
                                 }
-                                @include mediaQ('sm1'){
+
+                                @include mediaQ('sm1') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
                                 }
-                                @include mediaQ('sm2'){
+
+                                @include mediaQ('sm2') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
                                 }
-                                @include mediaQ('smHam'){
+
+                                @include mediaQ('smHam') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
                                     margin-top: 26vw;
                                 }
-                                @include mediaQ('smHam2'){
+
+                                @include mediaQ('smHam2') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
                                     margin-top: 42vw;
                                 }
                             }
                         }
+                        display: none;
                     }
                 }
             }
@@ -221,16 +255,19 @@ footer {
             height: 20vw;
             background-color: $background;
 
-            @include mediaQ ('sm1'){
+            @include mediaQ ('sm1') {
                 height: 50vw;
             }
-            @include mediaQ ('sm2'){
+
+            @include mediaQ ('sm2') {
                 height: 50vw;
             }
-            @include mediaQ ('smHam'){
+
+            @include mediaQ ('smHam') {
                 height: 60vw;
             }
-            @include mediaQ ('smHam2'){
+
+            @include mediaQ ('smHam2') {
                 height: 90vw;
             }
 
@@ -243,16 +280,19 @@ footer {
                 display: flex;
                 flex-direction: column;
 
-                @include mediaQ ('sm1'){
+                @include mediaQ ('sm1') {
                     height: 50vw;
                 }
-                @include mediaQ ('sm2'){
+
+                @include mediaQ ('sm2') {
                     height: 50vw;
                 }
-                @include mediaQ ('smHam'){
+
+                @include mediaQ ('smHam') {
                     height: 60vw;
                 }
-                @include mediaQ ('smHam2'){
+
+                @include mediaQ ('smHam2') {
                     height: 90vw;
                 }
 
@@ -262,36 +302,41 @@ footer {
                     padding-top: 6vw;
                     position: relative;
 
-                    @include mediaQ ('lg'){
+                    @include mediaQ ('lg') {
                         gap: 7vw;
                         padding-top: 4vw;
                     }
-                    @include mediaQ ('md'){
+
+                    @include mediaQ ('md') {
                         gap: 4vw;
                         padding-top: 3vw;
                     }
-                    @include mediaQ ('sm1'){
+
+                    @include mediaQ ('sm1') {
                         gap: 4vw;
                         padding-top: 5vw;
                         display: grid;
                         grid-template-columns: repeat(2, 30vw);
                         margin: 0 8vw;
                     }
-                    @include mediaQ ('sm2'){
+
+                    @include mediaQ ('sm2') {
                         gap: 4vw;
                         padding-top: 5vw;
                         display: grid;
                         grid-template-columns: repeat(2, 30vw);
                         margin: 0 8vw;
                     }
-                    @include mediaQ ('smHam'){
+
+                    @include mediaQ ('smHam') {
                         gap: 4vw;
                         padding-top: 5vw;
                         display: grid;
                         grid-template-columns: repeat(2, 30vw);
                         margin: 0;
                     }
-                    @include mediaQ ('smHam2'){
+
+                    @include mediaQ ('smHam2') {
                         gap: 4vw;
                         padding-top: 5vw;
                         display: grid;
@@ -306,27 +351,33 @@ footer {
                         height: 18rem;
                         top: 8rem;
 
-                        @include mediaQ ('lg'){
+                        @include mediaQ ('lg') {
                             top: 2vw;
                         }
-                        @include mediaQ ('md'){
+
+                        @include mediaQ ('md') {
                             top: 1vw;
                             height: 16rem;
                         }
-                        @include mediaQ ('md'){
+
+                        @include mediaQ ('md') {
                             top: 1vw;
                             height: 16rem;
                         }
-                        @include mediaQ ('sm1'){
+
+                        @include mediaQ ('sm1') {
                             border: none;
                         }
-                        @include mediaQ ('sm2'){
+
+                        @include mediaQ ('sm2') {
                             border: none;
                         }
-                        @include mediaQ ('smHam'){
+
+                        @include mediaQ ('smHam') {
                             border: none;
                         }
-                        @include mediaQ ('smHam2'){
+
+                        @include mediaQ ('smHam2') {
                             border: none;
                         }
                     }
@@ -334,10 +385,11 @@ footer {
                     .tetx1:before {
                         margin-left: 37rem;
 
-                        @include mediaQ ('lg'){
+                        @include mediaQ ('lg') {
                             margin-left: 18vw;
                         }
-                        @include mediaQ ('md'){
+
+                        @include mediaQ ('md') {
                             margin-left: 20vw;
                         }
                     }
@@ -345,10 +397,11 @@ footer {
                     .tetx2:before {
                         margin-left: 30rem;
 
-                        @include mediaQ ('lg'){
+                        @include mediaQ ('lg') {
                             margin-left: 15vw;
                         }
-                        @include mediaQ ('md'){
+
+                        @include mediaQ ('md') {
                             margin-left: 17vw;
                         }
                     }
@@ -356,10 +409,11 @@ footer {
                     .tetx3:before {
                         margin-left: 28rem;
 
-                        @include mediaQ ('lg'){
+                        @include mediaQ ('lg') {
                             margin-left: 13vw;
                         }
-                        @include mediaQ ('md'){
+
+                        @include mediaQ ('md') {
                             margin-left: 13vw;
                         }
                     }
@@ -402,7 +456,7 @@ footer {
                             grid-template-columns: repeat(2, 5vw);
 
                             li {
-                                a{
+                                a {
                                     display: block;
                                     padding: 0.5rem;
                                     margin: 0.2rem;
@@ -414,23 +468,26 @@ footer {
                                 }
                             }
 
-                            @include mediaQ ('sm1'){
+                            @include mediaQ ('sm1') {
                                 grid-template-columns: repeat(2, 10vw);
                             }
-                            @include mediaQ ('sm2'){
+
+                            @include mediaQ ('sm2') {
                                 grid-template-columns: repeat(2, 10vw);
                             }
-                            @include mediaQ ('smHam'){
+
+                            @include mediaQ ('smHam') {
                                 grid-template-columns: repeat(2, 13vw);
                             }
-                            @include mediaQ ('smHam2'){
+
+                            @include mediaQ ('smHam2') {
                                 grid-template-columns: repeat(2, 15vw);
                             }
                         }
                     }
 
                     .tetx4 {
-                        p{
+                        p {
                             color: $text2;
                             font-weight: 300;
                         }
@@ -445,13 +502,15 @@ footer {
                 font-weight: 300;
                 font-size: 1.4rem;
 
-                @include mediaQ ('sm2'){
+                @include mediaQ ('sm2') {
                     transform: translate(-25%);
                 }
-                @include mediaQ ('smHam'){
+
+                @include mediaQ ('smHam') {
                     transform: translate(-25%);
                 }
-                @include mediaQ ('smHam2'){
+
+                @include mediaQ ('smHam2') {
                     transform: translate(-40%);
                 }
             }

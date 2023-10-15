@@ -1,3 +1,37 @@
+//스크롤 top탭 구현, 애니메이션 구현
+const scrollH = $('header').height();
+const scrollReal = $(window).height() - scrollH;
+
+$(window).on('scroll', function () {
+    let sct = $(this).scrollTop();
+
+    if (sct > scrollReal) {
+        $('.toptab').show();
+        $('.title-img').addClass('show').css('display', 'block');
+
+    } else {
+        $('.toptab').hide();
+        $('.title-img').removeClass('show').css('display', 'none');
+    }
+
+})
+
+// 애니메이션 구현
+$(window).on('scroll', function () {
+    let windowHeight = $(window).height();
+    let scroll = $(window).scrollTop();
+    let footerTop = $('footer').offset().top;
+
+    if (scroll + windowHeight >= footerTop) {
+        $('.contactText').fadeIn(800);
+    } else {
+        $('.contactText').hide();
+    }
+});
+
+
+
+//햄버거 메뉴 구현
 let btn = $('header span.ham');
 let open = $('header .gnb');
 let solid = $('header .solid');
@@ -163,3 +197,9 @@ boxImgWrap.each(function () {
         tg2.addClass('active5');
     });
 });
+
+
+//푸터 애니메이션 구현
+$('section.contact span').css('opacity', '1');
+$('.conBox').css('opacity', '1');
+

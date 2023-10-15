@@ -460,6 +460,18 @@ header .header-inner .home .header-box .box-2 .mail span:last-child {
     width: 100%;
   }
 }
+header .toptab {
+  position: fixed;
+  z-index: 999;
+  right: 3rem;
+  bottom: 3rem;
+  background: transparent;
+  display: none;
+}
+header .toptab img {
+  width: 3rem;
+  height: auto;
+}
 
 main {
   width: 100vw;
@@ -1562,6 +1574,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText {
   left: 40vw;
   top: 12vw;
   line-height: 0.5;
+  display: none;
 }
 footer .footerWrap .backImg .footer-inner section.contact .contactText span {
   font-size: 4rem;
