@@ -267,17 +267,91 @@ header .header-inner {
     background-position-y: top !important;
   }
 }
-header .header-inner .home .header-text {
+header .header-inner .home #container {
   font-size: 5.5rem;
   position: absolute;
   color: #666;
   top: 14rem;
   left: 10vw;
   line-height: 1.5;
+  color: #666;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
 }
-header .header-inner .home .header-text strong {
+header .header-inner .home #container strong {
   color: #E76162;
   font-weight: 500;
+}
+header .header-inner .home #container {
+  /*                     #flip div div {
+                          background: #42c58a;
+                      }
+
+                      #flip div:first-child div {
+                          background: #4ec7f3;
+                      }
+
+                      #flip div:last-child div {
+                          background: #DC143C;
+                      } */
+}
+header .header-inner .home #container #flip {
+  height: 50px;
+  overflow: hidden;
+}
+header .header-inner .home #container #flip > div > div {
+  color: #fff;
+  display: inline-block;
+}
+header .header-inner .home #container #flip div:first-child {
+  animation: show2 5s linear infinite;
+  line-height: 0.7;
+}
+header .header-inner .home #container #flip div:nth-child(2) {
+  line-height: 2.7;
+}
+header .header-inner .home #container #flip div:last-child {
+  line-height: 0.6;
+}
+@keyframes show2 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+header .header-inner .home .header-text {
+  /*  font-size: $h1;
+   position: absolute;
+   color: $text2;
+   top: 14rem;
+   left: 10vw;
+   line-height: 1.5;
+
+   strong {
+       color: $primary;
+       font-weight: 500;
+   } */
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
   header .header-inner .home .header-text {
