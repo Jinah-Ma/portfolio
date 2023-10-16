@@ -6,77 +6,69 @@ header {
     &>.ham {
         display: none;
 
-        &>.solod {
-            display: none;
-        }
-
         @include mediaQ ('smHam') {
             display: inline-block;
             position: fixed;
             top: 3rem;
             left: 3rem;
             z-index: 5;
-            padding: 2rem 2.5rem;
+            padding: 2.5rem 1.5rem;
             background-color: $secondary;
             border-radius: 100%;
             cursor: pointer;
             user-select: none;
 
-            &>.solid {
-                display: inline-block;
-                position: fixed;
-                top: 5.7rem;
-                left: 4.5rem;
-                width: 2.5rem;
-                height: 1px;
-                border: 1px solid $background;
-                z-index: 9;
+            span {
+                display: block;
 
-                &:after {
-                    content: '';
+                &.solid {
+                    display: block;
+                    position: relative;
+                    top: 0rem;
+                    left: 0rem;
+                    width: 2.5rem;
+                    border: 1px solid $background;
+                    z-index: 9;
+                }
+
+                &:first-child {
+                    width: 2.5rem;
                     position: absolute;
-                    top: 0.7rem;
-                    left: -0.1rem;
-                    width: 2.3rem;
+                    top: 1.5rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
                     border: 1px solid $background;
                 }
 
-                &:before {
-                    content: '';
+                &:last-child {
+                    width: 2.5rem;
                     position: absolute;
-                    top: -1rem;
-                    left: -0.1rem;
-                    width: 2.3rem;
+                    top: 3.4rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
                     border: 1px solid $background;
                 }
-            }
 
-            &:hover .solid:after {
-                top: 0.9rem;
-                transition: all 0.1s;
-            }
+                &:first-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(135deg);
+                    transition: all 0.2s;
+                }
 
-            &:hover .solid:before {
-                top: -1.2rem;
-                transition: all 0.1s;
-            }
+                &:last-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(-135deg);
+                    transition: all 0.2s;
+                }
 
-            &.active .solid:before {
-                top: 0;
-                transform: rotate(135deg);
-                transition: all 0.2s;
-            }
-
-            &.active .solid:after {
-                top: 0;
-                transform: rotate(-135deg);
-                transition: all 0.2s;
-            }
-
-            &.active .solid {
-                border-color: transparent;
+                &.solid.active {
+                    border-color: transparent;
+                }
             }
         }
+
 
         @include mediaQ ('smHam2') {
             display: inline-block;
@@ -84,245 +76,279 @@ header {
             top: 3rem;
             left: 3rem;
             z-index: 5;
-            padding: 2rem 2.5rem;
+            padding: 2.5rem 1.5rem;
             background-color: $secondary;
             border-radius: 100%;
             cursor: pointer;
             user-select: none;
 
-            &>.solid {
-                display: inline-block;
-                position: fixed;
-                top: 5.7rem;
-                left: 4.5rem;
-                width: 2.5rem;
-                height: 1px;
-                border: 1px solid $background;
-                z-index: 9;
+            span {
+                display: block;
 
-                &:after {
-                    content: '';
+                &.solid {
+                    display: block;
+                    position: relative;
+                    top: 0rem;
+                    left: 0rem;
+                    width: 2.5rem;
+                    border: 1px solid $background;
+                    z-index: 9;
+                }
+
+                &:first-child {
+                    width: 2.5rem;
                     position: absolute;
-                    top: 0.7rem;
-                    left: -0.1rem;
-                    width: 2.3rem;
+                    top: 1.5rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
                     border: 1px solid $background;
                 }
 
-                &:before {
-                    content: '';
+                &:last-child {
+                    width: 2.5rem;
                     position: absolute;
-                    top: -1rem;
-                    left: -0.1rem;
-                    width: 2.3rem;
+                    top: 3.4rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
                     border: 1px solid $background;
                 }
-            }
 
-            &:hover .solid:after {
-                top: 0.9rem;
-                transition: all 0.1s;
-            }
+                &:first-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(135deg);
+                    transition: all 0.2s;
+                }
 
-            &:hover .solid:before {
-                top: -1.2rem;
-                transition: all 0.1s;
-            }
-        }
-    }
+                &:last-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(-135deg);
+                    transition: all 0.2s;
+                }
 
-    .gnb {
-        width: 15vw;
-        height: $height;
-        background-color: $background;
-        position: fixed;
-        top: 0;
-        box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.25);
-        z-index: 1;
-
-        .logo img {
-            width: 12rem;
-            margin-left: 50%;
-            transform: translate(-50%);
-            margin-top: 5rem;
-        }
-
-        .menu {
-            width: 100%;
-
-            &-name {
-                margin-top: 7rem;
-
-                li {
-                    text-align: center;
-                    margin: 2rem;
-
-                    a {
-                        text-transform: capitalize;
-                        color: $text2;
-                        font-size: $main2;
-                    }
-
-                    a:hover {
-                        color: $primary;
-                    }
+                &.solid.active {
+                    border-color: transparent;
                 }
             }
-        }
 
-        .copy {
-            font-size: $info1;
-            color: $text3;
-            text-align: center;
-            margin-top: 38rem;
-
-            &:before {
-                content: '';
-                display: block;
-                width: 7rem;
-                margin: auto;
-                border-top: 1px solid $primary;
-                margin-bottom: 2rem;
-            }
-        }
-
-        @include mediaQ ('smHam') {
-            display: none;
-        }
-
-        @include mediaQ ('smHam2') {
-            display: none;
         }
     }
+}
 
-    //gnb
+.gnb {
+    width: 15vw;
+    height: $height;
+    background-color: $background;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 
-    .header-inner {
-        z-index: 0;
-        width: $mainW;
-        height: 100vh;
-        position: relative;
-        left: 15vw;
-        background:
-            url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
-        background-position-y: -5rem;
+    .logo img {
+        width: 12rem;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 5rem;
+    }
 
-        @include mediaQ('lg') {
-            background-position-y: top;
-        }
+    .menu {
+        width: 100%;
 
-        @include mediaQ('md') {
-            background-position-y: top !important;
-        }
+        &-name {
+            margin-top: 7rem;
 
-        @include mediaQ('sm1') {
-            background-position-y: top !important;
-        }
+            li {
+                text-align: center;
+                margin: 2rem;
 
-        @include mediaQ('sm2') {
-            background-position-y: top !important;
-        }
+                a {
+                    text-transform: capitalize;
+                    color: $text2;
+                    font-size: $main2;
+                }
 
-        @include mediaQ('smHam') {
-            background-position-y: top !important;
-        }
-
-        @include mediaQ('smHam2') {
-            background-position-y: top !important;
-        }
-
-        .home {
-            #container {
-                font-size: $h1;
-                position: absolute;
-                color: $text2;
-                top: 14rem;
-                left: 10vw;
-                line-height:1.5;
-                color: $text2;
-                text-transform: uppercase;
-                width: 100%;
-                display: block;
-
-                strong {
+                a:hover {
                     color: $primary;
-                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .copy {
+        font-size: $info1;
+        color: $text3;
+        text-align: center;
+        margin-top: 38rem;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 7rem;
+            margin: auto;
+            border-top: 1px solid $primary;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include mediaQ ('smHam') {
+        display: none;
+    }
+
+    @include mediaQ ('smHam2') {
+        display: none;
+    }
+}
+
+//gnb
+
+.header-inner {
+    z-index: 0;
+    width: $mainW;
+    height: 100vh;
+    position: relative;
+    left: 15vw;
+    background:
+        url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
+    background-position-y: -5rem;
+
+    @include mediaQ('lg') {
+        background-position-y: top;
+    }
+
+    @include mediaQ('md') {
+        background-position-y: top !important;
+    }
+
+    @include mediaQ('sm1') {
+        background-position-y: top !important;
+    }
+
+    @include mediaQ('sm2') {
+        background-position-y: top !important;
+    }
+
+    @include mediaQ('smHam') {
+        background-position-y: top !important;
+    }
+
+    @include mediaQ('smHam2') {
+        background-position-y: top !important;
+    }
+
+    .home {
+        #container {
+            font-size: $h1;
+            position: absolute;
+            color: $text2;
+            top: 8vw;
+            left: 9vw;
+            line-height: 1.5;
+            color: $text2;
+            text-transform: uppercase;
+            width: 100%;
+            display: block;
+
+            strong {
+                color: $primary;
+                font-weight: 500;
+            }
+
+
+            #flip {
+                height: 50px;
+                overflow: hidden;
+
+                &>div>div {
+                    color: #fff;
+                    display: inline-block;
                 }
 
-                &{
-                    #flip {
-                        height: 50px;
-                        overflow: hidden;
-                    }
-        
-                    #flip>div>div {
-                        color: #fff;
-                      display: inline-block;
-                    }
-        
-                    #flip div:first-child {
-                        animation: show2 5s linear infinite;
-                        line-height: 0.7;
-                    }
-                    #flip div:nth-child(2) {
-                        line-height: 2.7;
-                    }
-                    #flip div:last-child {
-                        line-height: 0.6;
-                    }
-        
-/*                     #flip div div {
-                        background: #42c58a;
-                    }
-        
-                    #flip div:first-child div {
-                        background: #4ec7f3;
-                    }
-        
-                    #flip div:last-child div {
-                        background: #DC143C;
-                    } */
-        
-                    @keyframes show2 {
-                        0% {
-                            margin-top: -270px;
-                        }
-        
-                        5% {
-                            margin-top: -180px;
-                        }
-        
-                        33% {
-                            margin-top: -180px;
-                        }
-        
-                        38% {
-                            margin-top: -90px;
-                        }
-        
-                        66% {
-                            margin-top: -90px;
-                        }
-        
-                        71% {
-                            margin-top: 0px;
-                        }
-        
-                        99.99% {
-                            margin-top: 0px;
-                        }
-        
-                        100% {
-                            margin-top: -270px;
-                        }
-                    }
+                & div:first-child {
+                    animation: show2 5s linear infinite;
+                    line-height: 0.7;
+                }
+
+                & div:nth-child(2) {
+                    line-height: 2.7;
+                }
+
+                & div:last-child {
+                    line-height: 0.6;
                 }
             }
 
-            
+            @keyframes show2 {
+                0% {
+                    margin-top: -270px;
+                }
 
-            .header-text {
-               /*  font-size: $h1;
+                5% {
+                    margin-top: -180px;
+                }
+
+                33% {
+                    margin-top: -180px;
+                }
+
+                38% {
+                    margin-top: -90px;
+                }
+
+                66% {
+                    margin-top: -90px;
+                }
+
+                71% {
+                    margin-top: 0px;
+                }
+
+                99.99% {
+                    margin-top: 0px;
+                }
+
+                100% {
+                    margin-top: -270px;
+                }
+            }
+
+
+            @include mediaQ('md') {
+                left: 5vw;
+                font-size: $h3;
+            }
+
+            @include mediaQ('sm1') {
+                margin-left: 4vw;
+                left: 2vw;
+                font-size: $h3;
+            }
+
+            @include mediaQ('sm2') {
+                margin-left: 2vw;
+                left: 1vw;
+                top: 20rem;
+                font-size: $h3;
+            }
+
+            @include mediaQ('smHam') {
+                margin-left: 2vw;
+                left: 1.5vw;
+                top: 20rem;
+                font-size: $h3;
+            }
+
+            @include mediaQ('smHam2') {
+                margin-left: 2vw;
+                font-size: $h3 !important;
+                left: 1.5vw;
+                top: 22rem;
+            }
+
+        }
+
+        /* .header-text {
+             font-size: $h1;
                 position: absolute;
                 color: $text2;
                 top: 14rem;
@@ -332,36 +358,36 @@ header {
                 strong {
                     color: $primary;
                     font-weight: 500;
-                } */
-
-                @include mediaQ('md') {
-                    left: 5vw;
                 }
 
-                @include mediaQ('sm1') {
-                    margin-left: 4vw;
-                    left: 2vw;
-                }
-
-                @include mediaQ('sm2') {
-                    margin-left: 2vw;
-                    left: 1vw;
-                    top: 20rem;
-                }
-
-                @include mediaQ('smHam') {
-                    margin-left: 2vw;
-                    left: 1.5vw;
-                    top: 20rem;
-                }
-
-                @include mediaQ('smHam2') {
-                    margin-left: 2vw;
-                    font-size: $h2;
-                    left: 1.5vw;
-                    top: 22rem;
-                }
+                       @include mediaQ('md') {
+                left: 5vw;
             }
+
+            @include mediaQ('sm1') {
+                margin-left: 4vw;
+                left: 2vw;
+            }
+
+            @include mediaQ('sm2') {
+                margin-left: 2vw;
+                left: 1vw;
+                top: 20rem;
+            }
+
+            @include mediaQ('smHam') {
+                margin-left: 2vw;
+                left: 1.5vw;
+                top: 20rem;
+            }
+
+            @include mediaQ('smHam2') {
+                margin-left: 2vw;
+                font-size: $h2;
+                left: 1.5vw;
+                top: 22rem;
+            }
+        } */
 
             .header-box {
                 width: 48rem;
@@ -525,4 +551,3 @@ header {
 
         display: none;
     }
-}

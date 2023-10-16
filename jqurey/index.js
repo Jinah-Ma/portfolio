@@ -32,9 +32,8 @@ $(window).on('scroll', function () {
 
 
 //햄버거 메뉴 구현
-let btn = $('header span.ham');
+let btn = $('header .ham');
 let open = $('header .gnb');
-let solid = $('header .solid');
 
 let isOpen = false;
 
@@ -44,15 +43,19 @@ btn.on('click', function () {
             open.css('width', '20rem'),
             open.css('z-index', '999'),
             btn.css('left', '22rem'),
-            solid.css('left', '23.5rem'),
             btn.addClass('active');
+            $('header span:first-child').addClass('active');
+            $('header span.solid').addClass('active');
+            $('header span:last-child').addClass('active');
     } else {
         open.css('display', ''),
             open.css('width', ''),
             open.css('z-index', ''),
             btn.css('left', ''),
-            solid.css('left', ''),
             btn.removeClass('active');
+            $('header span:first-child').removeClass('active');
+            $('header span.solid').removeClass('active');
+            $('header span:last-child').removeClass('active');
     }
     isOpen = !isOpen;
 });
