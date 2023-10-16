@@ -377,14 +377,12 @@ header > .ham {
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
   .header-inner .home #container {
     left: 5vw;
-    font-size: 4rem;
   }
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .header-inner .home #container {
     margin-left: 4vw;
     left: 2vw;
-    font-size: 4rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
@@ -392,7 +390,6 @@ header > .ham {
     margin-left: 2vw;
     left: 1vw;
     top: 20rem;
-    font-size: 4rem;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
@@ -400,13 +397,11 @@ header > .ham {
     margin-left: 2vw;
     left: 1.5vw;
     top: 20rem;
-    font-size: 4rem;
   }
 }
 @media screen and (max-width: 644px) {
   .header-inner .home #container {
     margin-left: 2vw;
-    font-size: 4rem !important;
     left: 1.5vw;
     top: 22rem;
   }

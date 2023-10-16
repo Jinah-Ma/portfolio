@@ -315,32 +315,32 @@ header {
 
             @include mediaQ('md') {
                 left: 5vw;
-                font-size: $h3;
+                // font-size: $h3;
             }
 
             @include mediaQ('sm1') {
                 margin-left: 4vw;
                 left: 2vw;
-                font-size: $h3;
+                // font-size: $h3;
             }
 
             @include mediaQ('sm2') {
                 margin-left: 2vw;
                 left: 1vw;
                 top: 20rem;
-                font-size: $h3;
+                // font-size: $h3;
             }
 
             @include mediaQ('smHam') {
                 margin-left: 2vw;
                 left: 1.5vw;
                 top: 20rem;
-                font-size: $h3;
+                // font-size: $h3;
             }
 
             @include mediaQ('smHam2') {
                 margin-left: 2vw;
-                font-size: $h3 !important;
+                // font-size: $h3 !important;
                 left: 1.5vw;
                 top: 22rem;
             }
