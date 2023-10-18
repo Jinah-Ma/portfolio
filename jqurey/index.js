@@ -34,6 +34,7 @@ $(window).on('scroll', function () {
 //햄버거 메뉴 구현
 let btn = $('header .ham');
 let open = $('header .gnb');
+let overay = $('header .overay');
 
 let isOpen = false;
 
@@ -43,6 +44,7 @@ btn.on('click', function () {
             open.css('width', '20rem'),
             open.css('z-index', '999'),
             btn.css('left', '22rem'),
+            overay.show();
             btn.addClass('active');
             $('header span:first-child').addClass('active');
             $('header span.solid').addClass('active');
@@ -52,6 +54,7 @@ btn.on('click', function () {
             open.css('width', ''),
             open.css('z-index', ''),
             btn.css('left', ''),
+            overay.hide();
             btn.removeClass('active');
             $('header span:first-child').removeClass('active');
             $('header span.solid').removeClass('active');
@@ -91,7 +94,7 @@ const boxImgWrap = $('.boxImgWrap');
 boxImgWrap.each(function () {
     let currentEl = $(this);
 
-    let target2 = currentEl.find('.pageBtn span a');
+    let target2 = currentEl.find('.pageBtn1 span a');
     let tContainer2 = currentEl.find('.G1Img>div');
     console.log(tContainer2);
 
@@ -104,8 +107,8 @@ boxImgWrap.each(function () {
         tContainer2.hide();
         $(currentLink2).show();
 
-        target2.removeClass('active');
-        tg2.addClass('active');
+        target2.removeClass('active1');
+        tg2.addClass('active1');
     });
 });
 

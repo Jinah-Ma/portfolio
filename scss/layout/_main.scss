@@ -967,6 +967,10 @@ main {
                                         top: 433vw;
                                     }
                                 }
+
+                                & a.active1,& a.active2,& a.active3,& a.active4,& a.active5{
+                                    color: $primary;
+                                }
                             }
                         }
                     }

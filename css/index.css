@@ -52,6 +52,15 @@ header {
           user-select: none;
   height: 100vh;
 }
+header .overay {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  display: none;
+}
 header > .ham {
   display: none;
 }
@@ -61,7 +70,7 @@ header > .ham {
     position: fixed;
     top: 3rem;
     left: 3rem;
-    z-index: 5;
+    z-index: 15;
     padding: 2.5rem 1.5rem;
     background-color: #3E614D;
     border-radius: 100%;
@@ -80,7 +89,7 @@ header > .ham {
     left: 0rem;
     width: 2.5rem;
     border: 1px solid #fff;
-    z-index: 9;
+    z-index: 15;
   }
   header > .ham span:first-child {
     width: 2.5rem;
@@ -120,7 +129,7 @@ header > .ham {
     position: fixed;
     top: 3rem;
     left: 3rem;
-    z-index: 5;
+    z-index: 15;
     padding: 2.5rem 1.5rem;
     background-color: #3E614D;
     border-radius: 100%;
@@ -1470,6 +1479,9 @@ main {
     top: 433vw;
   }
 }
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn a.active1, .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn a.active2, .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn a.active3, .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn a.active4, .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .pageBtn a.active5 {
+  color: #E76162;
+}
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 {
   display: block;
 }
@@ -2076,9 +2088,16 @@ footer .footerWrap .contactF .contactFInner .textFlex .tetx3 .tBox li a:hover {
     grid-template-columns: repeat(2, 15vw);
   }
 }
+footer .footerWrap .contactF .contactFInner .textFlex .tetx4 h5 {
+  padding-top: 1vw;
+}
+footer .footerWrap .contactF .contactFInner .textFlex .tetx4 h5:first-child {
+  margin-top: -2rem;
+}
 footer .footerWrap .contactF .contactFInner .textFlex .tetx4 p {
   color: #666;
   font-weight: 300;
+  margin-top: -1rem;
 }
 footer .footerWrap .contactF .tetxFlexCl {
   margin: auto;
@@ -2237,6 +2256,7 @@ footer .footerWrap .contactF .tetxFlexCl {
   grid-template-columns: repeat(3, 22vw);
   grid-template-rows: repeat(2, 20vw);
   gap: 2vw;
+  overflow: hidden;
 }
 .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page a {
   width: 22vw;
@@ -2260,4 +2280,9 @@ footer .footerWrap .contactF .tetxFlexCl {
      object-position: center;
   overflow: hidden;
   display: block;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page a img:hover {
+  scale: 120% 120%;
+  transition: all 0.4s;
+  filter: grayscale(100%) brightness(40%);
 }/*# sourceMappingURL=index.css.map */

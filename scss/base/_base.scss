@@ -128,6 +128,7 @@
     grid-template-columns: repeat(3, 22vw);
     grid-template-rows: repeat(2, 20vw);
     gap: 2vw;
+    overflow: hidden;
 
     a {
         width: 22vw;
@@ -148,6 +149,11 @@
             overflow: hidden;
             display: block;
 
+            &:hover {
+                scale: 120% 120%;
+                transition: all 0.4s;
+                filter: grayscale(100%) brightness(40%);
+            }
         }
     }
 
