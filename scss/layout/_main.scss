@@ -872,12 +872,23 @@ main {
                         .boxGrup {
                             width: 100%;
                             height: inherit;
-                            position: absolute;
-
+                            position: relative;
 
                             .page {
                                 position: absolute;
                                 @extend %imgCard;
+
+                                .img{
+                                    width: 100%;
+                                    .hoverText{
+                                        p{
+                                            width: 22vw;
+                                            color: $background;
+                                            text-align: center;
+                                            line-height: 1.75;
+                                        }
+                                    }
+                                }
 
                                 @include mediaQ ('sm1') {
                                     grid-template-columns: repeat(2, 34vw) !important;
@@ -935,6 +946,27 @@ main {
                                             width: 70vw !important;
                                             height: 68vw !important;
                                         }
+                                    }
+                                }
+
+                                &.page1{
+                                    .img{
+                                        @extend %pageOps;
+                                    }
+                                }
+                                &.page2{
+                                    .img{
+                                        @extend %pageOps;
+                                    }
+                                }
+                                &.page3{
+                                    .img{
+                                        @extend %pageOps;
+                                    }
+                                }
+                                &.page4{
+                                    .img{
+                                        @extend %pageOps;
                                     }
                                 }
                             }

@@ -204,6 +204,18 @@ boxImgWrap.each(function () {
     });
 });
 
+//호버시 글씨
+let page = $('.G1Img .page');
+let img = $('.img');
+let imgText = $('.hoverText');
+
+img.on('mouseenter', function () {
+    $(this).find(imgText).fadeIn();
+})
+img.on('mouseleave', function () {
+    $(this).find(imgText).fadeOut();
+})
+
 
 //푸터 애니메이션 구현
 $('section.contact span').css('opacity', '1');
