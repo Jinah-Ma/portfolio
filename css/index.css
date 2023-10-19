@@ -1054,7 +1054,6 @@ main {
   width: 100%;
   height: 214rem;
   background-color: #fff;
-  position: relative;
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects {
@@ -1488,27 +1487,27 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 {
   z-index: 9;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 a:nth-child(1) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(1) img {
   -o-object-position: right;
      object-position: right;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 a:nth-child(3) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(3) img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 a:nth-child(6) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(6) img {
   -o-object-position: left;
      object-position: left;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page2 a:nth-child(5) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page2 div:nth-child(5) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 a:nth-child(2) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 div:nth-child(2) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 a:nth-child(4) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 div:nth-child(4) img {
   -o-object-position: top;
      object-position: top;
 }
@@ -1524,15 +1523,15 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page1 {
   z-index: 9;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page1 a:nth-child(4) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page1 div:nth-child(4) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page1 a:nth-child(5) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page1 div:nth-child(5) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page3 a:nth-child(5) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 .page3 div:nth-child(5) img {
   -o-object-position: top;
      object-position: top;
 }
@@ -1542,15 +1541,15 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page1 {
   z-index: 9;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page1 a:nth-child(1) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page1 div:nth-child(1) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page2 a:nth-child(1) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page2 div:nth-child(1) img {
   -o-object-position: top;
      object-position: top;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page2 a:nth-child(3) img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup4 .page2 div:nth-child(3) img {
   -o-object-position: top;
      object-position: top;
 }
@@ -1560,7 +1559,7 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup5 .page1 {
   z-index: 9;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup5 a img {
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup5 div img {
   background: #fff;
 }
 
@@ -2132,7 +2131,7 @@ footer .footerWrap .contactF .tetxFlexCl {
 }
 @keyframes show {
   0% {
-    transform: translateY(8rem);
+    transform: translateY(12rem);
     overflow: hidden;
     opacity: 0;
   }
