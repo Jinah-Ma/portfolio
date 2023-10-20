@@ -1068,6 +1068,66 @@ main {
     width: 8vw;
   }
 }
+.main-inner section.skills {
+  width: 100%;
+  height: 70rem;
+  background-color: #fff;
+  position: relative;
+}
+.main-inner section.skills .inner {
+  width: 65vw;
+  margin: auto;
+}
+.main-inner section.skills .inner > h3 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #3E614D;
+  padding-top: 12rem;
+}
+.main-inner section.skills .inner .skillLevel {
+  padding-top: 4rem;
+  display: flex;
+  width: 60vw;
+  margin: auto;
+}
+.main-inner section.skills .inner .skillLevel .skills .Level {
+  width: 28vw;
+  height: 12rem;
+}
+.main-inner section.skills .inner .skillLevel .skills .Level .Ltitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3E614D;
+  line-height: 1.333;
+}
+.main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar {
+  position: relative;
+  top: 2rem;
+  width: 26vw;
+  height: 20px;
+  background-color: #F8F2EE;
+}
+.main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #E76162;
+  width: 0;
+}
+.main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar .rate {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  line-height: 20px;
+  font-size: 1.2rem;
+  color: #E76162;
+}
+.main-inner section.skills .inner .skillLevel .skills.skills1 {
+  margin-right: 7rem;
+}
 .main-inner section.projects {
   width: 100%;
   height: 214rem;
@@ -2168,11 +2228,11 @@ footer .footerWrap .contactF .tetxFlexCl {
   }
 }
 
-.main-inner section.about > p, .main-inner section.projects .inner > p, .main-inner section.artworks .inner > p, footer .footerWrap .backImg .footer-inner > p {
+.main-inner section.about > p, .main-inner section.skills .inner > p, .main-inner section.projects .inner > p, .main-inner section.artworks .inner > p, footer .footerWrap .backImg .footer-inner > p {
   position: absolute;
   top: 6rem;
 }
-.main-inner section.about > p:before, .main-inner section.projects .inner > p:before, .main-inner section.artworks .inner > p:before, footer .footerWrap .backImg .footer-inner > p:before {
+.main-inner section.about > p:before, .main-inner section.skills .inner > p:before, .main-inner section.projects .inner > p:before, .main-inner section.artworks .inner > p:before, footer .footerWrap .backImg .footer-inner > p:before {
   content: "";
   display: inline-block;
   width: 5.7rem;

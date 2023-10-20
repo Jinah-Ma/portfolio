@@ -9,11 +9,11 @@ function scrollToSection(index) {
     $('html, body').stop().animate({ scrollTop: offset }, 1000, 'easeOutCirc');
 }
 
-win.on('scroll', function(){
+win.on('scroll', function () {
     let sct = win.scrollTop();
 
-    sections.each(function(i){
-        if(sct >= sections.eq(i).offset().top - 300){
+    sections.each(function (i) {
+        if (sct >= sections.eq(i).offset().top - 300) {
             menu.eq(i).addClass('on').siblings().removeClass('on');
             sections.eq(i).addClass('on').siblings().removeClass('on');
         }
@@ -22,10 +22,10 @@ win.on('scroll', function(){
 
 
 //스크롤 top탭 구현, 애니메이션 구현
- const scrollH = $('header').height();
+const scrollH = $('header').height();
 const scrollReal = $(window).height() - scrollH;
 
-$(window).on('scroll', function () {
+win.on('scroll', function () {
     let sct = $(this).scrollTop();
 
     if (sct > scrollReal) {
@@ -66,23 +66,66 @@ btn.on('click', function () {
             open.css('z-index', '999'),
             btn.css('left', '22rem'),
             overay.show();
-            btn.addClass('active');
-            $('header span:first-child').addClass('active');
-            $('header span.solid').addClass('active');
-            $('header span:last-child').addClass('active');
+        btn.addClass('active');
+        $('header span:first-child').addClass('active');
+        $('header span.solid').addClass('active');
+        $('header span:last-child').addClass('active');
     } else {
         open.css('display', ''),
             open.css('width', ''),
             open.css('z-index', ''),
             btn.css('left', ''),
             overay.hide();
-            btn.removeClass('active');
-            $('header span:first-child').removeClass('active');
-            $('header span.solid').removeClass('active');
-            $('header span:last-child').removeClass('active');
+        btn.removeClass('active');
+        $('header span:first-child').removeClass('active');
+        $('header span.solid').removeClass('active');
+        $('header span:last-child').removeClass('active');
     }
     isOpen = !isOpen;
 });
+
+
+//보유기술
+const progressWrap = $('.progress-bar');
+const animate = $('.Level').offset().top - 600;
+
+console.log(animate);
+
+win.on('scroll', function () {
+    if (win.scrollTop() >= animate && !isOpen) {
+        progressAnimation();
+    }
+});
+
+function progressAnimation() {
+    progressWrap.each(function () {
+        const $this = $(this);
+        const progressBar = $this.find('.bar');
+        const progressText = $this.find('.rate');
+        const progressRate = progressText.attr('data-rate');
+
+        progressBar.stop().animate({ width: progressRate + '%' }, 1500);
+
+        const text = function () {
+            $({ rate: 0 }).stop().animate(
+                { rate: progressRate },
+                {
+                    duration: 1500,
+                    progress: function () {
+                        let now = this.rate;
+                        // console.log(now);
+                        progressText.text(Math.floor(now) + '%');
+                    },
+                    complete : function(){
+                        isOpen = true;
+                    }
+                }
+            )
+        }
+        text();
+    })
+}
+
 
 
 

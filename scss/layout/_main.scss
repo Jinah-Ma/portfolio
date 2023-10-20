@@ -526,6 +526,86 @@ main {
 
     // .history
 
+    section.skills {
+        width: 100%;
+        height: 70rem;
+        background-color: $background;
+        position: relative;
+
+
+        .inner {
+            width: $inner;
+            margin: auto;
+
+            @extend %title;
+
+            >h3 {
+                font-size: 4.8rem;
+                font-weight: 600;
+                color: $secondary;
+                padding-top: 12rem;
+            }
+
+            .skillLevel {
+                padding-top: 4rem;
+                display: flex;
+                width: 60vw;
+                margin: auto;
+
+                .skills {
+                    .Level {
+                        width: 28vw;
+                        height: 12rem;
+
+                        .Ltitle {
+                            font-size: $main2;
+                            font-weight: 500;
+                            color: $secondary;
+                            line-height: 1.333;
+                        }
+
+                        .secon {
+                            .progress-bar {
+                                position: relative;
+                                top: 2rem;
+                                width: 26vw;
+                                height: 20px;
+                                background-color: $background2;
+
+                                & .bar {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    background: $primary;
+                                    width: 0;
+                                }
+
+                                & .rate {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 15px;
+                                    bottom: 0;
+                                    line-height: 20px;
+                                    font-size: 1.2rem;
+                                    color: $primary;
+                                }
+                            }
+                        }
+                    }
+
+                    &.skills1 {
+                        margin-right: 7rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    //.skills
+
     section.projects {
         width: 100%;
         height: 214rem;
@@ -767,7 +847,7 @@ main {
         width: 100%;
         height: 65vw;
         background-color: $background2;
-        
+
 
         @include mediaQ ('lg') {
             height: 70vw;
@@ -780,6 +860,7 @@ main {
         @include mediaQ ('sm1') {
             height: 150vw;
         }
+
         @include mediaQ ('sm2') {
             height: 160vw;
         }
@@ -787,6 +868,7 @@ main {
         @include mediaQ ('smHam') {
             height: 500vw;
         }
+
         @include mediaQ ('smHam2') {
             height: 520vw;
         }
@@ -842,14 +924,17 @@ main {
                                     font-size: $main3;
                                     padding-top: 1.9rem;
                                 }
+
                                 @include mediaQ ('sm2') {
                                     font-size: 1.4rem;
                                     padding-top: 1.9rem;
                                 }
+
                                 @include mediaQ ('smHam') {
                                     font-size: 1.4rem;
                                     padding-top: 1.9rem;
                                 }
+
                                 @include mediaQ ('smHam2') {
                                     font-size: 1.4rem;
                                     padding-top: 1.9rem;
@@ -878,10 +963,11 @@ main {
                                 position: absolute;
                                 @extend %imgCard;
 
-                                .img{
+                                .img {
                                     width: 100%;
-                                    .hoverText{
-                                        p{
+
+                                    .hoverText {
+                                        p {
                                             width: 22vw;
                                             color: $background;
                                             text-align: center;
@@ -904,6 +990,7 @@ main {
                                         }
                                     }
                                 }
+
                                 @include mediaQ ('sm2') {
                                     grid-template-columns: repeat(2, 34vw) !important;
                                     grid-template-rows: repeat(3, 30vw) !important;
@@ -918,6 +1005,7 @@ main {
                                         }
                                     }
                                 }
+
                                 @include mediaQ ('smHam') {
                                     grid-template-columns: repeat(1, 70vw) !important;
                                     grid-template-rows: repeat(6, 68vw) !important;
@@ -933,6 +1021,7 @@ main {
                                         }
                                     }
                                 }
+
                                 @include mediaQ ('smHam2') {
                                     grid-template-columns: repeat(1, 70vw) !important;
                                     grid-template-rows: repeat(6, 68vw) !important;
@@ -949,23 +1038,26 @@ main {
                                     }
                                 }
 
-                                &.page1{
-                                    .img{
+                                &.page1 {
+                                    .img {
                                         @extend %pageOps;
                                     }
                                 }
-                                &.page2{
-                                    .img{
+
+                                &.page2 {
+                                    .img {
                                         @extend %pageOps;
                                     }
                                 }
-                                &.page3{
-                                    .img{
+
+                                &.page3 {
+                                    .img {
                                         @extend %pageOps;
                                     }
                                 }
-                                &.page4{
-                                    .img{
+
+                                &.page4 {
+                                    .img {
                                         @extend %pageOps;
                                     }
                                 }
@@ -980,18 +1072,21 @@ main {
                                         top: 100vw;
                                     }
                                 }
+
                                 @include mediaQ ('sm2') {
                                     >span {
                                         left: 45%;
                                         top: 100vw;
                                     }
                                 }
+
                                 @include mediaQ ('smHam') {
                                     >span {
                                         left: 41%;
                                         top: 430vw;
                                     }
                                 }
+
                                 @include mediaQ ('smHam2') {
                                     >span {
                                         left: 41%;
@@ -999,7 +1094,11 @@ main {
                                     }
                                 }
 
-                                & a.active1,& a.active2,& a.active3,& a.active4,& a.active5{
+                                & a.active1,
+                                & a.active2,
+                                & a.active3,
+                                & a.active4,
+                                & a.active5 {
                                     color: $primary;
                                 }
                             }
