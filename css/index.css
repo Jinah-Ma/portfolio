@@ -1074,6 +1074,16 @@ main {
   background-color: #fff;
   position: relative;
 }
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.skills {
+    height: 120rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.skills {
+    height: 120rem;
+  }
+}
 .main-inner section.skills .inner {
   width: 65vw;
   margin: auto;
@@ -1089,10 +1099,33 @@ main {
   display: flex;
   width: 60vw;
   margin: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.skills .inner .skillLevel {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.skills .inner .skillLevel {
+    flex-direction: column;
+  }
 }
 .main-inner section.skills .inner .skillLevel .skills .Level {
   width: 28vw;
   height: 12rem;
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.skills .inner .skillLevel .skills .Level {
+    width: 60vw;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.skills .inner .skillLevel .skills .Level {
+    width: 60vw;
+    overflow: hidden;
+  }
 }
 .main-inner section.skills .inner .skillLevel .skills .Level .Ltitle {
   font-size: 2rem;
@@ -1106,6 +1139,16 @@ main {
   width: 26vw;
   height: 20px;
   background-color: #F8F2EE;
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar {
+    width: 60vw;
+  }
 }
 .main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar .bar {
   position: absolute;
@@ -1848,7 +1891,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText span.span
 }
 @media screen and (max-width: 644px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText span {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
@@ -1882,6 +1925,11 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
 @media screen and (min-width: 800px) and (max-width: 939px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
     margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
+    margin-left: -8rem;
   }
 }
 footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a {
@@ -1923,7 +1971,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a
   footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a {
     font-size: 1.4rem;
     padding: 1rem 3rem;
-    margin-top: 42vw;
+    margin-top: 37vw;
   }
 }
 footer .footerWrap .contactF {

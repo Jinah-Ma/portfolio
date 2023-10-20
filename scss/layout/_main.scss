@@ -532,6 +532,12 @@ main {
         background-color: $background;
         position: relative;
 
+        @include mediaQ ('smHam') {
+            height: 120rem;
+        }
+        @include mediaQ ('smHam2') {
+            height: 120rem;
+        }
 
         .inner {
             width: $inner;
@@ -551,11 +557,28 @@ main {
                 display: flex;
                 width: 60vw;
                 margin: auto;
+                overflow: hidden;
+
+                @include mediaQ ('smHam') {
+                    flex-direction: column;
+                }
+                @include mediaQ ('smHam2') {
+                    flex-direction: column;
+                }
 
                 .skills {
                     .Level {
                         width: 28vw;
                         height: 12rem;
+
+                        @include mediaQ ('smHam') {
+                            width: 60vw;
+                            overflow: hidden;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 60vw;
+                            overflow: hidden;
+                        }
 
                         .Ltitle {
                             font-size: $main2;
@@ -571,6 +594,13 @@ main {
                                 width: 26vw;
                                 height: 20px;
                                 background-color: $background2;
+
+                                @include mediaQ ('smHam') {
+                                    width:60vw;
+                                }
+                                @include mediaQ ('smHam2') {
+                                    width:60vw;
+                                }
 
                                 & .bar {
                                     position: absolute;

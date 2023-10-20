@@ -170,7 +170,7 @@ footer {
                             }
 
                             @include mediaQ('smHam2') {
-                                font-size: $main1;
+                                font-size: $main2;
                             }
                         }
 
@@ -203,6 +203,9 @@ footer {
 
                             @include mediaQ('sm2') {
                                 margin-top: 4rem;
+                            }
+                            @include mediaQ('smHam2') {
+                                margin-left: -8rem;
                             }
 
                             a {
@@ -238,7 +241,7 @@ footer {
                                 @include mediaQ('smHam2') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
-                                    margin-top: 42vw;
+                                    margin-top: 37vw;
                                 }
                             }
                         }

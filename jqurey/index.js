@@ -44,10 +44,10 @@ win.on('scroll', function(){
     let sct = $(this).scrollTop();
 
     if (sct > scrollReal2) {
-        $('.title-img').stop().fadeIn();
+        $('.title-img').fadeIn();
 
     } else {
-        $('.title-img').stop().fadeOut();
+        $('.title-img').fadeOut();
     }
 })
 
