@@ -3,7 +3,7 @@ header {
     user-select: none;
     height: 100vh;
 
-    .overay{
+    .overay {
         content: "";
         position: fixed;
         width: 100%;
@@ -179,6 +179,10 @@ header {
                 }
 
                 a:hover {
+                    color: $primary;
+                }
+
+                &.on a{
                     color: $primary;
                 }
             }
@@ -399,165 +403,165 @@ header {
             }
         } */
 
-            .header-box {
-                width: 48rem;
-                height: 27rem;
-                background-color: rgba(255, 255, 255, 0.8);
-                position: absolute;
-                padding-top: 0.2rem;
-                left: 50vw;
-                bottom: 6rem;
+        .header-box {
+            width: 48rem;
+            height: 27rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            padding-top: 0.2rem;
+            left: 50vw;
+            bottom: 6rem;
 
-                .box-1 {
-                    width: 38rem;
-                    margin: auto;
-                    margin-top: 3rem;
-                    padding-bottom: 1.2rem;
-                    border-bottom: 2px solid $pointcolor1;
+            .box-1 {
+                width: 38rem;
+                margin: auto;
+                margin-top: 3rem;
+                padding-bottom: 1.2rem;
+                border-bottom: 2px solid $pointcolor1;
 
-                    span:nth-child(1) {
-                        font-size: $h4;
-                        font-weight: 500;
-                    }
-
-                    p {
-                        color: $text3;
-                        margin-top: 1.333rem;
-                    }
-
-                    @include mediaQ('md') {
-                        width: 30rem;
-                    }
-
-                    @include mediaQ('sm1') {
-                        width: 25rem;
-                    }
-
-                    @include mediaQ('sm2') {
-                        width: 20rem;
-                        margin-top: 1.5rem;
-                    }
-
-                    @include mediaQ('smHam') {
-                        margin-top: 1.2rem;
-                    }
+                span:nth-child(1) {
+                    font-size: $h4;
+                    font-weight: 500;
                 }
 
-                .box-2 {
-                    width: 38rem;
-                    margin: auto;
+                p {
+                    color: $text3;
+                    margin-top: 1.333rem;
+                }
+
+                @include mediaQ('md') {
+                    width: 30rem;
+                }
+
+                @include mediaQ('sm1') {
+                    width: 25rem;
+                }
+
+                @include mediaQ('sm2') {
+                    width: 20rem;
+                    margin-top: 1.5rem;
+                }
+
+                @include mediaQ('smHam') {
                     margin-top: 1.2rem;
-
-                    .tell,
-                    .mail {
-                        line-height: 1.333 !important;
-
-                        span:first-child {
-                            color: $primary;
-                            font-size: $main2;
-                        }
-
-                        span:last-child {
-                            font-size: $main2;
-                            color: $text2;
-                        }
-
-                        @include mediaQ('sm2') {
-                            display: flex;
-                            flex-direction: column
-                        }
-                    }
-
-                    @include mediaQ('md') {
-                        width: 30rem;
-                    }
-
-                    @include mediaQ('sm1') {
-                        width: 25rem;
-                    }
-
-                    @include mediaQ('sm2') {
-                        width: 20rem;
-                    }
                 }
+            }
 
-                .box-3 {
-                    @extend %boxHover;
+            .box-2 {
+                width: 38rem;
+                margin: auto;
+                margin-top: 1.2rem;
 
-                    @include mediaQ('sm1') {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
+                .tell,
+                .mail {
+                    line-height: 1.333 !important;
 
-                        a {
-                            padding: 1.5rem 7.2rem !important;
-                        }
+                    span:first-child {
+                        color: $primary;
+                        font-size: $main2;
+                    }
+
+                    span:last-child {
+                        font-size: $main2;
+                        color: $text2;
                     }
 
                     @include mediaQ('sm2') {
                         display: flex;
-                        flex-direction: column;
-                        text-align: center;
-
-                        a {
-                            padding: 1.5rem 7.2rem !important;
-                        }
+                        flex-direction: column
                     }
                 }
 
                 @include mediaQ('md') {
-                    width: 40rem;
-                    height: 30rem;
+                    width: 30rem;
                 }
 
                 @include mediaQ('sm1') {
-                    width: 35rem;
-                    height: 35rem;
+                    width: 25rem;
                 }
 
                 @include mediaQ('sm2') {
-                    width: 30rem;
-                    height: 37rem;
-                }
-
-                @include mediaQ('smHam') {
-                    left: 35vw;
-                    bottom: 3rem;
-                    height: 24rem;
-                }
-
-                @include mediaQ('smHam2') {
-                    left: 0.4vw;
+                    width: 20rem;
                 }
             }
 
-            .header-box {
-                @extend %show;
+            .box-3 {
+                @extend %boxHover;
+
+                @include mediaQ('sm1') {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    a {
+                        padding: 1.5rem 7.2rem !important;
+                    }
+                }
+
+                @include mediaQ('sm2') {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    a {
+                        padding: 1.5rem 7.2rem !important;
+                    }
+                }
+            }
+
+            @include mediaQ('md') {
+                width: 40rem;
+                height: 30rem;
+            }
+
+            @include mediaQ('sm1') {
+                width: 35rem;
+                height: 35rem;
+            }
+
+            @include mediaQ('sm2') {
+                width: 30rem;
+                height: 37rem;
+            }
+
+            @include mediaQ('smHam') {
+                left: 35vw;
+                bottom: 3rem;
+                height: 24rem;
+            }
+
+            @include mediaQ('smHam2') {
+                left: 0.4vw;
             }
         }
 
-        @include mediaQ ('smHam') {
-            left: 0;
-            width: 100%;
-        }
-
-        @include mediaQ ('smHam2') {
-            left: 0;
-            width: 100%;
+        .header-box {
+            @extend %show;
         }
     }
 
-    .toptab {
-        position: fixed;
-        z-index: 999;
-        right: 3rem;
-        bottom: 3rem;
-        background: transparent;
-
-        img {
-            width: 3rem;
-            height: auto;
-        }
-
-        display: none;
+    @include mediaQ ('smHam') {
+        left: 0;
+        width: 100%;
     }
+
+    @include mediaQ ('smHam2') {
+        left: 0;
+        width: 100%;
+    }
+}
+
+.toptab {
+    position: fixed;
+    z-index: 999;
+    right: 3rem;
+    bottom: 3rem;
+    background: transparent;
+
+    img {
+        width: 3rem;
+        height: auto;
+    }
+
+    display: none;
+}

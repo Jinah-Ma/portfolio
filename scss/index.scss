@@ -1,5 +1,23 @@
 body {
     width: 100vw;
+
+    &::-webkit-scrollbar{
+        width: 2rem;
+        background-color: #fff;
+    }
+
+    &::-webkit-scrollbar-button{
+        width: 2rem;
+        height: 2rem;
+        background-color: #E76162;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        width: 2rem;
+        height: 4rem;
+        background-color: #FEE1E3;
+        box-shadow: 0 1px 3px #888;
+    }
 }
 
 .wrap {

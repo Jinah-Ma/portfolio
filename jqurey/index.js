@@ -1,21 +1,42 @@
+//nav 구현
+const win = $(window);
+const menu = $('.menu-name li');
+const sections = $('section');
+
+function scrollToSection(index) {
+    let section = sections.eq(index);
+    let offset = section.offset().top;
+    $('html, body').stop().animate({ scrollTop: offset }, 1000, 'easeOutCirc');
+}
+
+win.on('scroll', function(){
+    let sct = win.scrollTop();
+
+    sections.each(function(i){
+        if(sct >= sections.eq(i).offset().top - 300){
+            menu.eq(i).addClass('on').siblings().removeClass('on');
+            sections.eq(i).addClass('on').siblings().removeClass('on');
+        }
+    });
+});
+
+
 //스크롤 top탭 구현, 애니메이션 구현
-const scrollH = $('header').height();
+ const scrollH = $('header').height();
 const scrollReal = $(window).height() - scrollH;
 
 $(window).on('scroll', function () {
     let sct = $(this).scrollTop();
 
     if (sct > scrollReal) {
-        $('.toptab').show();
-        $('.title-img').addClass('show').css('display', 'block');
+        $('.toptab').fadeIn();
 
     } else {
-        $('.toptab').hide();
-        $('.title-img').removeClass('show').css('display', 'none');
+        $('.toptab').fadeOut();
     }
-
 })
 
+/*
 // 애니메이션 구현
 $(window).on('scroll', function () {
     let windowHeight = $(window).height();
@@ -27,7 +48,7 @@ $(window).on('scroll', function () {
     } else {
         $('.contactText').hide();
     }
-});
+}); */
 
 
 
@@ -218,6 +239,6 @@ img.on('mouseleave', function () {
 
 
 //푸터 애니메이션 구현
-$('section.contact span').css('opacity', '1');
-$('.conBox').css('opacity', '1');
+/* $('section.contact span').css('opacity', '1');
+$('.conBox').css('opacity', '1'); */
 

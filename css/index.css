@@ -2,6 +2,21 @@
 body {
   width: 100vw;
 }
+body::-webkit-scrollbar {
+  width: 2rem;
+  background-color: #fff;
+}
+body::-webkit-scrollbar-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: #E76162;
+}
+body::-webkit-scrollbar-thumb {
+  width: 2rem;
+  height: 4rem;
+  background-color: #FEE1E3;
+  box-shadow: 0 1px 3px #888;
+}
 
 .wrap {
   width: 100vw;
@@ -214,6 +229,9 @@ header > .ham {
   font-size: 2rem;
 }
 .gnb .menu-name li a:hover {
+  color: #E76162;
+}
+.gnb .menu-name li.on a {
   color: #E76162;
 }
 .gnb .copy {
