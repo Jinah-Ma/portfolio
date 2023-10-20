@@ -23,12 +23,12 @@ win.on('scroll', function () {
 
 //스크롤 top탭 구현, 애니메이션 구현
 const scrollH = $('header').height();
-const scrollReal = $(window).height() - scrollH;
+const scrollReal1 = $(window).height() - scrollH;
 
 win.on('scroll', function () {
     let sct = $(this).scrollTop();
 
-    if (sct > scrollReal) {
+    if (sct > scrollReal1) {
         $('.toptab').fadeIn();
 
     } else {
@@ -36,10 +36,25 @@ win.on('scroll', function () {
     }
 })
 
-/*
-// 애니메이션 구현
-$(window).on('scroll', function () {
-    let windowHeight = $(window).height();
+//about 애니메이션 구현
+const scrollA = $('section.about').height();
+const scrollReal2 = $(window).height() - scrollH + scrollA;
+
+win.on('scroll', function(){
+    let sct = $(this).scrollTop();
+
+    if (sct > scrollReal2) {
+        $('.title-img').stop().fadeIn();
+
+    } else {
+        $('.title-img').stop().fadeOut();
+    }
+})
+
+
+// 푸터 애니메이션 구현
+win.on('scroll', function () {
+    let windowHeight = win.height();
     let scroll = $(window).scrollTop();
     let footerTop = $('footer').offset().top;
 
@@ -48,7 +63,7 @@ $(window).on('scroll', function () {
     } else {
         $('.contactText').hide();
     }
-}); */
+});
 
 
 
@@ -116,7 +131,7 @@ function progressAnimation() {
                         // console.log(now);
                         progressText.text(Math.floor(now) + '%');
                     },
-                    complete : function(){
+                    complete: function () {
                         isOpen = true;
                     }
                 }
@@ -279,9 +294,4 @@ img.on('mouseenter', function () {
 img.on('mouseleave', function () {
     $(this).find(imgText).fadeOut();
 })
-
-
-//푸터 애니메이션 구현
-/* $('section.contact span').css('opacity', '1');
-$('.conBox').css('opacity', '1'); */
 
