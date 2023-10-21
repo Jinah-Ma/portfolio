@@ -3,6 +3,8 @@ const win = $(window);
 const menu = $('.menu-name li');
 const sections = $('section');
 
+let isOpen = false;
+
 function scrollToSection(index) {
     let section = sections.eq(index);
     let offset = section.offset().top;
@@ -37,18 +39,16 @@ win.on('scroll', function () {
 })
 
 //about 애니메이션 구현
-const scrollA = $('section.about').height();
-const scrollReal2 = $(window).height() - scrollH + scrollA;
+const scrollA = $('.about').height();
+const scrollReal2 = $(window).height() - scrollA;
 
-win.on('scroll', function(){
+win.on('scroll', function () {
     let sct = $(this).scrollTop();
 
-    if (sct > scrollReal2) {
-        $('.title-img').fadeIn();
-
-    } else {
-        $('.title-img').fadeOut();
-    }
+if (isOpen && sct > scrollReal2) {
+    $('.title-img').fadeIn();
+    isOpen = true;
+}
 })
 
 
@@ -60,8 +60,6 @@ win.on('scroll', function () {
 
     if (scroll + windowHeight >= footerTop) {
         $('.contactText').fadeIn(800);
-    } else {
-        $('.contactText').hide();
     }
 });
 
@@ -71,8 +69,6 @@ win.on('scroll', function () {
 let btn = $('header .ham');
 let open = $('header .gnb');
 let overay = $('header .overay');
-
-let isOpen = false;
 
 btn.on('click', function () {
     if (!isOpen) {
