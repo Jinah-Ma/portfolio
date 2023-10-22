@@ -20,6 +20,7 @@ main {
         height: 88rem;
         margin: auto;
         position: relative;
+        overflow: hidden;
 
         @include mediaQ ('smHam') {
             height: 145rem;
@@ -39,6 +40,7 @@ main {
             gap: 6vw;
             align-items: center;
             padding-top: 16.2rem;
+            
 
             @include mediaQ ('smHam') {
                 flex-direction: column;
@@ -344,8 +346,19 @@ main {
 
             & .title-img {
                 position: relative;
+                width: 22vw;
+                height: auto;
+                right: 0;
+                top: 26rem;
+                opacity: 0;
+
+                transform: translateY(85rem);
+                transition: transform 1.5s,
+                opacity 1.5s;
 
                 img {
+                    position: absolute;
+                    top: 0;
                     width: 22vw;
                     height: 30vw;
                     z-index: 0;
@@ -409,15 +422,6 @@ main {
                     }
                 }
 
-                & {
-                    animation: show2 both 1s;
-                    animation-iteration-count: 1;
-                    opacity: 0;
-                    transform: translateY(14rem);
-                    overflow: hidden;
-                    opacity: 0;
-                    transition: transform 2.5s, opacity 2.5s;
-                }
             }
         }
 

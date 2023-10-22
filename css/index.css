@@ -569,6 +569,13 @@ header > .ham {
     left: 0.4vw;
   }
 }
+.header-inner .home .header-box {
+  animation: show1 both 1s;
+  opacity: 0;
+  transform: translateY(12rem);
+  overflow: hidden;
+  transition: transform 1s, opacity 1s;
+}
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .header-inner {
     left: 0;
@@ -621,6 +628,7 @@ main {
   height: 88rem;
   margin: auto;
   position: relative;
+  overflow: hidden;
   /* 타이틀 base */
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
@@ -892,8 +900,17 @@ main {
 }
 .main-inner section.about .title-flex .title-img {
   position: relative;
+  width: 22vw;
+  height: auto;
+  right: 0;
+  top: 26rem;
+  opacity: 0;
+  transform: translateY(85rem);
+  transition: transform 1.5s, opacity 1.5s;
 }
 .main-inner section.about .title-flex .title-img img {
+  position: absolute;
+  top: 0;
   width: 22vw;
   height: 30vw;
   z-index: 0;
@@ -2253,23 +2270,6 @@ footer .footerWrap .contactF .tetxFlexCl {
 @media screen and (max-width: 644px) {
   footer .footerWrap .contactF .tetxFlexCl {
     transform: translate(-40%);
-  }
-}
-
-.header-inner .home .header-box, .main-inner section.about .title-flex .title-img {
-  animation: show both 1s;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-@keyframes show {
-  from {
-    transform: translateY(12rem);
-    overflow: hidden;
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
