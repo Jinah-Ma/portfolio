@@ -182,7 +182,7 @@ header {
                     color: $primary;
                 }
 
-                &.on a{
+                &.on a {
                     color: $primary;
                 }
             }
@@ -533,10 +533,16 @@ header {
             @include mediaQ('smHam2') {
                 left: 0.4vw;
             }
-        }
 
-        .header-box {
-            @extend %show;
+            & {
+                animation: show1 both 1s;
+                animation-iteration-count: 1;
+                opacity: 0;
+                transform: translateY(12rem);
+                overflow: hidden;
+                opacity: 0;
+                transition: transform 1s, opacity 1s;
+            }
         }
     }
 

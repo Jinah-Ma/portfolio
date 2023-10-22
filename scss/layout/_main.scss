@@ -409,7 +409,15 @@ main {
                     }
                 }
 
-                @extend %show;
+                & {
+                    animation: show2 both 1s;
+                    animation-iteration-count: 1;
+                    opacity: 0;
+                    transform: translateY(14rem);
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: transform 2.5s, opacity 2.5s;
+                }
             }
         }
 
@@ -535,6 +543,7 @@ main {
         @include mediaQ ('smHam') {
             height: 120rem;
         }
+
         @include mediaQ ('smHam2') {
             height: 120rem;
         }
@@ -562,6 +571,7 @@ main {
                 @include mediaQ ('smHam') {
                     flex-direction: column;
                 }
+
                 @include mediaQ ('smHam2') {
                     flex-direction: column;
                 }
@@ -575,6 +585,7 @@ main {
                             width: 60vw;
                             overflow: hidden;
                         }
+
                         @include mediaQ ('smHam2') {
                             width: 60vw;
                             overflow: hidden;
@@ -596,10 +607,11 @@ main {
                                 background-color: $background2;
 
                                 @include mediaQ ('smHam') {
-                                    width:60vw;
+                                    width: 60vw;
                                 }
+
                                 @include mediaQ ('smHam2') {
-                                    width:60vw;
+                                    width: 60vw;
                                 }
 
                                 & .bar {

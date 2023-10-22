@@ -22,33 +22,57 @@ win.on('scroll', function () {
     });
 });
 
+//홈 박스애니메이션 구현
+win.on('scroll', function () {
+    const winH = win.height();
+    let scroll = $(window).scrollTop();
+    let headerBox  = $('.header-inner').offset().top;
+
+    console.log(headerBox);
+
+    if (scroll + winH >= headerBox) {
+        $('.header-box ').css({
+            opacity: 1,
+            transform : 'translateY(0)',
+        });
+    }
+})
+
 
 //스크롤 top탭 구현, 애니메이션 구현
 const scrollH = $('header').height();
 const scrollReal1 = $(window).height() - scrollH;
+const topTab = $('.toptab');
 
 win.on('scroll', function () {
     let sct = $(this).scrollTop();
 
     if (sct > scrollReal1) {
-        $('.toptab').fadeIn();
+        topTab.fadeIn();
 
     } else {
-        $('.toptab').fadeOut();
+        topTab.fadeOut();
     }
 })
 
+topTab.on('click', function(){
+    $('html, body').animate({scrollTop : 0}, 'slow');
+})
+
 //about 애니메이션 구현
-const scrollA = $('.about').height();
-const scrollReal2 = $(window).height() - scrollA;
-
 win.on('scroll', function () {
-    let sct = $(this).scrollTop();
+    const winH = win.height();
+    let scroll = $(window).scrollTop();
+    let about = $('.main-inner').offset().top;
 
-if (isOpen && sct > scrollReal2) {
-    $('.title-img').fadeIn();
-    isOpen = true;
-}
+    console.log(about);
+
+    if (scroll + winH >= about) {
+        $('.title-img').css({
+            opacity: 1,
+            transform : 'translateY(0)',
+        });
+    }
 })
 
 
