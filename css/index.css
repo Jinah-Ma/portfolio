@@ -628,7 +628,6 @@ main {
   height: 88rem;
   margin: auto;
   position: relative;
-  overflow: hidden;
   /* 타이틀 base */
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
@@ -645,7 +644,6 @@ main {
   display: flex;
   flex-direction: row;
   gap: 6vw;
-  align-items: center;
   padding-top: 16.2rem;
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
@@ -903,7 +901,7 @@ main {
   width: 22vw;
   height: auto;
   right: 0;
-  top: 26rem;
+  margin-top: 50rem;
   opacity: 0;
   transform: translateY(85rem);
   transition: transform 1.5s, opacity 1.5s;

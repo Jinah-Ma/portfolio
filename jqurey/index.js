@@ -63,6 +63,15 @@ win.on('scroll', function () {
             transform : 'translateY(-53rem)',
         });
     }
+
+    if ($(window).width <= 799){
+        if (scroll + winH >= about) {
+            $('.title-img').css({
+                opacity: 1,
+                transform : 'translateY(-26rem)',
+            });
+        }
+    }
 })
 
 

@@ -20,7 +20,6 @@ main {
         height: 88rem;
         margin: auto;
         position: relative;
-        overflow: hidden;
 
         @include mediaQ ('smHam') {
             height: 145rem;
@@ -38,9 +37,7 @@ main {
             display: flex;
             flex-direction: row;
             gap: 6vw;
-            align-items: center;
             padding-top: 16.2rem;
-            
 
             @include mediaQ ('smHam') {
                 flex-direction: column;
@@ -349,7 +346,7 @@ main {
                 width: 22vw;
                 height: auto;
                 right: 0;
-                top: 26rem;
+                margin-top: 50rem;
                 opacity: 0;
 
                 transform: translateY(85rem);
