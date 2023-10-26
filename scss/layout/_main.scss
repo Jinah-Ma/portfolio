@@ -351,7 +351,7 @@ main {
 
                 transform: translateY(85rem);
                 transition: transform 1.5s,
-                opacity 1.5s;
+                    opacity 1.5s;
 
                 img {
                     position: absolute;
@@ -751,11 +751,20 @@ main {
 
                 &.project1 {
                     @extend %projectCard;
+
+                    @extend %projectMockup;
+                    // 목업 스크롤
                 }
 
                 &.project2 {
                     @extend %projectCard;
                     right: 0;
+
+                    @extend %projectMockup;
+                    // 목업 스크롤
+
+                    @extend %projectMockupMobile;
+                    // 목업 스크롤 모바일
 
                     @include mediaQ ('sm1') {
                         right: initial;
@@ -782,6 +791,12 @@ main {
                     @extend %projectCard;
                     top: 120rem !important;
 
+                    @extend %projectMockup;
+                    // 목업 스크롤
+
+                    @extend %projectMockupMobile;
+                    // 목업 스크롤 모바일
+
                     @include mediaQ ('sm1') {
                         top: 190rem !important;
                     }
@@ -803,6 +818,12 @@ main {
                     @extend %projectCard;
                     right: 0;
                     top: 120rem !important;
+
+                    @extend %projectMockup;
+                    // 목업 스크롤
+
+                    @extend %projectMockupMobile;
+                    // 목업 스크롤 모바일
 
                     @include mediaQ ('sm1') {
                         right: unset;

@@ -2379,6 +2379,94 @@ footer .footerWrap .contactF .tetxFlexCl {
   padding: 1.2rem 2rem;
 }
 
+.main-inner section.projects .inner .project.project1 .mockupAll, .main-inner section.projects .inner .project.project2 .mockupAll, .main-inner section.projects .inner .project.project3 .mockupAll, .main-inner section.projects .inner .project.project4 .mockupAll {
+  margin-bottom: -11vw;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.pc, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.pc, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.pc, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.pc {
+  position: relative;
+  width: 100%;
+  height: 14.5vw;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.pc .mask1, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.pc .mask1, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.pc .mask1, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.pc .mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.pc .mask1 img, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.pc .mask1 img, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.pc .mask1 img, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.pc .mask1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.tab, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.tab, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.tab, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.tab {
+  position: relative;
+  width: 10vw;
+  height: auto;
+  z-index: 2;
+  top: -6vw;
+  left: 18vw;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.tab > img, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.tab > img, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.tab > img, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.tab > img {
+  position: relative;
+  transform: rotate(-90deg);
+  width: 8vw;
+  height: auto;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.tab .mask2, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.tab .mask2, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.tab .mask2, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.tab .mask2 {
+  width: 105%;
+  height: 67%;
+  overflow: hidden;
+  z-index: 3;
+  position: absolute;
+  top: 1.8vw;
+  left: -1.2vw;
+}
+.main-inner section.projects .inner .project.project1 .mockupAll .mockup.tab .mask2 img, .main-inner section.projects .inner .project.project2 .mockupAll .mockup.tab .mask2 img, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.tab .mask2 img, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.tab .mask2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.main-inner section.projects .inner .project.project2 .mockupAll, .main-inner section.projects .inner .project.project3 .mockupAll, .main-inner section.projects .inner .project.project4 .mockupAll {
+  margin-bottom: -19.5vw !important;
+}
+.main-inner section.projects .inner .project.project2 .mockupAll .mockup.mobile, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.mobile {
+  position: relative;
+  width: 4vw;
+  height: auto;
+  z-index: 3;
+  top: -13vw;
+  left: 25vw;
+}
+.main-inner section.projects .inner .project.project2 .mockupAll .mockup.mobile > img, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile > img, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.mobile > img {
+  position: relative;
+  width: 4vw;
+  height: auto;
+}
+.main-inner section.projects .inner .project.project2 .mockupAll .mockup.mobile .mask3, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile .mask3, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.mobile .mask3 {
+  width: 95%;
+  height: 96.5%;
+  overflow: hidden;
+  z-index: 4;
+  position: absolute;
+  top: 0.2vw;
+  left: 0.1vw;
+  border-radius: 10% 10%;
+}
+.main-inner section.projects .inner .project.project2 .mockupAll .mockup.mobile .mask3 img, .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile .mask3 img, .main-inner section.projects .inner .project.project4 .mockupAll .mockup.mobile .mask3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 875%;
+}
+
 .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page {
   width: 100%;
   display: grid;

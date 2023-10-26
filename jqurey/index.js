@@ -24,7 +24,7 @@ win.on('scroll', function () {
 
 //홈 박스애니메이션 구현
 header();
-function header () {
+function header() {
     $('.header-box').css({
         opacity: 1,
         transform: 'translateY(0)',
@@ -60,15 +60,15 @@ win.on('scroll', function () {
     if (scroll + winH >= about) {
         $('.title-img').css({
             opacity: 1,
-            transform : 'translateY(-53rem)',
+            transform: 'translateY(-53rem)',
         });
     }
 
-    if ($(window).width <= 799){
+    if ($(window).width <= 799) {
         if (scroll + winH >= about) {
             $('.title-img').css({
                 opacity: 1,
-                transform : 'translateY(-26rem)',
+                transform: 'translateY(-26rem)',
             });
         }
     }
@@ -159,6 +159,39 @@ function progressAnimation() {
         text();
     })
 }
+
+//마스크
+const devices = $('.mockup.pc, .mockup.tab, .mockup.mobile');
+
+reScroll();
+function reScroll() {
+    devices.each(function (i, deviceEl) {
+        let device = $(this);
+        let screen = device.find('.mask>img');
+        let mask = device.find('.mask');
+
+        let heightD = screen.innerHeight() - mask.innerHeight();
+
+        device.data('heightD', heightD);
+
+        device.on({
+            mouseenter: function () {
+                screen.stop().animate({
+                    top: -heightD
+                }, 3000)
+            },
+            mouseleave: function () {
+                screen.stop().animate({
+                    top: 0
+                }, 3000)
+            }
+        });
+    })
+}
+win.on('resize', function () {
+    reScroll();
+})
+
 
 
 
