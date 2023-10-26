@@ -173,6 +173,7 @@ function reScroll() {
         let heightD = screen.innerHeight() - mask.innerHeight();
 
         device.data('heightD', heightD);
+        // console.log(heightD);
 
         device.on({
             mouseenter: function () {
