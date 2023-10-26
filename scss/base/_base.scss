@@ -72,9 +72,8 @@
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: $background;
 
-    img {
-        width: 30vw;
-        height: auto;
+    @include mediaQ ('sm1') {
+        height: 78rem;
     }
 
     .pInfo {
@@ -82,7 +81,7 @@
         margin: auto;
 
         .title {
-            padding: 4rem 0;
+            padding: 0 0 2rem 0;
 
             h3 {
                 font-size: $h4;
@@ -124,12 +123,26 @@
 
 %projectMockup {
     .mockupAll {
-        margin-bottom: -11vw;
+        margin-bottom: -7.5vw;
+
         .mockup {
             &.pc {
                 position: relative;
                 width: 100%;
                 height: 14.5vw;
+
+                @include mediaQ ('sm1') {
+                    height: 29vw;
+                }
+                @include mediaQ ('sm2') {
+                    height: 29vw;
+                }
+                @include mediaQ ('smHam') {
+                    height: 29vw;
+                }
+                @include mediaQ ('smHam2') {
+                    height: 29vw;
+                }
 
                 .mask1 {
                     position: absolute;
@@ -157,11 +170,53 @@
                 top: -6vw;
                 left: 18vw;
 
+                @include mediaQ ('sm1') {
+                    left: 40vw;
+                    width: 13vw;
+                    height: auto;
+                    top: -8vw;
+                }
+                @include mediaQ ('sm2') {
+                    left: 40vw;
+                    width: 13vw;
+                    height: auto;
+                    top: -8vw;
+                }
+                @include mediaQ ('smHam') {
+                    left: 40vw;
+                    width: 13vw;
+                    height: auto;
+                    top: -8vw;
+                }
+                @include mediaQ ('smHam2') {
+                    left: 40vw;
+                    width: 13vw;
+                    height: auto;
+                    top: -8vw;
+                }
+
                 &>img {
                     position: relative;
                     transform: rotate(-90deg);
                     width: 8vw;
                     height: auto;
+
+                    @include mediaQ ('sm1') {
+                        width: 13vw;
+                        height: auto;
+                    }
+                    @include mediaQ ('sm2') {
+                        width: 13vw !important;
+                        height: auto;
+                    }
+                    @include mediaQ ('smHam') {
+                        width: 13vw !important;
+                        height: auto;
+                    }
+                    @include mediaQ ('smHam2') {
+                        width: 13vw !important;
+                        height: auto;
+                    }
                 }
 
                 & .mask2 {
@@ -173,23 +228,60 @@
                     top: 1.8vw;
                     left: -1.2vw;
 
+                    @include mediaQ ('sm1') {
+                        width: 131%;
+                        height: 65%;
+                        top: 3vw;
+                        left: -2vw;
+                        padding-bottom: 93%;
+                    }
+                    @include mediaQ ('sm2') {
+                        width: 131%;
+                        height: 65%;
+                        top: 3vw;
+                        left: -2vw;
+                        padding-bottom: 93%;
+                    }
+                    @include mediaQ ('smHam') {
+                        width: 131%;
+                        height: 65%;
+                        top: 3vw;
+                        left: -2vw;
+                        padding-bottom: 93%;
+                    }
+                    @include mediaQ ('smHam2') {
+                        width: 131%;
+                        height: 65%;
+                        top: 3vw;
+                        left: -2vw;
+                        padding-bottom: 93%;
+                    }
+
                     img {
                         position: absolute;
                         top: 0;
                         left: 0;
                         width: 100%;
                         height: auto;
+
+                        @include mediaQ ('sm2') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 100% !important;
+                        }
                     }
                 }
             }
         }
     }
-
 }
 
-%projectMockupMobile{
+%projectMockupMobile {
     .mockupAll {
-        margin-bottom: -19.5vw !important;
         .mockup {
             &.mobile {
                 position: relative;
@@ -199,15 +291,53 @@
                 top: -13vw;
                 left: 25vw;
 
+                @include mediaQ ('sm1') {
+                    width: 7.1vw;
+                    height: auto;
+                    top: -20.5vw;
+                    left: 51vw;
+                }
+                @include mediaQ ('sm2') {
+                    width: 7.1vw;
+                    height: auto;
+                    top: -20.5vw;
+                    left: 51vw;
+                }
+                @include mediaQ ('smHam') {
+                    width: 7.1vw;
+                    height: auto;
+                    top: -20.5vw;
+                    left: 51vw;
+                }
+                @include mediaQ ('smHam2') {
+                    width: 7.1vw;
+                    height: auto;
+                    top: -20.5vw;
+                    left: 51vw;
+                }
+
                 &>img {
                     position: relative;
                     width: 4vw;
                     height: auto;
+
+                    @include mediaQ ('sm1') {
+                        width: 7vw;
+                    }
+                    @include mediaQ ('sm2') {
+                        width: 7vw !important;
+                    }
+                    @include mediaQ ('smHam') {
+                        width: 7vw !important;
+                    }
+                    @include mediaQ ('smHam2') {
+                        width: 7vw !important;
+                    }
                 }
 
                 & .mask3 {
                     width: 95%;
-                    height: 96.5%;
+                    height: 96.8%;
                     overflow: hidden;
                     z-index: 4;
                     position: absolute;
@@ -220,7 +350,17 @@
                         top: 0;
                         left: 0;
                         width: 100%;
-                        height: 875%;
+                        height: auto;
+
+                        @include mediaQ ('sm2') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 100% !important;
+                        }
                     }
                 }
             }
