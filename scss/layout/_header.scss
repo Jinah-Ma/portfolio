@@ -193,7 +193,7 @@ header {
         font-size: $info1;
         color: $text3;
         text-align: center;
-        margin-top: 38rem;
+        margin-top: 35rem;
 
         &:before {
             content: '';
@@ -252,296 +252,267 @@ header {
 
     .home {
         #container {
-            font-size: $h1;
             position: absolute;
-            color: $text2;
             top: 8vw;
             left: 9vw;
-            line-height: 1.5;
-            color: $text2;
             text-transform: uppercase;
             width: 100%;
-            display: block;
+            display: flex;
+            flex-direction: column;
 
-            strong {
+            span.animated-text span.letter {
+                display: inline-block;
+            }
+
+            span.animated-text.wave span.letter {
+                animation: 1s wave backwards ease-in-out infinite;
+            }
+
+            span.animated-text.flip span.letter {
+                animation: 1s flip forwards ease-in-out infinite;
+            }
+
+            span.animated-text.tilted span.letter {
+                animation: 1s tilted forwards ease-in-out infinite;
+            }
+
+            span {
+                @keyframes wave {
+                    0% {
+                        transform: translateY(0em);
+                    }
+
+                    50% {
+                        transform: translateY(-1rem);
+                    }
+                }
+
+                @keyframes flip {
+                    0% {
+                        transform: rotateX(0deg);
+                    }
+
+                    50% {
+                        transform: rotateX(90deg);
+                    }
+
+                    100% {
+                        transform: rotateX(0deg);
+                    }
+                }
+
+                @keyframes tilted {
+                    0% {
+                        transform: rotateZ(-15deg);
+                    }
+
+                    50% {
+                        transform: rotateZ(15deg);
+                    }
+
+                    100% {
+                        transform: rotateZ(-15deg);
+                    }
+                }
+            }
+
+            span {
+                font-size: $h1;
+                color: $text2;
+                line-height: 1.5;
+                font-family: 'SpoqaHanSansNeo-Regular';
+                font-weight: 600;
                 color: $primary;
+
+                @include mediaQ('md') {
+                    left: 5vw;
+                    font-size: $h3;
+                }
+            
+                @include mediaQ('sm1') {
+                    left: 2vw;
+                    font-size: $h3;
+                }
+            
+                @include mediaQ('sm2') {
+                    left: 1vw;
+                    font-size: $h3;
+                }
+            
+                @include mediaQ('smHam') {
+                    left: 1.5vw;
+                    font-size: $h3;
+                }
+            
+                @include mediaQ('smHam2') {
+                    font-size: $h3 !important;
+                    left: 1.5vw;
+                }
+            }
+
+            @include mediaQ('sm1') {
+                top: 22vw;
+                left: 5vw;
+            }
+
+            @include mediaQ('sm2') {
+                top: 22vw;
+                left: 5vw;
+            }
+        
+            @include mediaQ('smHam') {
+                top: 28vw;
+                left: 5vw;
+            }
+        
+            @include mediaQ('smHam2') {
+                top: 56vw;
+                left: 5vw;
+            }
+        }
+
+
+    }
+
+
+    .header-box {
+        width: 48rem;
+        height: 27rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        padding-top: 0.2rem;
+        left: 50vw;
+        bottom: 6rem;
+
+        .box-1 {
+            width: 38rem;
+            margin: auto;
+            margin-top: 3rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 2px solid $pointcolor1;
+
+            span:nth-child(1) {
+                font-size: $h4;
                 font-weight: 500;
             }
 
-
-            #flip {
-                height: 50px;
-                overflow: hidden;
-
-                &>div>div {
-                    color: #fff;
-                    display: inline-block;
-                }
-
-                & div:first-child {
-                    animation: show2 5s linear infinite;
-                    line-height: 0.7;
-                }
-
-                & div:nth-child(2) {
-                    line-height: 2.7;
-                }
-
-                & div:last-child {
-                    line-height: 0.6;
-                }
+            p {
+                color: $text3;
+                margin-top: 1.333rem;
             }
-
-            @keyframes show2 {
-                0% {
-                    margin-top: -270px;
-                }
-
-                5% {
-                    margin-top: -180px;
-                }
-
-                33% {
-                    margin-top: -180px;
-                }
-
-                38% {
-                    margin-top: -90px;
-                }
-
-                66% {
-                    margin-top: -90px;
-                }
-
-                71% {
-                    margin-top: 0px;
-                }
-
-                99.99% {
-                    margin-top: 0px;
-                }
-
-                100% {
-                    margin-top: -270px;
-                }
-            }
-
 
             @include mediaQ('md') {
-                left: 5vw;
-                // font-size: $h3;
+                width: 30rem;
             }
 
             @include mediaQ('sm1') {
-                margin-left: 4vw;
-                left: 2vw;
-                // font-size: $h3;
+                width: 25rem;
             }
 
             @include mediaQ('sm2') {
-                margin-left: 2vw;
-                left: 1vw;
-                top: 20rem;
-                // font-size: $h3;
+                width: 20rem;
+                margin-top: 1.5rem;
             }
 
             @include mediaQ('smHam') {
-                margin-left: 2vw;
-                left: 1.5vw;
-                top: 20rem;
-                // font-size: $h3;
+                margin-top: 1.2rem;
             }
-
-            @include mediaQ('smHam2') {
-                margin-left: 2vw;
-                // font-size: $h3 !important;
-                left: 1.5vw;
-                top: 22rem;
-            }
-
         }
 
-        /* .header-text {
-             font-size: $h1;
-                position: absolute;
-                color: $text2;
-                top: 14rem;
-                left: 10vw;
-                line-height: 1.5;
+        .box-2 {
+            width: 38rem;
+            margin: auto;
+            margin-top: 1.2rem;
 
-                strong {
+            .tell,
+            .mail {
+                line-height: 1.333 !important;
+
+                span:first-child {
                     color: $primary;
-                    font-weight: 500;
+                    font-size: $main2;
                 }
 
-                       @include mediaQ('md') {
-                left: 5vw;
-            }
-
-            @include mediaQ('sm1') {
-                margin-left: 4vw;
-                left: 2vw;
-            }
-
-            @include mediaQ('sm2') {
-                margin-left: 2vw;
-                left: 1vw;
-                top: 20rem;
-            }
-
-            @include mediaQ('smHam') {
-                margin-left: 2vw;
-                left: 1.5vw;
-                top: 20rem;
-            }
-
-            @include mediaQ('smHam2') {
-                margin-left: 2vw;
-                font-size: $h2;
-                left: 1.5vw;
-                top: 22rem;
-            }
-        } */
-
-        .header-box {
-            width: 48rem;
-            height: 27rem;
-            background-color: rgba(255, 255, 255, 0.8);
-            position: absolute;
-            padding-top: 0.2rem;
-            left: 50vw;
-            bottom: 6rem;
-
-            .box-1 {
-                width: 38rem;
-                margin: auto;
-                margin-top: 3rem;
-                padding-bottom: 1.2rem;
-                border-bottom: 2px solid $pointcolor1;
-
-                span:nth-child(1) {
-                    font-size: $h4;
-                    font-weight: 500;
-                }
-
-                p {
-                    color: $text3;
-                    margin-top: 1.333rem;
-                }
-
-                @include mediaQ('md') {
-                    width: 30rem;
-                }
-
-                @include mediaQ('sm1') {
-                    width: 25rem;
-                }
-
-                @include mediaQ('sm2') {
-                    width: 20rem;
-                    margin-top: 1.5rem;
-                }
-
-                @include mediaQ('smHam') {
-                    margin-top: 1.2rem;
-                }
-            }
-
-            .box-2 {
-                width: 38rem;
-                margin: auto;
-                margin-top: 1.2rem;
-
-                .tell,
-                .mail {
-                    line-height: 1.333 !important;
-
-                    span:first-child {
-                        color: $primary;
-                        font-size: $main2;
-                    }
-
-                    span:last-child {
-                        font-size: $main2;
-                        color: $text2;
-                    }
-
-                    @include mediaQ('sm2') {
-                        display: flex;
-                        flex-direction: column
-                    }
-                }
-
-                @include mediaQ('md') {
-                    width: 30rem;
-                }
-
-                @include mediaQ('sm1') {
-                    width: 25rem;
-                }
-
-                @include mediaQ('sm2') {
-                    width: 20rem;
-                }
-            }
-
-            .box-3 {
-                @extend %boxHover;
-
-                @include mediaQ('sm1') {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-
-                    a {
-                        padding: 1.5rem 7.2rem !important;
-                    }
+                span:last-child {
+                    font-size: $main2;
+                    color: $text2;
                 }
 
                 @include mediaQ('sm2') {
                     display: flex;
-                    flex-direction: column;
-                    text-align: center;
-
-                    a {
-                        padding: 1.5rem 7.2rem !important;
-                    }
+                    flex-direction: column
                 }
             }
 
             @include mediaQ('md') {
-                width: 40rem;
-                height: 30rem;
+                width: 30rem;
             }
 
             @include mediaQ('sm1') {
-                width: 35rem;
-                height: 35rem;
+                width: 25rem;
             }
 
             @include mediaQ('sm2') {
-                width: 30rem;
-                height: 37rem;
+                width: 20rem;
+            }
+        }
+
+        .box-3 {
+            @extend %boxHover;
+
+            @include mediaQ('sm1') {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                a {
+                    padding: 1.5rem 7.2rem !important;
+                }
             }
 
-            @include mediaQ('smHam') {
-                left: 35vw;
-                bottom: 3rem;
-                height: 24rem;
-            }
+            @include mediaQ('sm2') {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
 
-            @include mediaQ('smHam2') {
-                left: 0.4vw;
+                a {
+                    padding: 1.5rem 7.2rem !important;
+                }
             }
+        }
 
-            & {
-                animation: show1 both 1s;
-                opacity: 0;
-                transform: translateY(12rem);
-                overflow: hidden;
+        @include mediaQ('md') {
+            width: 40rem;
+            height: 30rem;
+        }
 
-                transition: transform 1s, opacity 1s;
-            }
+        @include mediaQ('sm1') {
+            width: 35rem;
+            height: 35rem;
+        }
+
+        @include mediaQ('sm2') {
+            width: 30rem;
+            height: 37rem;
+        }
+
+        @include mediaQ('smHam') {
+            left: 35vw;
+            bottom: 3rem;
+            height: 24rem;
+        }
+
+        @include mediaQ('smHam2') {
+            left: 0.4vw;
+        }
+
+        & {
+            animation: show1 both 1s;
+            opacity: 0;
+            transform: translateY(12rem);
+            overflow: hidden;
+
+            transition: transform 1s, opacity 1s;
         }
     }
 

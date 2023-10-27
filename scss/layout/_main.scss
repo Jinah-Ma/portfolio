@@ -20,6 +20,7 @@ main {
         height: 88rem;
         margin: auto;
         position: relative;
+        user-select:text;
 
         @include mediaQ ('smHam') {
             height: 145rem;
@@ -349,7 +350,7 @@ main {
                 margin-top: 50rem;
                 opacity: 0;
 
-                transform: translateY(85rem);
+                transform: translateY(100rem);
                 transition: transform 1.5s,
                     opacity 1.5s;
 
@@ -402,7 +403,7 @@ main {
                     width: 22vw;
                     height: 29vw;
                     background-image: url(../img/bg2.png);
-                    top: -3.8rem;
+                    top: -2.8rem;
                     left: 1.5vw;
                     z-index: -1;
 
@@ -428,7 +429,7 @@ main {
 
     section.history {
         width: $mainW;
-        height: 71rem;
+        height: 80rem;
         background-color: $background2;
 
         @include mediaQ ('md') {
@@ -444,14 +445,14 @@ main {
         }
 
         @include mediaQ ('smHam') {
-            height: 110rem;
+            height: 150rem;
             width: $width;
             margin: 0;
             margin-left: -7rem;
         }
 
         @include mediaQ ('smHam2') {
-            height: 120rem;
+            height: 150rem;
             width: $width;
             margin: 0;
             margin-left: -4rem;
@@ -537,7 +538,7 @@ main {
 
     section.skills {
         width: 100%;
-        height: 70rem;
+        height: 80rem;
         background-color: $background;
         position: relative;
 
@@ -559,11 +560,11 @@ main {
                 font-size: 4.8rem;
                 font-weight: 600;
                 color: $secondary;
-                padding-top: 12rem;
+                padding-top: 16rem;
             }
 
             .skillLevel {
-                padding-top: 4rem;
+                padding-top: 7rem;
                 display: flex;
                 width: 60vw;
                 margin: auto;
@@ -964,7 +965,7 @@ main {
 
     section.artworks {
         width: 100%;
-        height: 65vw;
+        height: 71vw;
         background-color: $background2;
 
 
@@ -1004,7 +1005,7 @@ main {
                 font-weight: 600;
                 color: $secondary;
                 position: absolute;
-                top: 10rem;
+                top: 15rem;
             }
 
             .boxwrap {
@@ -1016,7 +1017,7 @@ main {
                         width: 100%;
                         height: 6rem;
                         display: flex;
-                        padding-top: 20rem;
+                        padding-top: 27rem;
                         margin-bottom: 12rem;
 
                         h4 {

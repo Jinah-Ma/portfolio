@@ -1,7 +1,7 @@
 %title {
     &>p {
         position: absolute;
-        top: 6rem;
+        top: 10rem;
 
         &:before {
             content: '';
@@ -20,7 +20,7 @@
     h3 {
         font-size: 2.2rem;
         width: 7vw;
-        font-weight: 370;
+        font-weight: 400;
         color: $secondary;
     }
 
@@ -36,7 +36,7 @@
         font-size: $h4;
         font-weight: 600;
         color: $secondary;
-        padding-top: 5rem;
+        padding-top:10rem;
 
         &:after {
             content: '';

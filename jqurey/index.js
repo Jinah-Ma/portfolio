@@ -22,6 +22,7 @@ win.on('scroll', function () {
     });
 });
 
+
 //홈 박스애니메이션 구현
 header();
 function header() {
@@ -30,6 +31,31 @@ function header() {
         transform: 'translateY(0)',
     });
 }
+
+// 글씨 애니메이션
+var animatedText = document.querySelectorAll(".animated-text");
+
+function animate1(element){
+  var textArray = element.innerText.split("");
+  element.firstChild.remove();
+  
+  var elArray = textArray.map(
+    (letter,index)=>{
+      if(letter==" ") letter = '&nbsp;';
+      var el = document.createElement("span");
+      el.className = "letter";
+      el.innerHTML = letter;
+      el.style.animationDelay = index/(textArray.length)+"s";
+      element.appendChild(el);
+      return el;
+    }
+  );
+  element.innerHtml = elArray;
+}
+
+Array.from(animatedText).map(animate1)
+
+
 
 //스크롤 top탭 구현, 애니메이션 구현
 const scrollH = $('header').height();
