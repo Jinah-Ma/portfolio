@@ -254,7 +254,7 @@ header {
         #container {
             position: absolute;
             top: 8vw;
-            left: 9vw;
+            left: 8vw;
             text-transform: uppercase;
             width: 100%;
             display: flex;
@@ -317,15 +317,22 @@ header {
             }
 
             span {
-                font-size: $h1;
+                font-size: 6.5rem;
                 color: $text2;
                 line-height: 1.5;
                 font-family: 'TTTtangsbudaejjigaeB';
                 color: $primary;
+                letter-spacing: 0.3rem;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+
+                @include mediaQ('lg') {
+                    left: 5vw;
+                    font-size: $h2;
+                }
 
                 @include mediaQ('md') {
-                    left: 5vw;
-                    font-size: $h3;
+                    left: 0;
+                    font-size: $h2;
                 }
 
                 @include mediaQ('sm1') {
@@ -347,8 +354,44 @@ header {
                     font-size: $h3 !important;
                     left: 1.5vw;
                 }
+
+                &.tilted {
+                    .letter:nth-child(2) {
+                        color: $text3;
+                    }
+
+                    .letter:last-child {
+                        color: $text3;
+                    }
+                }
+
+                &.flip {
+                    .letter:last-child {
+                        color: $text3;
+                    }
+                }
+
+                &.wave {
+                    .letter:nth-child(4) {
+                        color: $text3;
+                    }
+                    .letter:nth-child(5) {
+                        color: $text3;
+                    }
+                    .letter:nth-child(6) {
+                        color: $text3;
+                    }
+                }
             }
 
+            @include mediaQ('lg') {
+                top: 12vw;
+                left: 5vw;
+            }
+            @include mediaQ('md') {
+                top: 22vw;
+                left: 5vw;
+            }
             @include mediaQ('sm1') {
                 top: 22vw;
                 left: 5vw;
@@ -391,12 +434,12 @@ header {
                 right: 3rem;
                 bottom: 38rem;
             }
-        
+
             @include mediaQ('smHam') {
                 right: 3rem;
                 bottom: 20rem;
             }
-        
+
             @include mediaQ('smHam2') {
                 right: 3rem;
                 bottom: 20rem;

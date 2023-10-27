@@ -98,12 +98,12 @@ footer {
                 section.contact {
                     .contactText {
                         position: absolute;
-                        left: 40vw;
-                        top: 12vw;
+                        left: 36vw;
+                        top: 10vw;
                         line-height: 0.5;
 
                         h6 {
-                            font-size: $h3;
+                            font-size: $h4;
                             font-weight: 300;
 
                             strong {
@@ -133,62 +133,69 @@ footer {
 
                             &.spanTwo {
                                 display: block;
-                                margin-left: 8rem;
+                                margin-left: 5.2rem;
 
                                 @include mediaQ('sm2') {
-                                    margin-left: 5rem;
+                                    margin-left: -1.5rem;
                                 }
 
                                 @include mediaQ('smHam') {
-                                    margin-left: 4rem;
+                                    margin-left: 2rem;
                                 }
 
                                 @include mediaQ('smHam2') {
-                                    margin-left: 4rem;
+                                    margin-left: 2rem;
                                 }
                             }
 
                             @include mediaQ('lg') {
-                                font-size: $h4;
+                                font-size: 3rem;
                             }
 
                             @include mediaQ('md') {
-                                font-size: $h4;
+                                font-size: $main1;
                             }
 
                             @include mediaQ('sm1') {
-                                font-size: $main1;
+                                font-size: $main2;
                             }
 
                             @include mediaQ('sm2') {
-                                font-size: $main1;
+                                font-size: $main2;
+                                margin-left: -5rem;
                             }
 
                             @include mediaQ('smHam') {
-                                font-size: $main1;
+                                font-size: 1.8rem;
                             }
 
                             @include mediaQ('smHam2') {
-                                font-size: $main2;
+                                font-size: $main3;
                             }
                         }
 
+                        @include mediaQ('lg') {
+                            line-height: 0.5;
+                        }
                         @include mediaQ('md') {
-                            line-height: 1;
+                            line-height: 0.5;
                         }
 
+                        @include mediaQ('sm1') {
+                            line-height: 0.5;
+                        }
                         @include mediaQ('sm2') {
                             line-height: 0.5;
                         }
 
                         @include mediaQ('smHam') {
                             line-height: 0.8;
-                            left: 20vw;
+                            left: 15vw;
                         }
 
                         @include mediaQ('smHam2') {
                             line-height: 0.8;
-                            left: 10vw;
+                            left: 8vw;
                         }
 
 
@@ -245,6 +252,44 @@ footer {
                             }
                         }
                         display: none;
+                    }
+                    .lottie2{
+                        width: 42vw;
+                        padding-top: 10vw;
+                        margin-left: 48vw;
+                        opacity: 10%;
+                        filter:hue-rotate(150deg);
+
+                        @include mediaQ('lg') {
+                        padding-top: 10vw;
+                        margin-left: 48vw;
+                        }
+    
+                        @include mediaQ('md') {
+                        padding-top: 10vw;
+                        margin-left: 48vw;
+                        }
+    
+                        @include mediaQ('sm1') {
+                        padding-top: 10vw;
+                        margin-left: 48vw;
+                        }
+    
+                        @include mediaQ('sm2') {
+                        padding-top: 25vw;
+                        margin-left: 45vw;
+                        }
+    
+                        @include mediaQ('smHam') {
+                        padding-top: 18vw;
+                        margin-left: 32vw;
+                        }
+    
+                        @include mediaQ('smHam2') {
+                            width: 50vw;
+                            padding-top: 18vw;
+                            margin-left: 23vw;
+                        }
                     }
                 }
             }
