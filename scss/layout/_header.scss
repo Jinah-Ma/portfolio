@@ -320,30 +320,29 @@ header {
                 font-size: $h1;
                 color: $text2;
                 line-height: 1.5;
-                font-family: 'SpoqaHanSansNeo-Regular';
-                font-weight: 600;
+                font-family: 'TTTtangsbudaejjigaeB';
                 color: $primary;
 
                 @include mediaQ('md') {
                     left: 5vw;
                     font-size: $h3;
                 }
-            
+
                 @include mediaQ('sm1') {
                     left: 2vw;
                     font-size: $h3;
                 }
-            
+
                 @include mediaQ('sm2') {
                     left: 1vw;
                     font-size: $h3;
                 }
-            
+
                 @include mediaQ('smHam') {
                     left: 1.5vw;
                     font-size: $h3;
                 }
-            
+
                 @include mediaQ('smHam2') {
                     font-size: $h3 !important;
                     left: 1.5vw;
@@ -359,19 +358,50 @@ header {
                 top: 22vw;
                 left: 5vw;
             }
-        
+
             @include mediaQ('smHam') {
                 top: 28vw;
                 left: 5vw;
             }
-        
+
             @include mediaQ('smHam2') {
                 top: 56vw;
                 left: 5vw;
             }
         }
 
+        .lottie {
+            width: 15rem;
+            position: absolute;
+            right: 18rem;
+            bottom: 27rem;
+            z-index: 5;
 
+            @include mediaQ('md') {
+                right: 6rem;
+                bottom: 30rem;
+            }
+
+            @include mediaQ('sm1') {
+                right: 3rem;
+                bottom: 36rem;
+            }
+
+            @include mediaQ('sm2') {
+                right: 3rem;
+                bottom: 38rem;
+            }
+        
+            @include mediaQ('smHam') {
+                right: 3rem;
+                bottom: 20rem;
+            }
+        
+            @include mediaQ('smHam2') {
+                right: 3rem;
+                bottom: 20rem;
+            }
+        }
     }
 
 

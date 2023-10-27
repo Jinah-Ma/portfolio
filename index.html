@@ -55,6 +55,9 @@
     <!-- 제이쿼리 -->
     <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
     <script src="./jqurey/index.js" defer></script>
+
+    <!-- lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
 
 <body>
@@ -98,13 +101,25 @@
                             잼처럼
                         </span>
                         <span class="animated-text flip">
-                            진득한
+                            찐한 맛
                         </span>
                         <span class="animated-text wave">
                             마진아입니다
                         </span>
                     </div>
                     <!-- //header-text -->
+
+                    <!-- lottie -->
+                    <div id="lottie" class="lottie" ></div>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('lottie'), // Required
+                            path: './img/ani/ani1.json', // Required
+                            renderer: 'svg', // Required
+                            loop: true, // Optional
+                            autoplay: true, // Optional
+                        })
+                    </script>
 
                     <div class="header-box">
                         <div class="box-1 borderB">
