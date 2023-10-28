@@ -62,9 +62,6 @@ body::-webkit-scrollbar-thumb {
 
 header {
   width: 100vw;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
   height: 100vh;
 }
 header .overay {
@@ -238,7 +235,7 @@ header > .ham {
   font-size: 1rem;
   color: #888;
   text-align: center;
-  margin-top: 35rem;
+  margin-top: 33rem;
 }
 .gnb .copy:before {
   content: "";
@@ -247,6 +244,16 @@ header > .ham {
   margin: auto;
   border-top: 1px solid #E76162;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .gnb .copy {
+    margin-top: 30rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .gnb .copy {
+    margin-top: 30rem;
+  }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .gnb {
@@ -351,7 +358,6 @@ header > .ham {
 }
 .header-inner .home #container span {
   font-size: 6.5rem;
-  color: #666;
   line-height: 1.5;
   font-family: "TTTtangsbudaejjigaeB";
   color: #E76162;
@@ -538,6 +544,8 @@ header > .ham {
 .header-inner .header-box .box-2 .tell,
 .header-inner .header-box .box-2 .mail {
   line-height: 1.333 !important;
+  display: flex;
+  gap: 1rem;
 }
 .header-inner .header-box .box-2 .tell span:first-child,
 .header-inner .header-box .box-2 .mail span:first-child {
@@ -555,6 +563,15 @@ header > .ham {
     display: flex;
     flex-direction: column;
   }
+}
+.header-inner .header-box .box-2 .tell button,
+.header-inner .header-box .box-2 .mail button {
+  border: none;
+  background: none;
+}
+.header-inner .header-box .box-2 .tell button i,
+.header-inner .header-box .box-2 .mail button i {
+  cursor: pointer;
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
   .header-inner .header-box .box-2 {
@@ -1227,7 +1244,7 @@ main {
   top: 0;
   bottom: 0;
   right: 0;
-  background: #E76162;
+  background: linear-gradient(to left, #E76162, rgb(255, 154, 154));
   width: 0;
 }
 .main-inner section.skills .inner .skillLevel .skills .Level .secon .progress-bar .rate {
@@ -2386,6 +2403,17 @@ footer .footerWrap .contactF .contactFInner .textFlex .tetx2 span:first-child {
 footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .tell2,
 footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .mail2 {
   font-weight: 300;
+  display: flex;
+  gap: 1rem;
+}
+footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .tell2 button,
+footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .mail2 button {
+  border: none;
+  background: none;
+}
+footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .tell2 button i,
+footer .footerWrap .contactF .contactFInner .textFlex .tetx2 .mail2 button i {
+  cursor: pointer;
 }
 footer .footerWrap .contactF .contactFInner .textFlex .tetx3 .tBox {
   display: grid;

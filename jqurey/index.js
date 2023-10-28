@@ -35,25 +35,46 @@ function header() {
 // 글씨 애니메이션
 var animatedText = document.querySelectorAll(".animated-text");
 
-function animate1(element){
-  var textArray = element.innerText.split("");
-  element.firstChild.remove();
-  
-  var elArray = textArray.map(
-    (letter,index)=>{
-      if(letter==" ") letter = '&nbsp;';
-      var el = document.createElement("span");
-      el.className = "letter";
-      el.innerHTML = letter;
-      el.style.animationDelay = index/(textArray.length)+"s";
-      element.appendChild(el);
-      return el;
-    }
-  );
-  element.innerHtml = elArray;
+function animate1(element) {
+    var textArray = element.innerText.split("");
+    element.firstChild.remove();
+
+    var elArray = textArray.map(
+        (letter, index) => {
+            if (letter == " ") letter = '&nbsp;';
+            var el = document.createElement("span");
+            el.className = "letter";
+            el.innerHTML = letter;
+            el.style.animationDelay = index / (textArray.length) + "s";
+            element.appendChild(el);
+            return el;
+        }
+    );
+    element.innerHtml = elArray;
 }
 
 Array.from(animatedText).map(animate1)
+
+//복사버튼
+const textCopy1 = document.getElementById("content-holder1");
+const textCopy2 = document.getElementById("content-holder2");
+const textCopy3 = document.getElementById("content-holder3");
+const textCopy4 = document.getElementById("content-holder4");
+
+// button 클릭 이벤트
+document.getElementById("copy-button1").onclick = () => {
+    window.navigator.clipboard.writeText(textCopy1.textContent).then(() => { });
+};
+document.getElementById("copy-button2").onclick = () => {
+    window.navigator.clipboard.writeText(textCopy2.textContent).then(() => { });
+};
+document.getElementById("copy-button3").onclick = () => {
+    window.navigator.clipboard.writeText(textCopy3.textContent).then(() => { });
+};
+document.getElementById("copy-button4").onclick = () => {
+    window.navigator.clipboard.writeText(textCopy4.textContent).then(() => { });
+};
+
 
 
 

@@ -494,6 +494,16 @@ footer {
                         .tell2,
                         .mail2 {
                             font-weight: 300;
+                            display: flex;
+                            gap: 1rem;
+
+                            button{
+                                border: none;
+                                background: none;
+                                i{
+                                    cursor: pointer;
+                                }
+                            }
                         }
                     }
 

@@ -623,7 +623,7 @@ main {
                                     top: 0;
                                     bottom: 0;
                                     right: 0;
-                                    background: $primary;
+                                    background: linear-gradient(to left, $primary, rgb(255, 154, 154));
                                     width: 0;
                                 }
 

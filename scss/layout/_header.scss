@@ -1,6 +1,5 @@
 header {
     width: $width;
-    user-select: none;
     height: 100vh;
 
     .overay {
@@ -193,7 +192,7 @@ header {
         font-size: $info1;
         color: $text3;
         text-align: center;
-        margin-top: 35rem;
+        margin-top: 33rem;
 
         &:before {
             content: '';
@@ -202,6 +201,13 @@ header {
             margin: auto;
             border-top: 1px solid $primary;
             margin-bottom: 2rem;
+        }
+
+        @include mediaQ ('sm1') {
+            margin-top: 30rem;
+        }
+        @include mediaQ ('sm2') {
+            margin-top: 30rem;
         }
     }
 
@@ -318,7 +324,6 @@ header {
 
             span {
                 font-size: 6.5rem;
-                color: $text2;
                 line-height: 1.5;
                 font-family: 'TTTtangsbudaejjigaeB';
                 color: $primary;
@@ -375,9 +380,11 @@ header {
                     .letter:nth-child(4) {
                         color: $text3;
                     }
+
                     .letter:nth-child(5) {
                         color: $text3;
                     }
+
                     .letter:nth-child(6) {
                         color: $text3;
                     }
@@ -388,10 +395,12 @@ header {
                 top: 12vw;
                 left: 5vw;
             }
+
             @include mediaQ('md') {
                 top: 22vw;
                 left: 5vw;
             }
+
             @include mediaQ('sm1') {
                 top: 22vw;
                 left: 5vw;
@@ -500,6 +509,7 @@ header {
             .tell,
             .mail {
                 line-height: 1.333 !important;
+                display: flex; gap: 1rem;
 
                 span:first-child {
                     color: $primary;
@@ -514,6 +524,14 @@ header {
                 @include mediaQ('sm2') {
                     display: flex;
                     flex-direction: column
+                }
+
+                button{
+                    border: none;
+                    background: none;
+                    i{
+                        cursor: pointer;
+                    }
                 }
             }
 
