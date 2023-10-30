@@ -1855,6 +1855,12 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup5 div img {
   background: #fff;
 }
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup6 {
+  display: none;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup6 .page1 {
+  z-index: 9;
+}
 
 footer {
   width: 100vw;

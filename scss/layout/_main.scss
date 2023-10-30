@@ -1341,6 +1341,16 @@ main {
                             background: $background;
                         }
                     }
+
+                    #boxGrup6 {
+                        display: none;
+
+                        .page1 {
+                            z-index: 9;
+                        }
+
+                        
+                    }
                 }
             }
         }

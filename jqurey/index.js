@@ -383,6 +383,29 @@ boxImgWrap.each(function () {
     });
 });
 
+/* ================= grup6 */
+//아트워크 이미지 페이지
+boxImgWrap.each(function () {
+    let currentEl = $(this);
+
+    let target2 = currentEl.find('.pageBtn6 span a');
+    let tContainer2 = currentEl.find('.G6Img>div');
+    console.log(tContainer2);
+
+    target2.on('click', function (e) {
+        e.preventDefault();
+        let tg2 = $(this);
+        let currentLink2 = tg2.attr('href');
+        console.log(currentLink2);
+
+        tContainer2.hide();
+        $(currentLink2).show();
+
+        target2.removeClass('active6');
+        tg2.addClass('active6');
+    });
+});
+
 //호버시 글씨
 let page = $('.G1Img .page');
 let img = $('.img');
