@@ -1226,8 +1226,19 @@ main {
                         }
                     }
 
+
                     #boxGrup1 {
                         display: block;
+
+                        .page1 {
+                            z-index: 9;
+                        }
+
+                        
+                    }
+
+                    #boxGrup2 {
+                        display: none;
 
                         .page1 {
                             z-index: 9;
@@ -1268,14 +1279,6 @@ main {
                             }
                         }
 
-                    }
-
-                    #boxGrup2 {
-                        display: none;
-
-                        .page1 {
-                            z-index: 9;
-                        }
                     }
 
                     #boxGrup3 {
@@ -1348,9 +1351,8 @@ main {
                         .page1 {
                             z-index: 9;
                         }
-
-                        
                     }
+
                 }
             }
         }

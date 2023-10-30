@@ -1780,35 +1780,35 @@ main {
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 {
   z-index: 9;
 }
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(1) img {
-  -o-object-position: right;
-     object-position: right;
-}
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(3) img {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page1 div:nth-child(6) img {
-  -o-object-position: left;
-     object-position: left;
-}
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page2 div:nth-child(5) img {
-  -o-object-position: top;
-     object-position: top;
-}
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 div:nth-child(2) img {
-  -o-object-position: top;
-     object-position: top;
-}
-.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup1 .page3 div:nth-child(4) img {
-  -o-object-position: top;
-     object-position: top;
-}
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 {
   display: none;
 }
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page1 {
   z-index: 9;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page1 div:nth-child(1) img {
+  -o-object-position: right;
+     object-position: right;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page1 div:nth-child(3) img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page1 div:nth-child(6) img {
+  -o-object-position: left;
+     object-position: left;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page2 div:nth-child(5) img {
+  -o-object-position: top;
+     object-position: top;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page3 div:nth-child(2) img {
+  -o-object-position: top;
+     object-position: top;
+}
+.main-inner section.artworks .inner .boxwrap .boxInner #boxGrup2 .page3 div:nth-child(4) img {
+  -o-object-position: top;
+     object-position: top;
 }
 .main-inner section.artworks .inner .boxwrap .boxInner #boxGrup3 {
   display: none;
