@@ -700,6 +700,7 @@ main {
   -webkit-user-select: text;
      -moz-user-select: text;
           user-select: text;
+  overflow: hidden;
   /* 타이틀 base */
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {

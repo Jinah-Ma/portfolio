@@ -21,6 +21,7 @@ main {
         margin: auto;
         position: relative;
         user-select:text;
+        overflow: hidden;
 
         @include mediaQ ('smHam') {
             height: 145rem;
