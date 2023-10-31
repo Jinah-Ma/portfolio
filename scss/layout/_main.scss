@@ -815,6 +815,7 @@ main {
                 &.project3 {
                     @extend %projectCard;
                     top: 120rem !important;
+                    display: none;
 
                     @extend %projectMockup;
                     // 목업 스크롤
@@ -854,7 +855,7 @@ main {
 
                 &.project4 {
                     @extend %projectCard;
-                    right: 0;
+                    // right: 0;
                     top: 120rem !important;
 
                     @extend %projectMockup;
