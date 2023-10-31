@@ -368,6 +368,122 @@
     }
 }
 
+%projectMockupMobile2 {
+    .mockupAll {
+        .mockup {
+            &.mobile1 {
+                position: relative;
+                width: 7.6vw;
+                height: auto;
+                z-index: 3;
+                top: 3.5rem;
+                left: 17%;
+
+                @include mediaQ ('smHam') {
+                    
+                }
+                @include mediaQ ('smHam2') {
+                    
+                }
+
+                &>img {
+                    position: relative;
+                    width: 7.5vw;
+                    height: 13vw;
+
+                    @include mediaQ ('smHam') {
+                        
+                    }
+                    @include mediaQ ('smHam2') {
+                        
+                    }
+                }
+
+                & .mask3 {
+                    width: 95%;
+                    height: 96.8%;
+                    overflow: hidden;
+                    z-index: 4;
+                    position: absolute;
+                    top: 0.2vw;
+                    left: 0.1vw;
+                    border-radius: 10% 10%;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+
+                        @include mediaQ ('smHam') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+
+            &.mobile2 {
+                position: absolute;
+                width: 7.6vw;
+                height: auto;
+                z-index: 3;
+                top: 3.5rem;
+                right: 17%;
+
+                @include mediaQ ('smHam') {
+                    
+                }
+                @include mediaQ ('smHam2') {
+                    
+                }
+
+                &>img {
+                    position: relative;
+                    width: 7.5vw;
+                    height: 13vw;
+
+                    @include mediaQ ('smHam') {
+                        
+                    }
+                    @include mediaQ ('smHam2') {
+                        
+                    }
+                }
+
+                & .mask4 {
+                    width: 95%;
+                    height: 96.8%;
+                    overflow: hidden;
+                    z-index: 4;
+                    position: absolute;
+                    top: 0.2vw;
+                    left: 0.1vw;
+                    border-radius: 10% 10%;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+
+                        @include mediaQ ('smHam') {
+                            width: 100% !important;
+                        }
+                        @include mediaQ ('smHam2') {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 %imgCard {
     width: 100%;

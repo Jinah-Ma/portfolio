@@ -657,19 +657,23 @@ main {
         background-color: $background;
 
         @include mediaQ ('sm1') {
-            height: 390rem;
+            // height: 390rem;
+            height: 300rem;
         }
 
         @include mediaQ ('sm2') {
-            height: 390rem;
+            // height: 390rem;
+            height: 300rem;
         }
 
         @include mediaQ ('smHam') {
-            height: 390rem;
+            // height: 390rem;
+            height: 300rem;
         }
 
         @include mediaQ ('smHam2') {
-            height: 390rem;
+            // height: 390rem;
+            height: 300rem;
         }
 
         .inner {
@@ -817,23 +821,14 @@ main {
                     top: 120rem !important;
                     display: none;
 
-                    @extend %projectMockup;
-                    // 목업 스크롤
-
-                    @extend %projectMockupMobile;
+                    @extend %projectMockupMobile2;
                     // 목업 스크롤 모바일
-                    .mockupAll {
-                        margin-bottom: -16vw !important;
 
-                        @include mediaQ ('sm1') {
-                            margin-bottom: -28.5vw !important;
-                        }
-                        @include mediaQ ('sm2') {
-                            margin-bottom: -28.5vw !important;
-                        }
-                        @include mediaQ ('smHam') {
-                            margin-bottom: -28.5vw !important;
-                        }
+                    @extend %projectMockupMobile2;
+                    // 목업 스크롤 모바일
+                    
+                    .mockupAll {
+                    margin-bottom: 9rem;
                     }
 
                     @include mediaQ ('sm1') {
@@ -881,22 +876,26 @@ main {
 
                     @include mediaQ ('sm1') {
                         right: unset;
-                        top: 292rem !important;
+                        // top: 292rem !important;
+                        top: 205rem !important;
                     }
 
                     @include mediaQ ('sm2') {
                         right: unset;
-                        top: 292rem !important;
+                        // top: 292rem !important;
+                        top: 205rem !important;
                     }
 
                     @include mediaQ ('smHam') {
                         right: unset;
-                        top: 292rem !important;
+                        // top: 292rem !important;
+                        top: 205rem !important;
                     }
 
                     @include mediaQ ('smHam2') {
                         right: unset;
-                        top: 292rem !important;
+                        // top: 292rem !important;
+                        top: 205rem !important;
                     }
                 }
 
