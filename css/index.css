@@ -2094,6 +2094,8 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText h6.spanTw
   }
 }
 footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
+  position: relative;
+  z-index: 1;
   line-height: 1.333;
   display: flex;
   margin-top: 6rem;
@@ -2111,7 +2113,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
 }
 footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a {
   font-size: 2rem;
-  padding: 1.2rem 4.5rem;
+  padding: 1.2rem 4.5rem !important;
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a {
@@ -2152,47 +2154,48 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a
   }
 }
 footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
+  position: absolute;
   width: 42vw;
-  padding-top: 10vw;
-  margin-left: 48vw;
+  top: 10vw;
+  left: 48vw;
   opacity: 10%;
   filter: hue-rotate(150deg);
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
-    padding-top: 10vw;
-    margin-left: 48vw;
+    top: 10vw;
+    left: 48vw;
   }
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
-    padding-top: 10vw;
-    margin-left: 48vw;
+    top: 10vw;
+    left: 48vw;
   }
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
-    padding-top: 10vw;
-    margin-left: 48vw;
+    top: 10vw;
+    left: 48vw;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
-    padding-top: 25vw;
-    margin-left: 45vw;
+    top: 25vw;
+    left: 45vw;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
-    padding-top: 18vw;
-    margin-left: 32vw;
+    top: 18vw;
+    left: 32vw;
   }
 }
 @media screen and (max-width: 644px) {
   footer .footerWrap .backImg .footer-inner section.contact .lottie2 {
     width: 50vw;
-    padding-top: 18vw;
-    margin-left: 23vw;
+    top: 18vw;
+    left: 23vw;
   }
 }
 footer .footerWrap .contactF {

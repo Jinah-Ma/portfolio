@@ -177,6 +177,7 @@ footer {
                         @include mediaQ('lg') {
                             line-height: 0.5;
                         }
+
                         @include mediaQ('md') {
                             line-height: 0.5;
                         }
@@ -184,6 +185,7 @@ footer {
                         @include mediaQ('sm1') {
                             line-height: 0.5;
                         }
+
                         @include mediaQ('sm2') {
                             line-height: 0.5;
                         }
@@ -200,23 +202,27 @@ footer {
 
 
                         .conBox {
+                            @extend %boxHover;
+                            position: relative;
+                            z-index: 1;
+
                             line-height: 1.333;
                             display: flex;
                             margin-top: 6rem;
 
-                            @extend %boxHover;
                             gap: 2vw;
 
                             @include mediaQ('sm2') {
                                 margin-top: 4rem;
                             }
+
                             @include mediaQ('smHam2') {
                                 margin-left: -8rem;
                             }
 
                             a {
                                 font-size: $main2;
-                                padding: 1.2rem 4.5rem;
+                                padding: 1.2rem 4.5rem !important;
 
                                 @include mediaQ('lg') {
                                     font-size: $main3;
@@ -251,44 +257,47 @@ footer {
                                 }
                             }
                         }
+
                         display: none;
                     }
-                    .lottie2{
+
+                    .lottie2 {
+                        position: absolute;
                         width: 42vw;
-                        padding-top: 10vw;
-                        margin-left: 48vw;
+                        top: 10vw;
+                        left: 48vw;
                         opacity: 10%;
-                        filter:hue-rotate(150deg);
+                        filter: hue-rotate(150deg);
 
                         @include mediaQ('lg') {
-                        padding-top: 10vw;
-                        margin-left: 48vw;
+                            top: 10vw;
+                            left: 48vw;
                         }
-    
+
                         @include mediaQ('md') {
-                        padding-top: 10vw;
-                        margin-left: 48vw;
+                            top: 10vw;
+                            left: 48vw;
                         }
-    
+
                         @include mediaQ('sm1') {
-                        padding-top: 10vw;
-                        margin-left: 48vw;
+                            top: 10vw;
+                            left: 48vw;
                         }
-    
+
                         @include mediaQ('sm2') {
-                        padding-top: 25vw;
-                        margin-left: 45vw;
+                            top: 25vw;
+                            left: 45vw;
                         }
-    
+
                         @include mediaQ('smHam') {
-                        padding-top: 18vw;
-                        margin-left: 32vw;
+                            top: 18vw;
+                            left: 32vw;
                         }
-    
+
                         @include mediaQ('smHam2') {
                             width: 50vw;
-                            padding-top: 18vw;
-                            margin-left: 23vw;
+                            top: 18vw;
+                            left: 23vw;
                         }
                     }
                 }
@@ -497,10 +506,11 @@ footer {
                             display: flex;
                             gap: 1rem;
 
-                            button{
+                            button {
                                 border: none;
                                 background: none;
-                                i{
+
+                                i {
                                     cursor: pointer;
                                 }
                             }
@@ -544,12 +554,14 @@ footer {
                     }
 
                     .tetx4 {
-                        h5{
+                        h5 {
                             padding-top: 1vw;
-                            &:first-child{
+
+                            &:first-child {
                                 margin-top: -2rem;
                             }
                         }
+
                         p {
                             color: $text2;
                             font-weight: 300;
