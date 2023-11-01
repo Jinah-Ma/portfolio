@@ -1271,22 +1271,22 @@ main {
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects {
-    height: 300rem;
+    height: 390rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects {
-    height: 300rem;
+    height: 390rem;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .main-inner section.projects {
-    height: 300rem;
+    height: 390rem;
   }
 }
 @media screen and (max-width: 644px) {
   .main-inner section.projects {
-    height: 300rem;
+    height: 390rem;
   }
 }
 .main-inner section.projects .inner {
@@ -1424,7 +1424,6 @@ main {
 }
 .main-inner section.projects .inner .project.project3 {
   top: 120rem !important;
-  display: none;
 }
 .main-inner section.projects .inner .project.project3 .mockupAll {
   margin-bottom: 9rem;
@@ -1450,6 +1449,7 @@ main {
   }
 }
 .main-inner section.projects .inner .project.project4 {
+  right: 0;
   top: 120rem !important;
 }
 .main-inner section.projects .inner .project.project4 .mockupAll {
@@ -1478,25 +1478,25 @@ main {
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects .inner .project.project4 {
     right: unset;
-    top: 205rem !important;
+    top: 292rem !important;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project4 {
     right: unset;
-    top: 205rem !important;
+    top: 292rem !important;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .main-inner section.projects .inner .project.project4 {
     right: unset;
-    top: 205rem !important;
+    top: 292rem !important;
   }
 }
 @media screen and (max-width: 644px) {
   .main-inner section.projects .inner .project.project4 {
     right: unset;
-    top: 205rem !important;
+    top: 292rem !important;
   }
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
@@ -2877,35 +2877,76 @@ footer .footerWrap .contactF .tetxFlexCl {
   top: 3.5rem;
   left: 17%;
 }
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    left: 17%;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    left: 17%;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    left: 17%;
+  }
+}
 .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
   position: relative;
   width: 7.5vw;
-  height: 13vw;
+  height: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
+    width: 7.5vw !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
+    width: 7.5vw !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
+    width: 7.5vw !important;
+  }
 }
 .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 {
-  width: 95%;
-  height: 96.8%;
+  width: 90%;
+  height: 80%;
   overflow: hidden;
   z-index: 4;
   position: absolute;
-  top: 0.2vw;
-  left: 0.1vw;
-  border-radius: 10% 10%;
+  top: 1.4vw;
+  left: 0.3vw;
 }
-.main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 img {
+.main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 14.8vw;
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
-  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 img {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop iframe {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 644px) {
-  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 img {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop iframe {
     width: 100% !important;
   }
 }
@@ -2917,20 +2958,55 @@ footer .footerWrap .contactF .tetxFlexCl {
   top: 3.5rem;
   right: 17%;
 }
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    right: 17%;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    right: 17%;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 {
+    width: 7.6vw !important;
+    top: 3.5rem;
+    right: 17%;
+  }
+}
 .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
   position: relative;
   width: 7.5vw;
-  height: 13vw;
+  height: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
+    width: 7.5vw !important;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
+    width: 7.5vw !important;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
+    width: 7.5vw !important;
+  }
 }
 .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 {
-  width: 95%;
-  height: 96.8%;
+  width: 90%;
+  height: 80%;
   overflow: hidden;
   z-index: 4;
   position: absolute;
-  top: 0.2vw;
-  left: 0.1vw;
-  border-radius: 10% 10%;
+  top: 1.4vw;
+  left: 0.3vw;
 }
 .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 img {
   position: absolute;
@@ -2938,6 +3014,11 @@ footer .footerWrap .contactF .tetxFlexCl {
   left: 0;
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 800px) and (max-width: 939px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 img {
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 img {

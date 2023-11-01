@@ -241,9 +241,6 @@ win.on('resize', function () {
 })
 
 
-
-
-
 // 아트워크 메뉴와 이미지
 const boxWrap = $('.boxwrap');
 boxWrap.each(function () {
