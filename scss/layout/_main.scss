@@ -20,7 +20,7 @@ main {
         height: 88rem;
         margin: auto;
         position: relative;
-        user-select:text;
+        user-select: text;
         overflow: hidden;
 
         @include mediaQ ('smHam') {
@@ -344,81 +344,86 @@ main {
                 }
             }
 
-            & .title-img {
-                position: relative;
+            & .perspective {
                 width: 22vw;
-                height: auto;
-                right: 0;
-                margin-top: 50rem;
-                opacity: 0;
+                perspective: 1000px;
 
-                transform: translateY(100rem);
-                transition: transform 1.5s,
-                    opacity 1.5s;
-
-                img {
-                    position: absolute;
-                    top: 0;
+                & .title-img {
+                    position: relative;
                     width: 22vw;
-                    height: 30vw;
-                    z-index: 0;
-                    object-fit: cover;
-                    object-position: center;
+                    height: auto;
+                    right: 0;
+                    margin-top: 50rem;
+                    opacity: 0;
 
-                    @include mediaQ ('smHam') {
-                        width: 45rem;
-                        height: auto;
+                    transform: translateY(100rem);
+                    transition: transform 1.5s,
+                        opacity 1.5s;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        width: 22vw;
+                        height: 30vw;
+                        z-index: 0;
+                        object-fit: cover;
+                        object-position: center;
+
+                        @include mediaQ ('smHam') {
+                            width: 45rem;
+                            height: auto;
+                        }
+
+                        @include mediaQ ('smHam2') {
+                            width: 40rem;
+                            height: auto;
+                        }
                     }
 
-                    @include mediaQ ('smHam2') {
-                        width: 40rem;
-                        height: auto;
-                    }
-                }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 22vw;
+                        height: 29vw;
+                        border: 8px solid $pointcolor1;
+                        top: 3.8rem;
+                        left: -1.5vw;
+                        z-index: -1;
 
-                &:before {
-                    content: '';
-                    position: absolute;
-                    width: 22vw;
-                    height: 29vw;
-                    border: 8px solid $pointcolor1;
-                    top: 3.8rem;
-                    left: -1.5vw;
-                    z-index: -1;
+                        @include mediaQ ('smHam') {
+                            width: 50rem;
+                            height: 59rem;
+                            left: -4.5vw;
+                        }
 
-                    @include mediaQ ('smHam') {
-                        width: 50rem;
-                        height: 59rem;
-                        left: -4.5vw;
-                    }
-
-                    @include mediaQ ('smHam2') {
-                        width: 50rem;
-                        height: 59rem;
-                        left: -4.5vw;
-                    }
-                }
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    width: 22vw;
-                    height: 29vw;
-                    background-image: url(../img/bg2.png);
-                    top: -2.8rem;
-                    left: 1.5vw;
-                    z-index: -1;
-
-                    @include mediaQ ('smHam') {
-                        width: 50rem;
-                        height: 59rem;
-                        left: 4.5vw;
+                        @include mediaQ ('smHam2') {
+                            width: 50rem;
+                            height: 59rem;
+                            left: -4.5vw;
+                        }
                     }
 
-                    @include mediaQ ('smHam2') {
-                        width: 50rem;
-                        height: 59rem;
-                        left: 4.5vw;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 22vw;
+                        height: 29vw;
+                        background-image: url(../img/bg2.png);
+                        top: -2.8rem;
+                        left: 1.5vw;
+                        z-index: -1;
+
+                        @include mediaQ ('smHam') {
+                            width: 50rem;
+                            height: 59rem;
+                            left: 4.5vw;
+                        }
+
+                        @include mediaQ ('smHam2') {
+                            width: 50rem;
+                            height: 59rem;
+                            left: 4.5vw;
+                        }
                     }
                 }
 
@@ -761,6 +766,7 @@ main {
                         @include mediaQ ('sm1') {
                             margin-bottom: -13.5vw !important;
                         }
+
                         @include mediaQ ('sm2') {
                             margin-bottom: -13.5vw !important;
                         }
@@ -785,12 +791,15 @@ main {
                         @include mediaQ ('sm1') {
                             margin-bottom: -28.5vw !important;
                         }
+
                         @include mediaQ ('sm2') {
                             margin-bottom: -28.5vw !important;
                         }
+
                         @include mediaQ ('smHam') {
                             margin-bottom: -23.5vw !important;
                         }
+
                         @include mediaQ ('smHam2') {
                             margin-bottom: -22vw !important;
                         }
@@ -827,9 +836,9 @@ main {
 
                     @extend %projectMockupMobile2;
                     // 목업 스크롤 모바일
-                    
+
                     .mockupAll {
-                    margin-bottom: 9rem;
+                        margin-bottom: 9rem;
                     }
 
                     @include mediaQ ('sm1') {
@@ -858,18 +867,23 @@ main {
                     // 목업 스크롤
 
                     @extend %projectMockupMobile;
+
                     // 목업 스크롤 모바일
                     .mockupAll {
                         margin-bottom: -16vw !important;
+
                         @include mediaQ ('sm1') {
                             margin-bottom: -28.5vw !important;
                         }
+
                         @include mediaQ ('sm2') {
                             margin-bottom: -28.5vw !important;
                         }
+
                         @include mediaQ ('smHam') {
                             margin-bottom: -28.5vw !important;
                         }
+
                         @include mediaQ ('smHam2') {
                             margin-bottom: -23vw !important;
                         }
@@ -1235,7 +1249,7 @@ main {
                             z-index: 9;
                         }
 
-                        
+
                     }
 
                     #boxGrup2 {
