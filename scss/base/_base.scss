@@ -402,19 +402,19 @@
                 left: 17%;
 
                 @include mediaQ ('sm2') {
-                    width: 7.6vw !important;
+                    width: 12vw !important;
                     top: 3.5rem;
                     left: 17%;
                 }
 
                 @include mediaQ ('smHam') {
-                    width: 7.6vw !important;
+                    width: 14vw !important;
                     top: 3.5rem;
                     left: 17%;
                 }
 
                 @include mediaQ ('smHam2') {
-                    width: 7.6vw !important;
+                    width: 14vw !important;
                     top: 3.5rem;
                     left: 17%;
                 }
@@ -425,15 +425,15 @@
                     height: auto;
 
                     @include mediaQ ('sm2') {
-                        width: 7.5vw !important;
+                        width: 12vw !important;
                     }
 
                     @include mediaQ ('smHam') {
-                        width: 7.5vw !important;
+                        width: 14vw !important;
                     }
 
                     @include mediaQ ('smHam2') {
-                        width: 7.5vw !important;
+                        width: 14vw !important;
                     }
                 }
 
@@ -445,6 +445,21 @@
                     position: absolute;
                     top: 1.4vw;
                     left: 0.3vw;
+
+                    @include mediaQ ('sm2') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
+
+                    @include mediaQ ('smHam') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
 
                     .crop {
                         width: 100%;
@@ -459,12 +474,19 @@
                             width: 100%;
                             height: 14.8vw;
 
+                            @include mediaQ ('sm2') {
+                                width: 100% !important;
+                                height: 24.8vw;
+                            }
+
                             @include mediaQ ('smHam') {
                                 width: 100% !important;
+                                height: 28.8vw;
                             }
 
                             @include mediaQ ('smHam2') {
                                 width: 100% !important;
+                                height: 30.8vw;
                             }
                         }
                     }
@@ -480,18 +502,19 @@
                 right: 17%;
 
                 @include mediaQ ('sm2') {
-                    width: 7.6vw !important;
+                    width: 12vw !important;
                     top: 3.5rem;
                     right: 17%;
                 }
+
                 @include mediaQ ('smHam') {
-                    width: 7.6vw !important;
+                    width: 14vw !important;
                     top: 3.5rem;
                     right: 17%;
                 }
 
                 @include mediaQ ('smHam2') {
-                    width: 7.6vw !important;
+                    width: 14vw !important;
                     top: 3.5rem;
                     right: 17%;
                 }
@@ -502,14 +525,15 @@
                     height: auto;
 
                     @include mediaQ ('sm2') {
-                        width: 7.5vw !important;
+                        width: 12vw !important;
                     }
+
                     @include mediaQ ('smHam') {
-                        width: 7.5vw !important;
+                        width: 14vw !important;
                     }
 
                     @include mediaQ ('smHam2') {
-                        width: 7.5vw !important;
+                        width: 14vw !important;
                     }
                 }
 
@@ -522,6 +546,21 @@
                     top: 1.4vw;
                     left: 0.3vw;
 
+                    @include mediaQ ('sm2') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
+
+                    @include mediaQ ('smHam') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
+
+                    @include mediaQ ('smHam2') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
+
                     img {
                         position: absolute;
                         top: 0;
@@ -532,6 +571,7 @@
                         @include mediaQ ('sm2') {
                             width: 100% !important;
                         }
+
                         @include mediaQ ('smHam') {
                             width: 100% !important;
                         }
