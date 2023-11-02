@@ -240,7 +240,6 @@ win.on('resize', function () {
     reScroll();
 })
 
-
 // 아트워크 메뉴와 이미지
 const boxWrap = $('.boxwrap');
 boxWrap.each(function () {
@@ -248,7 +247,7 @@ boxWrap.each(function () {
 
     let target = currentEl.find('.boxTitle h4 a');
     let tContainer = currentEl.find('.boxImgWrap>div');
-    console.log(tContainer);
+    // console.log(tContainer);
 
     target.on('click', function (e) {
         e.preventDefault();
@@ -272,13 +271,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn1 span a');
     let tContainer2 = currentEl.find('.G1Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
+
+    let overayB = $('.overayB');
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
-        let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -286,6 +285,8 @@ boxImgWrap.each(function () {
         target2.removeClass('active1');
         tg2.addClass('active1');
     });
+
+
 });
 
 /* ================= grup2 */
@@ -295,13 +296,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn2 span a');
     let tContainer2 = currentEl.find('.G2Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
         let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
+        // console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -318,13 +319,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn3 span a');
     let tContainer2 = currentEl.find('.G3Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
         let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
+        // console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -341,13 +342,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn4 span a');
     let tContainer2 = currentEl.find('.G4Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
         let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
+        // console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -364,13 +365,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn5 span a');
     let tContainer2 = currentEl.find('.G5Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
         let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
+        // console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -387,13 +388,13 @@ boxImgWrap.each(function () {
 
     let target2 = currentEl.find('.pageBtn6 span a');
     let tContainer2 = currentEl.find('.G6Img>div');
-    console.log(tContainer2);
+    // console.log(tContainer2);
 
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
         let currentLink2 = tg2.attr('href');
-        console.log(currentLink2);
+        // console.log(currentLink2);
 
         tContainer2.hide();
         $(currentLink2).show();
@@ -402,6 +403,28 @@ boxImgWrap.each(function () {
         tg2.addClass('active6');
     });
 });
+
+//이미지 라이트 박스
+let pic = $('.pic');
+const light = $('.overayB');
+let lightImg = $('.lightImg');
+
+pic.on('click', function () {
+    let picImg = $(this).find('img');
+    let srcPicImg = picImg.attr('data-src');
+    // console.log(srcPicImg);
+
+    lightImg.attr('src', srcPicImg);
+    light.show();
+});
+
+light.on('click', function (){
+    light.css('display', 'none');
+})
+
+
+
+
 
 //호버시 글씨
 let page = $('.G1Img .page');
