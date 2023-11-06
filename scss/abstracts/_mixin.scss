@@ -34,10 +34,4 @@
             @content;
         }
     }
-
-    @else if $screen-width == 'smHam3' {
-        @media screen and (min-width: 360px) {
-            @content;
-        }
-    }
 }

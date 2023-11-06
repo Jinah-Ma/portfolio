@@ -450,7 +450,7 @@ header > .ham {
 }
 @media screen and (max-width: 644px) {
   .header-inner .home #container {
-    top: 56vw;
+    top: 35vw;
     left: 5vw;
   }
 }
@@ -2081,7 +2081,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText h6.spanTw
 }
 @media screen and (max-width: 644px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText h6 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
@@ -2131,7 +2131,7 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
 }
 @media screen and (max-width: 644px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox {
-    margin-left: -8rem;
+    margin-left: -11rem;
   }
 }
 footer .footerWrap .backImg .footer-inner section.contact .contactText .conBox a {
