@@ -1430,6 +1430,11 @@ main {
   margin-bottom: 9rem;
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll {
+    margin-bottom: 15rem !important;
+  }
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects .inner .project.project3 {
     top: 205rem !important;
   }
@@ -2579,7 +2584,7 @@ footer .footerWrap .contactF .tetxFlexCl {
 
 .main-inner section.projects .inner .project.project1, .main-inner section.projects .inner .project.project2, .main-inner section.projects .inner .project.project3, .main-inner section.projects .inner .project.project4 {
   width: 30vw;
-  height: 77rem;
+  height: 70rem;
   position: absolute;
   top: 30rem;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
@@ -2587,12 +2592,24 @@ footer .footerWrap .contactF .tetxFlexCl {
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects .inner .project.project1, .main-inner section.projects .inner .project.project2, .main-inner section.projects .inner .project.project3, .main-inner section.projects .inner .project.project4 {
-    height: 78rem;
+    height: 75rem;
   }
 }
 .main-inner section.projects .inner .project.project1 .pInfo, .main-inner section.projects .inner .project.project2 .pInfo, .main-inner section.projects .inner .project.project3 .pInfo, .main-inner section.projects .inner .project.project4 .pInfo {
   width: 27vw;
   margin: auto;
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project1 .pInfo, .main-inner section.projects .inner .project.project2 .pInfo, .main-inner section.projects .inner .project.project3 .pInfo, .main-inner section.projects .inner .project.project4 .pInfo {
+    width: 54vw !important;
+    margin: auto 2rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project1 .pInfo, .main-inner section.projects .inner .project.project2 .pInfo, .main-inner section.projects .inner .project.project3 .pInfo, .main-inner section.projects .inner .project.project4 .pInfo {
+    width: 54vw !important;
+    margin: auto 2rem;
+  }
 }
 .main-inner section.projects .inner .project.project1 .pInfo .title, .main-inner section.projects .inner .project.project2 .pInfo .title, .main-inner section.projects .inner .project.project3 .pInfo .title, .main-inner section.projects .inner .project.project4 .pInfo .title {
   padding: 0 0 2rem 0;
@@ -2605,7 +2622,9 @@ footer .footerWrap .contactF .tetxFlexCl {
 .main-inner section.projects .inner .project.project1 .pInfo .title > p, .main-inner section.projects .inner .project.project2 .pInfo .title > p, .main-inner section.projects .inner .project.project3 .pInfo .title > p, .main-inner section.projects .inner .project.project4 .pInfo .title > p {
   font-weight: 300;
   font-size: 2rem;
-  padding-top: 1rem;
+}
+.main-inner section.projects .inner .project.project1 .pInfo .mainInfo, .main-inner section.projects .inner .project.project2 .pInfo .mainInfo, .main-inner section.projects .inner .project.project3 .pInfo .mainInfo, .main-inner section.projects .inner .project.project4 .pInfo .mainInfo {
+  margin-bottom: 1.5vw !important;
 }
 .main-inner section.projects .inner .project.project1 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project2 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project3 .pInfo .mainInfo p, .main-inner section.projects .inner .project.project4 .pInfo .mainInfo p {
   font-size: 1.8rem;
@@ -2614,14 +2633,28 @@ footer .footerWrap .contactF .tetxFlexCl {
   color: #3E614D;
 }
 .main-inner section.projects .inner .project.project1 .pInfo .infoBtn, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn {
-  margin-top: 3.2rem !important;
-  gap: 2vw !important;
+  gap: 0.5vw !important;
 }
-.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:first-child, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:first-child {
-  padding: 1.2rem 2.3rem;
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project1 .pInfo .infoBtn, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn {
+    gap: 2vw !important;
+  }
 }
-.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a:last-child, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a:last-child {
-  padding: 1.2rem 2rem;
+.main-inner section.projects .inner .project.project1 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a {
+  padding-left: 0.2rem !important;
+  padding-right: 0.2rem !important;
+  width: 30vw;
+  text-align: center;
+}
+@media screen and (min-width: 645px) and (max-width: 799px) {
+  .main-inner section.projects .inner .project.project1 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 644px) {
+  .main-inner section.projects .inner .project.project1 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project2 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project3 .pInfo .infoBtn a, .main-inner section.projects .inner .project.project4 .pInfo .infoBtn a {
+    width: 35vw;
+  }
 }
 
 .main-inner section.projects .inner .project.project1 .mockupAll, .main-inner section.projects .inner .project.project2 .mockupAll, .main-inner section.projects .inner .project.project4 .mockupAll {
@@ -2911,6 +2944,13 @@ footer .footerWrap .contactF .tetxFlexCl {
   top: 3.5rem;
   left: 17%;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 {
+    width: 12vw !important;
+    top: 3.5rem;
+    left: 17%;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 {
     width: 12vw !important;
@@ -2937,6 +2977,11 @@ footer .footerWrap .contactF .tetxFlexCl {
   width: 7.5vw;
   height: auto;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
+    width: 12vw !important;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 > img {
     width: 12vw !important;
@@ -2960,6 +3005,12 @@ footer .footerWrap .contactF .tetxFlexCl {
   position: absolute;
   top: 1.4vw;
   left: 0.3vw;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 {
+    top: 2.5vw;
+    left: 0.6vw;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 {
@@ -2992,6 +3043,13 @@ footer .footerWrap .contactF .tetxFlexCl {
   width: 100%;
   height: 14.8vw;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop iframe {
+    width: 100% !important;
+    height: 24.8vw;
+    top: -2.7vw;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile1 .mask3 .crop iframe {
     width: 100% !important;
@@ -3021,6 +3079,13 @@ footer .footerWrap .contactF .tetxFlexCl {
   top: 3.5rem;
   right: 17%;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 {
+    width: 12vw !important;
+    top: 3.5rem;
+    right: 17%;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 {
     width: 12vw !important;
@@ -3047,6 +3112,11 @@ footer .footerWrap .contactF .tetxFlexCl {
   width: 7.5vw;
   height: auto;
 }
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
+    width: 12vw !important;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 > img {
     width: 12vw !important;
@@ -3070,6 +3140,12 @@ footer .footerWrap .contactF .tetxFlexCl {
   position: absolute;
   top: 1.4vw;
   left: 0.3vw;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 {
+    top: 2.5vw;
+    left: 0.6vw;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 {
@@ -3095,6 +3171,11 @@ footer .footerWrap .contactF .tetxFlexCl {
   left: 0;
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 940px) and (max-width: 1069px) {
+  .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 img {
+    width: 100% !important;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.projects .inner .project.project3 .mockupAll .mockup.mobile2 .mask4 img {

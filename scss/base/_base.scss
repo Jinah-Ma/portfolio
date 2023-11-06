@@ -66,20 +66,29 @@
 
 %projectCard {
     width: 30vw;
-    height: 77rem;
+    height: 70rem;
     position: absolute;
     top: 30rem;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: $background;
 
     @include mediaQ ('sm1') {
-        height: 78rem;
+        height: 75rem;
     }
 
     .pInfo {
         width: 27vw;
         margin: auto;
 
+        @include mediaQ ('smHam') {
+            width: 54vw !important;
+            margin: auto 2rem;
+        }
+
+        @include mediaQ ('smHam2') {
+            width: 54vw !important;
+            margin: auto 2rem;
+        }
         .title {
             padding: 0 0 2rem 0;
 
@@ -92,11 +101,12 @@
             >p {
                 font-weight: 300;
                 font-size: $main2;
-                padding-top: 1rem;
             }
         }
 
         .mainInfo {
+            margin-bottom: 1.5vw !important;
+
             p {
                 font-size: 1.8rem;
                 font-weight: 300;
@@ -106,16 +116,26 @@
         }
 
         .infoBtn {
-            margin-top: 3.2rem !important;
-            gap: 2vw !important;
+            gap: 0.5vw !important;
             @extend %boxHover;
 
-            a:first-child {
-                padding: 1.2rem 2.3rem;
+            @include mediaQ ('sm1') {
+                gap: 2vw !important;
             }
 
-            a:last-child {
-                padding: 1.2rem 2rem;
+            a {
+                padding-left: 0.2rem !important;
+                padding-right: 0.2rem !important;
+                width: 30vw;
+                text-align: center;
+
+                @include mediaQ ('smHam') {
+                    width: 35vw;
+                }
+
+                @include mediaQ ('smHam2') {
+                    width: 35vw;
+                }
             }
         }
     }
@@ -401,6 +421,11 @@
                 top: 3.5rem;
                 left: 17%;
 
+                @include mediaQ ('sm1') {
+                    width: 12vw !important;
+                    top: 3.5rem;
+                    left: 17%;
+                }
                 @include mediaQ ('sm2') {
                     width: 12vw !important;
                     top: 3.5rem;
@@ -424,6 +449,9 @@
                     width: 7.5vw;
                     height: auto;
 
+                    @include mediaQ ('sm1') {
+                        width: 12vw !important;
+                    }
                     @include mediaQ ('sm2') {
                         width: 12vw !important;
                     }
@@ -446,6 +474,10 @@
                     top: 1.4vw;
                     left: 0.3vw;
 
+                    @include mediaQ ('sm1') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
                     @include mediaQ ('sm2') {
                         top: 2.5vw;
                         left: 0.6vw;
@@ -474,6 +506,11 @@
                             width: 100%;
                             height: 14.8vw;
 
+                            @include mediaQ ('sm1') {
+                                width: 100% !important;
+                                height: 24.8vw;
+                                top: -2.7vw;
+                            }
                             @include mediaQ ('sm2') {
                                 width: 100% !important;
                                 height: 24.8vw;
@@ -504,6 +541,11 @@
                 top: 3.5rem;
                 right: 17%;
 
+                @include mediaQ ('sm1') {
+                    width: 12vw !important;
+                    top: 3.5rem;
+                    right: 17%;
+                }
                 @include mediaQ ('sm2') {
                     width: 12vw !important;
                     top: 3.5rem;
@@ -527,6 +569,9 @@
                     width: 7.5vw;
                     height: auto;
 
+                    @include mediaQ ('sm1') {
+                        width: 12vw !important;
+                    }
                     @include mediaQ ('sm2') {
                         width: 12vw !important;
                     }
@@ -549,6 +594,10 @@
                     top: 1.4vw;
                     left: 0.3vw;
 
+                    @include mediaQ ('sm1') {
+                        top: 2.5vw;
+                        left: 0.6vw;
+                    }
                     @include mediaQ ('sm2') {
                         top: 2.5vw;
                         left: 0.6vw;
@@ -571,6 +620,9 @@
                         width: 100%;
                         height: auto;
 
+                        @include mediaQ ('sm1') {
+                            width: 100% !important;
+                        }
                         @include mediaQ ('sm2') {
                             width: 100% !important;
                         }
