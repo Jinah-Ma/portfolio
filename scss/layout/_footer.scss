@@ -206,6 +206,11 @@ footer {
 
                         @include mediaQ('smHam2') {
                             line-height: 0.8;
+                            left: 8vw;
+                        }
+
+                        @include mediaQ('smHam3') {
+                            line-height: 0.8;
                             left: 0;
                         }
 

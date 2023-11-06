@@ -2301,6 +2301,12 @@ footer .footerWrap .backImg .footer-inner section.contact .contactText h6.spanTw
 @media screen and (max-width: 644px) {
   footer .footerWrap .backImg .footer-inner section.contact .contactText {
     line-height: 0.8;
+    left: 8vw;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  footer .footerWrap .backImg .footer-inner section.contact .contactText {
+    line-height: 0.8;
     left: 0;
   }
 }
