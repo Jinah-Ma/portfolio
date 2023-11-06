@@ -28,8 +28,15 @@
             @content;
         }
     }
+
     @else if $screen-width == 'smHam2' {
         @media screen and (max-width: 644px) {
+            @content;
+        }
+    }
+
+    @else if $screen-width == 'smHam3' {
+        @media screen and (min-width: 360px) {
             @content;
         }
     }

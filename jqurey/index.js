@@ -142,6 +142,7 @@ let overay = $('header .overay');
 
 btn.on('click', function () {
     if (!isOpen) {
+        $('html').addClass('scrollLock');
         open.css('display', 'block'),
             open.css('width', '20rem'),
             open.css('z-index', '999'),
@@ -151,7 +152,9 @@ btn.on('click', function () {
         $('header span:first-child').addClass('active');
         $('header span.solid').addClass('active');
         $('header span:last-child').addClass('active');
+        
     } else {
+        $('html').removeClass('scrollLock');
         open.css('display', ''),
             open.css('width', ''),
             open.css('z-index', ''),
