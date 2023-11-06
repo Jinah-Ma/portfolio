@@ -89,6 +89,11 @@
             width: 54vw !important;
             margin: auto 2rem;
         }
+
+        @include mediaQ ('smHam3') {
+            width: 81vw !important;
+            margin: auto 2rem;
+        }
         .title {
             padding: 0 0 2rem 0;
 
@@ -167,6 +172,10 @@
                     height: 29vw;
                 }
 
+                @include mediaQ ('smHam3') {
+                    height: 34vw;
+                }
+
                 .mask1 {
                     position: absolute;
                     top: 0;
@@ -216,6 +225,13 @@
 
                 @include mediaQ ('smHam2') {
                     left: 40vw;
+                    width: 13vw;
+                    height: auto;
+                    top: -8vw;
+                }
+
+                @include mediaQ ('smHam3') {
+                    left: 65vw;
                     width: 13vw;
                     height: auto;
                     top: -8vw;
@@ -353,6 +369,13 @@
                     left: 51vw;
                 }
 
+                @include mediaQ ('smHam3') {
+                    width: 7.1vw;
+                    height: auto;
+                    top: -20.5vw;
+                    left: 76vw;
+                }
+
                 &>img {
                     position: relative;
                     width: 4vw;
@@ -371,6 +394,10 @@
                     }
 
                     @include mediaQ ('smHam2') {
+                        width: 7vw !important;
+                    }
+
+                    @include mediaQ ('smHam3') {
                         width: 7vw !important;
                     }
                 }
@@ -401,6 +428,10 @@
                         }
 
                         @include mediaQ ('smHam2') {
+                            width: 100% !important;
+                        }
+
+                        @include mediaQ ('smHam3') {
                             width: 100% !important;
                         }
                     }

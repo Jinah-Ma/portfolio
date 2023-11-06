@@ -14,6 +14,9 @@ main {
     @include mediaQ ('smHam2') {
         margin: auto;
     }
+    @include mediaQ ('smHam3') {
+        margin: auto;
+    }
 
     section.about {
         width: $inner;
@@ -28,6 +31,11 @@ main {
         }
 
         @include mediaQ ('smHam2') {
+            height: 145rem;
+        }
+
+        @include mediaQ ('smHam3') {
+            width: inherit;
             height: 145rem;
         }
 
@@ -665,22 +673,21 @@ main {
 
         @include mediaQ ('sm1') {
             height: 390rem;
-            // height: 300rem;
         }
 
         @include mediaQ ('sm2') {
             height: 390rem;
-            // height: 300rem;
         }
 
         @include mediaQ ('smHam') {
             height: 390rem;
-            // height: 300rem;
         }
 
         @include mediaQ ('smHam2') {
             height: 390rem;
-            // height: 300rem;
+        }
+        @include mediaQ ('smHam3') {
+            height: 330rem;
         }
 
         .inner {
@@ -706,6 +713,12 @@ main {
             @include mediaQ ('smHam2') {
                 display: flex;
                 flex-direction: column;
+            }
+
+            @include mediaQ ('smHam2') {
+                display: flex;
+                flex-direction: column;
+                width: inherit;
             }
 
             >h3 {
@@ -755,6 +768,15 @@ main {
                         height: auto !important;
                     }
                 }
+                @include mediaQ ('smHam3') {
+                    width: 90vw !important;
+                    height: 60rem !important;
+
+                    img {
+                        width: 90vw !important;
+                        height: auto !important;
+                    }
+                }
 
 
                 &.project1 {
@@ -783,7 +805,6 @@ main {
                     // 목업 스크롤
 
                     @extend %projectMockupMobile;
-
                     // 목업 스크롤 모바일
 
                     .mockupAll {
@@ -825,6 +846,11 @@ main {
                         right: initial;
                         top: 117rem !important;
                     }
+
+                    @include mediaQ ('smHam3') {
+                        right: initial;
+                        top: 100rem !important;
+                    }
                 }
 
                 &.project3 {
@@ -857,6 +883,10 @@ main {
 
                     @include mediaQ ('smHam2') {
                         top: 205rem !important;
+                    }
+
+                    @include mediaQ ('smHam3') {
+                        top: 175rem !important;
                     }
                 }
 
@@ -894,25 +924,25 @@ main {
                     @include mediaQ ('sm1') {
                         right: unset;
                         top: 292rem !important;
-                        // top: 205rem !important;
                     }
 
                     @include mediaQ ('sm2') {
                         right: unset;
                         top: 292rem !important;
-                        // top: 205rem !important;
                     }
 
                     @include mediaQ ('smHam') {
                         right: unset;
                         top: 292rem !important;
-                        // top: 205rem !important;
                     }
 
                     @include mediaQ ('smHam2') {
                         right: unset;
                         top: 292rem !important;
-                        // top: 205rem !important;
+                    }
+                    @include mediaQ ('smHam2') {
+                        right: unset;
+                        top: 250rem !important;
                     }
                 }
 
@@ -1011,6 +1041,10 @@ main {
             height: 520vw;
         }
 
+        @include mediaQ ('smHam3') {
+            height: 550vw;
+        }
+
         .inner {
             width: 75vw;
             position: relative;
@@ -1076,6 +1110,10 @@ main {
                                 @include mediaQ ('smHam2') {
                                     font-size: 1.4rem;
                                     padding-top: 1.9rem;
+                                }
+                                @include mediaQ ('smHam3') {
+                                    font-size: 1.4rem;
+                                    padding-top: 1rem;
                                 }
                             }
                         }

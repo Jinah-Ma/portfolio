@@ -5,6 +5,10 @@ footer {
         width: 100%;
         height: 65vw;
 
+        @include mediaQ('smHam2') {
+            height: 75vw !important;
+        }
+
         .backImg {
             width: 100%;
             height: 45vw;
@@ -39,7 +43,7 @@ footer {
             }
 
             @include mediaQ('smHam2') {
-                height: 85vw;
+                height: 100vw;
                 background: url(../img/photo/pick4-sm3.jpg) no-repeat top center/cover;
                 width: 85vw;
                 margin: auto;
@@ -200,6 +204,11 @@ footer {
                             left: 8vw;
                         }
 
+                        @include mediaQ('smHam2') {
+                            line-height: 0.8;
+                            left: 0;
+                        }
+
 
                         .conBox {
                             @extend %boxHover;
@@ -253,6 +262,12 @@ footer {
                                 @include mediaQ('smHam2') {
                                     font-size: 1.4rem;
                                     padding: 1rem 3rem;
+                                    margin-top: 37vw;
+                                }
+
+                                @include mediaQ('smHam3') {
+                                    font-size: 1.4rem;
+                                    padding: 1rem 2rem !important;
                                     margin-top: 37vw;
                                 }
                             }
@@ -327,6 +342,10 @@ footer {
                 height: 90vw;
             }
 
+            @include mediaQ ('smHam3') {
+                height: 150vw;
+            }
+
             .contactFInner {
                 width: 90vw;
                 height: inherit;
@@ -350,6 +369,11 @@ footer {
 
                 @include mediaQ ('smHam2') {
                     height: 90vw;
+                }
+
+                @include mediaQ ('smHam3') {
+                    width: 100%;
+                    height: 150vw;
                 }
 
                 .textFlex {
@@ -588,6 +612,10 @@ footer {
 
                 @include mediaQ ('smHam2') {
                     transform: translate(-40%);
+                }
+
+                @include mediaQ ('smHam3') {
+                    transform: translate(-15%);
                 }
             }
         }

@@ -78,12 +78,75 @@ header {
             }
         }
 
-
         @include mediaQ ('smHam2') {
             display: inline-block;
             position: fixed;
             top: 3rem;
             left: 3rem;
+            z-index: 15;
+            padding: 2.5rem 1.5rem;
+            background-color: $secondary;
+            border-radius: 100%;
+            cursor: pointer;
+            user-select: none;
+
+            span {
+                display: block;
+
+                &.solid {
+                    display: block;
+                    position: relative;
+                    top: 0rem;
+                    left: 0rem;
+                    width: 2.5rem;
+                    border: 1px solid $background;
+                    z-index: 9;
+                }
+
+                &:first-child {
+                    width: 2.5rem;
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
+                    border: 1px solid $background;
+                }
+
+                &:last-child {
+                    width: 2.5rem;
+                    position: absolute;
+                    top: 3.4rem;
+                    left: 1.5rem;
+                    width: 2.5rem;
+                    border: 1px solid $background;
+                }
+
+                &:first-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(135deg);
+                    transition: all 0.2s;
+                }
+
+                &:last-child.active {
+                    position: absolute;
+                    top: 2.5rem;
+                    transform: rotate(-135deg);
+                    transition: all 0.2s;
+                }
+
+                &.solid.active {
+                    border-color: transparent;
+                }
+            }
+
+        }
+
+        @include mediaQ ('smHam3') {
+            display: inline-block;
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
             z-index: 15;
             padding: 2.5rem 1.5rem;
             background-color: $secondary;
@@ -209,6 +272,16 @@ header {
         @include mediaQ ('sm2') {
             margin-top: 30rem;
         }
+
+        @include mediaQ ('smHam') {
+            margin-top: 28rem;
+        }
+        @include mediaQ ('smHam2') {
+            margin-top: 28rem;
+        }
+        @include mediaQ ('smHam3') {
+            margin-top: 28rem;
+        }
     }
 
     @include mediaQ ('smHam') {
@@ -216,6 +289,10 @@ header {
     }
 
     @include mediaQ ('smHam2') {
+        display: none;
+    }
+
+    @include mediaQ ('smHam3') {
         display: none;
     }
 }
@@ -231,6 +308,7 @@ header {
     background:
         url(../img/photo/pick2-sm1.jpg) no-repeat center top/cover;
     background-position-y: -5rem;
+    overflow: hidden;
 
     @include mediaQ('lg') {
         background-position-y: top;
@@ -253,6 +331,9 @@ header {
     }
 
     @include mediaQ('smHam2') {
+        background-position-y: top !important;
+    }
+    @include mediaQ('smHam3') {
         background-position-y: top !important;
     }
 
@@ -360,6 +441,11 @@ header {
                     left: 1.5vw;
                 }
 
+                @include mediaQ('smHam3') {
+                    font-size: $h3 !important;
+                    left: 1vw;
+                }
+
                 &.tilted {
                     .letter:nth-child(2) {
                         color: $text3;
@@ -420,6 +506,11 @@ header {
                 top: 60vw;
                 left: 5vw;
             }
+
+            @include mediaQ('smHam3') {
+                top: 76vw;
+                left: 3vw;
+            }
         }
 
         .lottie {
@@ -452,6 +543,11 @@ header {
             @include mediaQ('smHam2') {
                 right: 3rem;
                 bottom: 20rem;
+            }
+
+            @include mediaQ('smHam3') {
+                right: 0;
+                bottom: 26rem;
             }
         }
     }
@@ -570,6 +666,12 @@ header {
                     padding: 1.5rem 7.2rem !important;
                 }
             }
+
+            @include mediaQ('smHam3') {
+                text-align: center;
+                justify-content: left !important;
+                margin-left: 5rem;
+            }
         }
 
         @include mediaQ('md') {
@@ -594,7 +696,7 @@ header {
         }
 
         @include mediaQ('smHam2') {
-            left: 0.4vw;
+            left: 10vw !important;
         }
 
         & {
