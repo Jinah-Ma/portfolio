@@ -412,12 +412,12 @@ header {
             }
 
             @include mediaQ('smHam') {
-                top: 28vw;
+                top: 41vw;
                 left: 5vw;
             }
 
             @include mediaQ('smHam2') {
-                top: 35vw;
+                top: 60vw;
                 left: 5vw;
             }
         }

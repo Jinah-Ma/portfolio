@@ -444,13 +444,13 @@ header > .ham {
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .header-inner .home #container {
-    top: 28vw;
+    top: 41vw;
     left: 5vw;
   }
 }
 @media screen and (max-width: 644px) {
   .header-inner .home #container {
-    top: 35vw;
+    top: 60vw;
     left: 5vw;
   }
 }
