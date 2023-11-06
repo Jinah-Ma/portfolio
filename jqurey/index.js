@@ -409,17 +409,20 @@ let pic = $('.pic');
 const light = $('.overayB');
 let lightImg = $('.lightImg');
 
-pic.on('click', function () {
+pic.on('click', function (e) {
+    e.preventDefault;
     let picImg = $(this).find('img');
     let srcPicImg = picImg.attr('data-src');
     // console.log(srcPicImg);
 
     lightImg.attr('src', srcPicImg);
     light.show();
+    $('html').addClass('scrollLock');
 });
 
 light.on('click', function (){
     light.css('display', 'none');
+    $('html').removeClass('scrollLock');
 })
 
 
