@@ -452,15 +452,6 @@ header > .ham {
     left: 1vw;
   }
 }
-.header-inner .home #container span.tilted strong, .header-inner .home #container span strong.tilted strong {
-  color: #E76162;
-}
-.header-inner .home #container span.flip strong, .header-inner .home #container span strong.flip strong {
-  color: #E76162;
-}
-.header-inner .home #container span.wave strong, .header-inner .home #container span strong.wave strong {
-  color: #E76162;
-}
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   .header-inner .home #container {
     top: 12vw;

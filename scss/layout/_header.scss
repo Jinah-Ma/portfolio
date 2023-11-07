@@ -394,24 +394,7 @@ header {
                     left: 1vw;
                 }
 
-                &.tilted {
-                    strong {
-                        color: $primary;
-                    }
-                }
-
-                &.flip {
-                    strong {
-                        color: $primary;
-                    }
-                }
-
-                &.wave {
-                    strong {
-                        color: $primary;
-                    }
-
-                }
+               
             }
 
             @include mediaQ('lg') {
