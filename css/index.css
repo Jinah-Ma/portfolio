@@ -402,6 +402,20 @@ header > .ham {
 .header-inner .home #container span.animated-text span.letter {
   display: inline-block;
 }
+.header-inner .home #container span.animated-text.tilted span.letter {
+  animation: 1s tilted forwards ease-in-out infinite;
+}
+@keyframes tilted {
+  0% {
+    transform: rotateZ(-15deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
 .header-inner .home #container span {
   font-size: 6.5rem;
   line-height: 1.5;
@@ -409,6 +423,12 @@ header > .ham {
   color: #888;
   letter-spacing: 0.3rem;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.header-inner .home #container span.letter {
+  color: #E76162;
+}
+.header-inner .home #container span.pri {
+  color: #E76162;
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   .header-inner .home #container span {
@@ -451,9 +471,6 @@ header > .ham {
     font-size: 4rem !important;
     left: 1vw;
   }
-}
-.header-inner .home #container span span {
-  color: #E76162;
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   .header-inner .home #container {

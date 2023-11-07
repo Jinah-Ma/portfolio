@@ -32,6 +32,28 @@ function header() {
     });
 }
 
+// 글씨 애니메이션
+const animatedText = document.querySelectorAll(".animated-text");
+
+function animate1(element) {
+    const textArray = element.innerText.split("");
+    element.firstChild.remove();
+    const elArray = textArray.map(
+        (letter, index) => {
+            if (letter == " ") letter = '&nbsp;';
+            var el = document.createElement("span");
+            el.className = "letter";
+            el.innerHTML = letter;
+            el.style.animationDelay = index / (textArray.length) + "s";
+            element.appendChild(el);
+            return el;
+        }
+    );
+    element.innerHtml = elArray;
+}
+
+Array.from(animatedText).map(animate1)
+
 //복사버튼
 const textCopy1 = document.getElementById("content-holder1");
 const textCopy2 = document.getElementById("content-holder2");

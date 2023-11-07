@@ -269,6 +269,7 @@ header {
         @include mediaQ ('sm1') {
             margin-top: 30rem;
         }
+
         @include mediaQ ('sm2') {
             margin-top: 30rem;
         }
@@ -276,9 +277,11 @@ header {
         @include mediaQ ('smHam') {
             margin-top: 28rem;
         }
+
         @include mediaQ ('smHam2') {
             margin-top: 28rem;
         }
+
         @include mediaQ ('smHam3') {
             margin-top: 28rem;
         }
@@ -333,6 +336,7 @@ header {
     @include mediaQ('smHam2') {
         background-position-y: top !important;
     }
+
     @include mediaQ('smHam3') {
         background-position-y: top !important;
     }
@@ -351,6 +355,26 @@ header {
                 display: inline-block;
             }
 
+            span.animated-text.tilted span.letter {
+                animation: 1s tilted forwards ease-in-out infinite;
+            }
+
+            span {
+                @keyframes tilted {
+                    0% {
+                        transform: rotateZ(-15deg);
+                    }
+
+                    50% {
+                        transform: rotateZ(15deg);
+                    }
+
+                    100% {
+                        transform: rotateZ(-15deg);
+                    }
+                }
+            }
+
             span {
                 font-size: 6.5rem;
                 line-height: 1.5;
@@ -358,6 +382,14 @@ header {
                 color: $text3;
                 letter-spacing: 0.3rem;
                 text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+
+                &.letter {
+                    color: $primary;
+                }
+
+                &.pri {
+                    color: $primary;
+                }
 
                 @include mediaQ('lg') {
                     left: 5vw;
@@ -393,11 +425,6 @@ header {
                     font-size: $h3 !important;
                     left: 1vw;
                 }
-
-                & span{
-                    color: $primary;
-                }
-               
             }
 
             @include mediaQ('lg') {
@@ -528,7 +555,8 @@ header {
             .tell,
             .mail {
                 line-height: 1.333 !important;
-                display: flex; gap: 1rem;
+                display: flex;
+                gap: 1rem;
 
                 span:first-child {
                     color: $primary;
@@ -545,10 +573,11 @@ header {
                     flex-direction: column
                 }
 
-                button{
+                button {
                     border: none;
                     background: none;
-                    i{
+
+                    i {
                         cursor: pointer;
                     }
                 }
