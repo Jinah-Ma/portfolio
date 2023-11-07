@@ -351,63 +351,11 @@ header {
                 display: inline-block;
             }
 
-            span.animated-text.wave span.letter {
-                animation: 1s wave backwards ease-in-out infinite;
-            }
-
-            span.animated-text.flip span.letter {
-                animation: 1s flip forwards ease-in-out infinite;
-            }
-
-            span.animated-text.tilted span.letter {
-                animation: 1s tilted forwards ease-in-out infinite;
-            }
-
-            span {
-                @keyframes wave {
-                    0% {
-                        transform: translateY(0em);
-                    }
-
-                    50% {
-                        transform: translateY(-1rem);
-                    }
-                }
-
-                @keyframes flip {
-                    0% {
-                        transform: rotateX(0deg);
-                    }
-
-                    50% {
-                        transform: rotateX(90deg);
-                    }
-
-                    100% {
-                        transform: rotateX(0deg);
-                    }
-                }
-
-                @keyframes tilted {
-                    0% {
-                        transform: rotateZ(-15deg);
-                    }
-
-                    50% {
-                        transform: rotateZ(15deg);
-                    }
-
-                    100% {
-                        transform: rotateZ(-15deg);
-                    }
-                }
-            }
-
-            span {
+            span, span strong {
                 font-size: 6.5rem;
                 line-height: 1.5;
                 font-family: 'TTTtangsbudaejjigaeB';
-                color: $primary;
+                color: $text3;
                 letter-spacing: 0.3rem;
                 text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 
@@ -447,33 +395,22 @@ header {
                 }
 
                 &.tilted {
-                    .letter:nth-child(2) {
-                        color: $text3;
-                    }
-
-                    .letter:last-child {
-                        color: $text3;
+                    strong {
+                        color: $primary;
                     }
                 }
 
                 &.flip {
-                    .letter:last-child {
-                        color: $text3;
+                    strong {
+                        color: $primary;
                     }
                 }
 
                 &.wave {
-                    .letter:nth-child(4) {
-                        color: $text3;
+                    strong {
+                        color: $primary;
                     }
 
-                    .letter:nth-child(5) {
-                        color: $text3;
-                    }
-
-                    .letter:nth-child(6) {
-                        color: $text3;
-                    }
                 }
             }
 

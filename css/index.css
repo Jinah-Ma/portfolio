@@ -402,112 +402,64 @@ header > .ham {
 .header-inner .home #container span.animated-text span.letter {
   display: inline-block;
 }
-.header-inner .home #container span.animated-text.wave span.letter {
-  animation: 1s wave backwards ease-in-out infinite;
-}
-.header-inner .home #container span.animated-text.flip span.letter {
-  animation: 1s flip forwards ease-in-out infinite;
-}
-.header-inner .home #container span.animated-text.tilted span.letter {
-  animation: 1s tilted forwards ease-in-out infinite;
-}
-@keyframes wave {
-  0% {
-    transform: translateY(0em);
-  }
-  50% {
-    transform: translateY(-1rem);
-  }
-}
-@keyframes flip {
-  0% {
-    transform: rotateX(0deg);
-  }
-  50% {
-    transform: rotateX(90deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-@keyframes tilted {
-  0% {
-    transform: rotateZ(-15deg);
-  }
-  50% {
-    transform: rotateZ(15deg);
-  }
-  100% {
-    transform: rotateZ(-15deg);
-  }
-}
-.header-inner .home #container span {
+.header-inner .home #container span, .header-inner .home #container span strong {
   font-size: 6.5rem;
   line-height: 1.5;
   font-family: "TTTtangsbudaejjigaeB";
-  color: #E76162;
+  color: #888;
   letter-spacing: 0.3rem;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     left: 5vw;
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     left: 0;
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     left: 2vw;
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     left: 1vw;
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     left: 1.5vw;
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 644px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     font-size: 4rem !important;
     left: 1.5vw;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 500px) {
-  .header-inner .home #container span {
+  .header-inner .home #container span, .header-inner .home #container span strong {
     font-size: 4rem !important;
     left: 1vw;
   }
 }
-.header-inner .home #container span.tilted .letter:nth-child(2) {
-  color: #888;
+.header-inner .home #container span.tilted strong, .header-inner .home #container span strong.tilted strong {
+  color: #E76162;
 }
-.header-inner .home #container span.tilted .letter:last-child {
-  color: #888;
+.header-inner .home #container span.flip strong, .header-inner .home #container span strong.flip strong {
+  color: #E76162;
 }
-.header-inner .home #container span.flip .letter:last-child {
-  color: #888;
-}
-.header-inner .home #container span.wave .letter:nth-child(4) {
-  color: #888;
-}
-.header-inner .home #container span.wave .letter:nth-child(5) {
-  color: #888;
-}
-.header-inner .home #container span.wave .letter:nth-child(6) {
-  color: #888;
+.header-inner .home #container span.wave strong, .header-inner .home #container span strong.wave strong {
+  color: #E76162;
 }
 @media screen and (min-width: 1280px) and (max-width: 1650px) {
   .header-inner .home #container {
@@ -1575,6 +1527,9 @@ main {
 .main-inner section.projects .inner .project.project3 {
   top: 120rem !important;
 }
+.main-inner section.projects .inner .project.project3 .infoBtn {
+  margin-top: 6rem !important;
+}
 .main-inner section.projects .inner .project.project3 .mockupAll {
   margin-bottom: 9rem;
 }
@@ -1582,6 +1537,13 @@ main {
   .main-inner section.projects .inner .project.project3 .mockupAll {
     margin-bottom: 15rem !important;
   }
+}
+.main-inner section.projects .inner .project.project3 .mockupAll p {
+  position: absolute;
+  left: 21%;
+  top: 33.5rem;
+  font-size: 1.4rem;
+  color: #888;
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.projects .inner .project.project3 {
@@ -3067,7 +3029,7 @@ footer .footerWrap .contactF .tetxFlexCl {
   width: 4vw;
   height: auto;
   z-index: 3;
-  top: -13vw;
+  top: -15vw;
   left: 25vw;
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
