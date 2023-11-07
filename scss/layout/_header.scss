@@ -351,7 +351,7 @@ header {
                 display: inline-block;
             }
 
-            span, span strong {
+            span {
                 font-size: 6.5rem;
                 line-height: 1.5;
                 font-family: 'TTTtangsbudaejjigaeB';
@@ -394,6 +394,9 @@ header {
                     left: 1vw;
                 }
 
+                & span{
+                    color: $primary;
+                }
                
             }
 
