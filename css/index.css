@@ -390,6 +390,9 @@ header > .ham {
     background-position-y: top !important;
   }
 }
+.header-inner .home h1 {
+  display: none;
+}
 .header-inner .home #container {
   position: absolute;
   top: 8vw;
@@ -816,21 +819,21 @@ main {
 .main-inner section.about .title-flex .title-text {
   line-height: 1.333;
 }
-.main-inner section.about .title-flex .title-text .title-name h1:first-child {
+.main-inner section.about .title-flex .title-text .title-name h2:first-child {
   font-size: 2rem;
   font-weight: 300;
 }
-.main-inner section.about .title-flex .title-text .title-name h1:first-child > strong {
+.main-inner section.about .title-flex .title-text .title-name h2:first-child > strong {
   color: #E76162;
   font-weight: 400;
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
-  .main-inner section.about .title-flex .title-text .title-name h1:first-child {
+  .main-inner section.about .title-flex .title-text .title-name h2:first-child {
     text-align: center;
   }
 }
 @media screen and (max-width: 644px) {
-  .main-inner section.about .title-flex .title-text .title-name h1:first-child {
+  .main-inner section.about .title-flex .title-text .title-name h2:first-child {
     text-align: center;
   }
 }
