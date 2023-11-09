@@ -597,13 +597,15 @@ footer {
 
             .tetxFlexCl {
                 margin: auto;
-                transform: translate(-50%);
+                transform: translate(-30%);
                 color: $secondary;
                 font-weight: 300;
                 font-size: 1.4rem;
+                display: flex;
+                gap: 2rem;
 
                 @include mediaQ ('sm2') {
-                    transform: translate(-25%);
+                    transform: translate(-20%);
                 }
 
                 @include mediaQ ('smHam') {
@@ -611,11 +613,13 @@ footer {
                 }
 
                 @include mediaQ ('smHam2') {
-                    transform: translate(-40%);
+                    transform: translate(-20%);
                 }
 
                 @include mediaQ ('smHam3') {
-                    transform: translate(-15%);
+                    transform: translate(-20%);
+                    gap: 0;
+                    width: 90%;
                 }
             }
         }

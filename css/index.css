@@ -2675,14 +2675,16 @@ footer .footerWrap .contactF .contactFInner .textFlex .tetx4 p {
 }
 footer .footerWrap .contactF .tetxFlexCl {
   margin: auto;
-  transform: translate(-50%);
+  transform: translate(-30%);
   color: #3E614D;
   font-weight: 300;
   font-size: 1.4rem;
+  display: flex;
+  gap: 2rem;
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   footer .footerWrap .contactF .tetxFlexCl {
-    transform: translate(-25%);
+    transform: translate(-20%);
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
@@ -2692,12 +2694,14 @@ footer .footerWrap .contactF .tetxFlexCl {
 }
 @media screen and (max-width: 644px) {
   footer .footerWrap .contactF .tetxFlexCl {
-    transform: translate(-40%);
+    transform: translate(-20%);
   }
 }
 @media screen and (min-width: 360px) and (max-width: 500px) {
   footer .footerWrap .contactF .tetxFlexCl {
-    transform: translate(-15%);
+    transform: translate(-20%);
+    gap: 0;
+    width: 90%;
   }
 }
 
