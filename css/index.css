@@ -3446,7 +3446,7 @@ footer .footerWrap .contactF .tetxFlexCl {
   display: block;
 }
 .main-inner section.artworks .inner .boxwrap .boxInner .boxImgWrap .boxGrup .page div.pic img:hover {
-  scale: 120% 120%;
+  transform: scale(1.2);
   transition: all 0.4s;
   filter: grayscale(100%) brightness(40%);
 }
