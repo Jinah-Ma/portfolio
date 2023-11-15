@@ -700,7 +700,7 @@
             display: block;
 
             &:hover {
-                scale: 120% 120%;
+                transform: scale(1.2);
                 transition: all 0.4s;
                 filter: grayscale(100%) brightness(40%);
             }
