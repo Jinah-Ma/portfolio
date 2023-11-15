@@ -75,8 +75,6 @@ document.getElementById("copy-button4").onclick = () => {
 };
 
 
-
-
 //스크롤 top탭 구현, 애니메이션 구현
 const scrollH = $('header').height();
 const scrollReal1 = $(window).height() - scrollH;
