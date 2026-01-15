@@ -278,6 +278,7 @@ boxImgWrap.each(function () {
     target2.on('click', function (e) {
         e.preventDefault();
         let tg2 = $(this);
+        let currentLink2 = tg2.attr('href');
 
         tContainer2.hide();
         $(currentLink2).show();
