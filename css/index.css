@@ -1144,27 +1144,27 @@ main {
 }
 .main-inner section.history {
   width: 85vw;
-  height: 80rem;
+  height: 85rem;
   background-color: #F8F2EE;
 }
 @media screen and (min-width: 1070px) and (max-width: 1279px) {
   .main-inner section.history {
-    height: 84rem;
+    height: 90rem;
   }
 }
 @media screen and (min-width: 940px) and (max-width: 1069px) {
   .main-inner section.history {
-    height: 110rem;
+    height: 120rem;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 939px) {
   .main-inner section.history {
-    height: 110rem;
+    height: 120rem;
   }
 }
 @media screen and (min-width: 645px) and (max-width: 799px) {
   .main-inner section.history {
-    height: 150rem;
+    height: 130rem;
     width: 100vw;
     margin: 0;
     margin-left: -7rem;
@@ -1172,7 +1172,7 @@ main {
 }
 @media screen and (max-width: 644px) {
   .main-inner section.history {
-    height: 150rem;
+    height: 140rem;
     width: 100vw;
     margin: 0;
     margin-left: -4rem;
